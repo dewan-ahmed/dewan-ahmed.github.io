@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dewans Blog</title>
-    <link>https://dewanahmed.com/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Dewans Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dewanahmed.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Stability comes from making changes - A tale of Infrastructure as Code</title>
-      <link>https://dewanahmed.com/post/tale-of-iac-pt1/</link>
+      <link>/post/tale-of-iac-pt1/</link>
       <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dewanahmed.com/post/tale-of-iac-pt1/</guid>
+      <guid>/post/tale-of-iac-pt1/</guid>
       <description>When mentioning code, it&amp;rsquo;s commonly understood as application code. What about the system your application runs on?</description>
     </item>
     
     <item>
       <title>How to make a GitHub issue creator FOLLOW YOUR RULES?</title>
-      <link>https://dewanahmed.com/post/checklist-checker-github-actions/</link>
+      <link>/post/checklist-checker-github-actions/</link>
       <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dewanahmed.com/post/checklist-checker-github-actions/</guid>
+      <guid>/post/checklist-checker-github-actions/</guid>
       <description>One of my friend sets up build infrastructure for his team and the process is initiated from a GitHub issue.</description>
     </item>
     
     <item>
       <title>Five reasons why YOU should consider a career in the software industry?</title>
-      <link>https://dewanahmed.com/post/five-reasons-software-career/</link>
+      <link>/post/five-reasons-software-career/</link>
       <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dewanahmed.com/post/five-reasons-software-career/</guid>
+      <guid>/post/five-reasons-software-career/</guid>
       <description>It’s tough to make predictions, especially about the future (Yogi Berra)</description>
     </item>
     

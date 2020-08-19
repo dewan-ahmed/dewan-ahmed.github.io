@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dewans Blog</title>
-    <link>https://dewanahmed.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Dewans Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dewanahmed.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Infrastructure as Code</title>
-      <link>https://dewanahmed.com/tags/infrastructure-as-code/</link>
+      <link>/tags/infrastructure-as-code/</link>
       <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dewanahmed.com/tags/infrastructure-as-code/</guid>
+      <guid>/tags/infrastructure-as-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub Actions</title>
-      <link>https://dewanahmed.com/tags/github-actions/</link>
+      <link>/tags/github-actions/</link>
       <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dewanahmed.com/tags/github-actions/</guid>
+      <guid>/tags/github-actions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>career</title>
-      <link>https://dewanahmed.com/tags/career/</link>
+      <link>/tags/career/</link>
       <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dewanahmed.com/tags/career/</guid>
+      <guid>/tags/career/</guid>
       <description></description>
     </item>
     
