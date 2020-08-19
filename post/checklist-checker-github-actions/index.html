@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Dewan Ahmed | Dewans Blog </title>
+    <title> Dewan Ahmed | How to make a GitHub issue creator FOLLOW YOUR RULES? </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="I love to learn, build and share my experiences.">
     
@@ -10,16 +10,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://dewanahmed.com/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://dewanahmed.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://dewanahmed.com/favicons/favicon-16x16.png">
-    <link rel="canonical" href="https://dewanahmed.com/">
-    <link rel="alternate" type="application/rss+xml" href="https://dewanahmed.com/index.xml" title="Dewans Blog" />
+    <link rel="canonical" href="https://dewanahmed.com/post/checklist-checker-github-actions/">
     
     
     <script type="text/javascript" src="https://dewanahmed.com/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dewanahmed.com/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Dewans Blog"/>
-<meta name="twitter:description" content="I love to learn, build and share my experiences."/>
+<meta name="twitter:title" content="How to make a GitHub issue creator FOLLOW YOUR RULES?"/>
+<meta name="twitter:description" content="A tutorial on using GitHub Actions to check if there are incomplete checklist items in the issue&#39;s description."/>
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -70,7 +69,7 @@
         
         
         
-        <li><a class="current" href="/" title="">Home</a></li>
+        <li><a  href="/" title="">Home</a></li>
         
         
         <li><a  href="/post/" title="">Posts</a></li>
@@ -89,64 +88,82 @@
 
             <div class="autopagerize_page_element">
                 <div class="content">
-  
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/tale-of-iac-pt1/">Stability comes from making changes - A tale of Infrastructure as Code</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>When mentioning code, it&rsquo;s commonly understood as application code. What about the system your application runs on?</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Wed, Aug 19, 2020</span>
-          <a class="tag" href="/tags/infrastructure-as-code/">Infrastructure as Code</a>       
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/checklist-checker-github-actions/">How to make a GitHub issue creator FOLLOW YOUR RULES?</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>One of my friend sets up build infrastructure for his team and the process is initiated from a GitHub issue.</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Sun, Aug 16, 2020</span>
-          <a class="tag" href="/tags/github-actions/">GitHub Actions</a>       
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/five-reasons-software-career/">Five reasons why YOU should consider a career in the software industry?</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>It’s tough to make predictions, especially about the future (Yogi Berra)</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Thu, Aug 13, 2020</span>
-          <a class="tag" href="/tags/career/">career</a>       
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<div class="pagination">
-  
+<div class="post animated fadeInDown">
+    <div class="post-content">
 
+      <div class="post-title">
+        <h3>How to make a GitHub issue creator FOLLOW YOUR RULES?
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i>
+          <span class="date">Sun, Aug 16, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
+        </div>
+        
+        </div>
 
+    <p>One of my friend sets up build infrastructure for his team and the process is initiated from a GitHub issue. Although the issue description states the required reading each user needs to do before using this infrastructure, many don&rsquo;t take the time to actually read the docs and start messaging my friend with questions. In this tutorial-style blog, I offer my friend help through GitHub Actions where the issue creator is forced to check-off a checklist (of the required reading) or else their issues would be tagged with <strong>Incomplete Checklist</strong> label.</p>
+<p>This tutorial has two parts:</p>
+<ul>
+<li>To <a href="https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository">configure issue templates</a> for your repository</li>
+<li>Adding <a href="https://github.com/marketplace/actions/issue-checklist-checker">issue-checklist-checker</a> GitHub Actions on your repository</li>
+</ul>
+<h3 id="configuring-issue-template">Configuring Issue Template</h3>
+<p>On your issue-enabled GitHub repository, create a markdown file under .github/ISSUE_TEMPLATE and add a checklist in the description. Take a look at the following sample:</p>
+<pre><code>---
+name: Request access setup for your team
+about: Request access setup for your team.
+title: &quot;[Access Setup Request]&quot;
+labels: 'access request'
+assignees: 'dewan-ahmed'
+
+---
+
+## Pre-requisites ::: You must check the following list before your issue gets addressed
+
+- [ ] I have read the docs
+- [ ] I have watched the videos
+- [ ] I have done my research
+
+* name: team-name
+* team-admin-emails: email1, email2, ...
+* team-user-emails: email1, email2, ...
+</code></pre><p>You can get creative with the checklist and need to make changes to the above sample to fit your need.</p>
+<h3 id="configuring-github-actions">Configuring GitHub Actions</h3>
+<p>On your GitHub account, create a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Personal Access Token</a> from Settings &ndash;&gt; Developer Settings &ndash;&gt; Personal access tokens.</p>
+<p>On the specific repo where you have created the issue template, add the personal secret token under Settings &ndash;&gt; Secrets. Keep a note of the name of the secret which you&rsquo;ll need to provide in the following yml. Under .github/workflows directory, create <em>main.yml</em> and add the following:</p>
+<pre><code>name: Issue Checklist Checker
+
+on: issues
+
+jobs:
+  checkIssue:
+    name: Check Issue for Incomplete Checklist
+    runs-on: ubuntu-latest
+    steps:
+      - uses: adamzolyak/checklist-checker-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+</code></pre><p>I named my secret <strong>PAT</strong> so that&rsquo;s what you see above. If you have a different name for your secert, be sure to make the necessary change.</p>
+<p>That&rsquo;s it! With this particular GitHub Action in place, any incomplete checklist item will result in <strong>Incomplete Checklist</strong> label on that issue. To make things even more interesting, if the issue is closed with incomplete checklist items, the action will reopen the issue and comment on the issue 😏.</p>
+<p>You can check-out <a href="https://github.com/dewan-ahmed/github-actions-issue-checker">this sample repo</a> for reference.</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+    <span class="separator"><a class="tag" href="/tags/github-actions/">GitHub Actions</a></span>
+
+      </div>
+    </div>
+
+    
+           
+    
 </div>
+
 
                 </div>
             </div>
