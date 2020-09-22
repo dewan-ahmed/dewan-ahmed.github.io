@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hello! I’m Dewan Ahmed, and I’m a software engineer at Red Hat.</description>
+    </item>
+    
+    <item>
       <title>When to go K8s-native - A tale of CI/CD servers</title>
       <link>/post/tekton-k8snative-cicd-pt1/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
@@ -36,15 +45,6 @@
       
       <guid>/post/checklist-checker-github-actions/</guid>
       <description>One of my friend sets up build infrastructure for his team and the process is initiated from a GitHub issue.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hello! I’m Dewan Ahmed, and I’m a Developer Advocate at IBM specializing in cloud and DevOps.</description>
     </item>
     
     <item>

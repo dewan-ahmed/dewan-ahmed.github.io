@@ -98,7 +98,7 @@
         <div class="info">
           <i class="fa fa-sun-o"></i>
           <span class="date">Mon, Sep 21, 2020</span>
-          <i class="fa fa-clock-o"></i><span class="reading-time">5-minute read</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">4-minute read</span>
         </div>
         
         </div>
@@ -156,27 +156,21 @@ No pulp, some pulp or lots of pulp? Brand-name or no-name? Would you like it col
 </tr>
 </tbody>
 </table>
-<p>Let&rsquo;s discuss the above points in depth. For ease of reference, I&rsquo;ll use <a href="https://www.jenkins.io/">Jenkins</a> as a traditional CI/CD server example and <a href="https://tekton.dev">Tekton</a> as the Kubernetes-native one. Reference will be made to <a href="https://www.openshift.com/learn/topics/pipelines">OpenShift Pipelines</a> which uses Tekton under the hood.</p>
-<ol>
-<li>
-<p><strong>Logging/Monitoring</strong>: In order to view your Jenkins logs, you&rsquo;d need to access Jenkins server. Although an integration can be made to fetch these logs, this adds overhead, nevertheless. This also means that you&rsquo;d have someone in your team as the &ldquo;Jenkins Expert&rdquo; who understands these logs and can take decisions on it. For OpneShift Pipelines, the resources are pods running in containers. All of these logs are centralized and are shown on the OpenShift Console.</p>
-</li>
-<li>
-<p><strong>High-availability</strong>: You can achieve high-availability on Jenkins by using multiple Jenkins masters with HA-proxy. However, you end up using more resource and the process is complex. For OpenShift Pipelines, the cluster itself can offer high-availability if chosen the right minimum number of master nodes.</p>
-</li>
-<li>
-<p><strong>Self-healing</strong>: While Jenkins can implement <em>retry</em> logic for its failed stages, it is limited to scope and number. Kubernetes (OpenShift, in this case), as a software, has self-healing baked in. This means all the resources run as pods and if one goes down, the platform automatically brings another up to continue the task.</p>
-</li>
-<li>
-<p><strong>Pre-container</strong>: Although Jenkins uses a number of plugins to provide cloud-native capabilities, the fact that you need a <a href="https://wiki.jenkins-ci.org/display/JENKINS/Docker+build+step+plugin">plug-in to build for a Docker environment</a> is problematic. This is because traditional CI/CD servers like Jenkins is pre-container era and the design is a monolith which does not play well with Kubernetes platform. On the contrary, OpenShift Pipelines, Jenkins X etc are developed for Kubernetes and they run on Kubernetes.</p>
-</li>
-</ol>
-<h3 id="next-steps">Next steps?</h3>
-<p>If you&rsquo;ve enjoyed reading this blog and would like to get started, here are some resources:</p>
+<h3 id="challenges-around-k8s-native-cicd-adoption">Challenges around K8s-native CI/CD adoption</h3>
+<p>There is no free lunch. The benefits of a K8s-native CI/CD server come at a cost. It is paramount that you know of these challenges before going all in.</p>
 <ul>
-<li>Try a <a href="https://github.com/dewan-ahmed/java-tekton-demo">demo</a></li>
-<li>Tekton <a href="https://tekton.dev">website</a></li>
+<li>Steep learning curve: Kubernetes is hard. Since the pre-requisite is Kubernetes adoption, transitioning from traditional tools might take some time.</li>
+<li>Fairly new technology: Most K8s-native CI/CD tools have been out only for a few years and have not GA-ed yet. So these tools are not &ldquo;battle-tested&rdquo; yet and very few companies are running them in production. This also means that there will be limited resources available online for these tools.</li>
+<li>Resistance: If your team is already using an established CI/CD tool, there might be resistance towards a new tool.</li>
 </ul>
+<h3 id="next-steps">Next steps?</h3>
+<p>Now that you know the benefits as well as the challenges around a K8s-native CI/CD tool, here are the three steps you can follow for a smooth transition:</p>
+<ol>
+<li>Research: As a team, do your own research if the K8s-native tool is a good fit for your product.</li>
+<li>PoC: Play around with the tool with non-production codebase. This is the time to explore it&rsquo;s capabilities and weaknesses. This is also a good time to learn about the community and the level of support available.</li>
+<li>Go live (with caution): If you&rsquo;re satisfied, start using the tool with production codebase BUT with a backup plan, in case you need to rollback.</li>
+</ol>
+<p>If you&rsquo;ve enjoyed reading this blog and would like to get started with a popular K8s-native CI/CD tool, you can give <a href="https://tekton.dev">Tekton</a> a try. <a href="https://github.com/dewan-ahmed/java-tekton-demo">This repo</a> contains a hands-on tutorial.</p>
 
     </div>
     <div class="post-footer">
