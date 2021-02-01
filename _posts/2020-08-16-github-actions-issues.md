@@ -1,5 +1,7 @@
 ---
 title: "How to make a GitHub issue creator follow your rules?"
+last_modified_at: 2020-08-16T0:00:00-05:00
+author: Dewan Ahmed
 categories:
   - Blog
 tags:
