@@ -11,6 +11,8 @@ tags:
 
 Few weeks ago, I gave an IBM-internal talk on [OpenShift](https://www.openshift.com/). During my favorite part of the talk (the Q&A), a number of good questions came up. I took away some of the questions I didn't have answers for, as a to-do and gathered answers from my Red Hat colleagues. This blog is a collection of those questions and their answers as the information would be useful to many others. If you'd like to improve any of the answer(s), please [reach out to me](https://linkedin.com/in/diahmed) and I'll update this post. 
 
+![Photo by Edwin Andrade on Unsplash](../assets/images/openshift-questions-image.jpg)
+
 > Is OpenShift the same as Kubernetes?
 
 If Kubernetes is the engine, OpenShift is the car. Just like you cannot drive using the engine itself, you'll need a bunch of other services (for monitoring, storage etc.) alongside container orchestration (a.k.a. Kubernetes). A number of these essential services come out of the box with OpenShift and you have the option to [install more](https://docs.openshift.com/container-platform/4.1/applications/operators/olm-understanding-operatorhub.html) based on your project needs.  
