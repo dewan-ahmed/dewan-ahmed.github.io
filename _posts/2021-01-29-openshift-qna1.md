@@ -15,12 +15,12 @@ Few weeks ago, I gave an IBM-internal talk on [OpenShift](https://www.openshift.
 
 > Is OpenShift the same as Kubernetes?
 
-If Kubernetes is the engine, OpenShift is the car. Just like you cannot drive using the engine itself, you'll need a bunch of other services (for monitoring, storage etc.) alongside container orchestration (a.k.a. Kubernetes). A number of these essential services come out of the box with OpenShift and you have the option to [install more](https://docs.openshift.com/container-platform/4.1/applications/operators/olm-understanding-operatorhub.html) based on your project needs.  
+If Kubernetes is the engine, OpenShift is the car. Just like you cannot drive using the engine itself, you'll need a bunch of other services (for monitoring, storage etc.) alongside container orchestration (a.k.a. Kubernetes). A number of these essential services come out of the box with OpenShift and you have the option to [install more](https://docs.openshift.com/container-platform/4.1/applications/operators/olm-understanding-operatorhub.html) based on your project needs. Some specific mentions: *RBAC* and *Networking*; i.e. try to implement using vanilla Kubernetes versus how OpenShift provides the out-of-the-box capabilities. 
 
 At the heart of OpenShift IS Kubernetes, and that it is a [100% certified Kubernetes](https://www.cncf.io/certification/software-conformance/), fully open source and non-proprietary, which means:
 - The API to the OpenShift  cluster is 100% Kubernetes.
 - Nothing changes between a container running on any other Kubernetes and running on OpenShift. No changes to the application.
-For a more detailed answer, you can read [this excellent blog](https://www.openshift.com/blog/whats-the-difference-between-openshift-and-kubernetes) by my colleague Alex Handy.
+For a more detailed answer, you can read [this excellent blog](https://www.redhat.com/en/blog/openshift-and-kubernetes-whats-difference).
 
 > Any good docs on how to design/deploy apps to OpenShift clusters?
 
