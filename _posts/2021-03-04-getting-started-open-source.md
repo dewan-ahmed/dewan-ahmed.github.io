@@ -41,7 +41,9 @@ First of all, you need to consider the type of open source project you'd like to
 
 ### Learn git
 
-With more than 100 million repositories and 60 million developers, [GitHub](https://github.com/) is the first choice for most open source projects. Then what is **git**? Git is a version control system that lets you manage and keep track of your source code history. GitHub is the hosting platform that lets you manage Git repositories. Resources to learn git will be under the **Resources** section.
+> What is **git**? 
+
+Git is a version control system that lets you manage and keep track of your source code history. With more than 100 million repositories and 60 million developers, [GitHub](https://github.com/) is the first choice for most open source projects to host their git repositories. Since git is the primary way to contribute to these projects, learning the basics of git will be essential. Resources to learn git will be under the **Resources** section.
 
 ### Time to start contributing
 
