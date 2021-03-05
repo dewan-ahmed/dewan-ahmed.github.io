@@ -9,12 +9,11 @@ tags:
 ---
 
 Recently, a student reached out to me and asked:
-
 > Could you guide me in terms of how I can get started with contributing to open source projects?
 
 I'm a strong believer of reusable contents and that's why I decided to write a blog post on this topic. If you're a student, newgrad or anyone who is looking to start/transition into the software industry; open source contribution will be a strong skillset on your resume. 
 
-![Open Source](../assets/images/open-source.jpeg)
+![Open Source](/assets/images/open-source.jpeg)
 
 ## What is Open Source?
 
@@ -32,6 +31,30 @@ Since the target audience of this blog is not enterprise clients, I'll focus on 
 
 ## But... How??
 
+### Things to consider
+
+First of all, you need to consider the type of open source project you'd like to contribute to. You can consider three factors:
+
+- The programming langugae: The most fundamental technology behind any application is a programming language. If you have a strong preference, you can choose an open source project using that language. If you're a complete beginner and don't have any preference, [learn](www.freecodecamp.org) at least the basics of one programming language first. 
+- Area of interest: Once you decide on your language of choise, try narrowing down the list of open source projects in terms of their area i.e. backend framework, ML tool, frontend framework, packages, security - the list goes on. 
+- Size of the project: Established projects with thousands of lines of codebase can be daunting. Therefore, try choosing a relatively smaller sized open source project unless you find a large project that has awesome docs and welcomes new contributors. 
+
+### Learn git
+
+With more than 100 million repositories and 60 million developers, [GitHub](https://github.com/) is the first choice for most open source projects. Then what is **git**? Git is a version control system that lets you manage and keep track of your source code history. GitHub is the hosting platform that lets you manage Git repositories. Resources to learn git will be under the **Resources** section.
+
+### Time to start contributing
+
+Block your calendar weekly for a certain time and commit yourself to open source contribution regularly. Open source contributions does not necessarily mean raising PRs only. The grunt work that goes in the background to learn git, read the contribution guide of open source projects and understanding the work that the issue requires - all of these are part of your open source contribution. The final PR that gets merged is simply the tip of the iceberg :)
+
+Please find some super-helpful resources on choosing your first open source project/issue under the **Resources** section.
+
 ## Resources
 
+- [Version Control with Git - Free Udacity Course](https://www.udacity.com/course/version-control-with-git--ud123)
+- [Atlassian Tutorials on Git](https://www.atlassian.com/git)
+- [Getting started with contributing to open source - StackOverflow](https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/)
+- [FreeCodeCamp GitHub Repo - How to contribute to open source](https://github.com/freeCodeCamp/how-to-contribute-to-open-source)
+- [Last but not the least - A website of AWESOME resources for first time contributors](https://www.firsttimersonly.com/)
 
+If this blog encouraged you to contribute to open source, please give a shout-out to my [linkedin](https://www.linkedin.com/in/diahmed/) or [Twitter](https://twitter.com/DewanAhmed). If your first PR to an open source project got merged, please let me know and I'll mail you a sticker of an open source project.  
