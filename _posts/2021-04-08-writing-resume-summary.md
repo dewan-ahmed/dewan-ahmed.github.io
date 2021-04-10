@@ -12,7 +12,7 @@ tags:
 
 Don't feel bad if your resume summary/objective reads like above. This blog aims to help you improve your resume summary/objective that can take your resume from zero to hero (couldn't resist using this overly used phrase). 
 
-![Photo by Anna Tarazevich from Pexels](../assets/images/resume-summary.jpg)
+![Photo by Anna Tarazevich from Pexels](/assets/images/resume-summary.jpg)
 
 ## Summary vs Objective
 
@@ -39,7 +39,7 @@ Some suggest that if you're just entering the workforace or switching careers an
 
 You might be right. But imagine this...it's Friday evening and the recruiter has been going through mountains of resumes. By the time they get to yours, they’re just skimming...trying to make it through. They glance at your resume but, in their tired overwhelmed rush to get done, don't find the relevant skills buried deep in your resume. Your resume, and your prospects at the company, are accidentally ignored.
 
-<img src="../assets/images/noooooo.jpg" width="200">
+<img src="/assets/images/noooooo.jpg" width="200">
 
 None of us want that, do we :) ?
 
