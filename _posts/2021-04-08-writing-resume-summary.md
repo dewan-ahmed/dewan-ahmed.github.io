@@ -6,6 +6,9 @@ categories:
 tags:
   - Career
   - Resume
+header:
+  overlay_image: /assets/images/resume-summary.jpg
+  caption: "Photo by Anna Tarazevich from Pexels"
 ---
 
 > Seeking an entry-level software engineering role to begin my career in a challenging environment.
