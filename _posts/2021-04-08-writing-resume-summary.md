@@ -6,7 +6,8 @@ categories:
 tags:
   - Career
   - Resume
-image: /assets/images/resume-summary.jpg
+header:
+  image: /assets/images/resume-summary.jpg
 thumbnail: /assets/images/resume-summary.jpg
 twitter:
   card: summary
