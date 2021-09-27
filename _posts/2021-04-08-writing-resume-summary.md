@@ -7,6 +7,12 @@ tags:
   - Career
   - Resume
 image: /assets/images/resume-summary.jpg
+
+twitter:
+  card: summary
+  username: dewanahmed
+  title: How to write an amazing resume summary statement
+  image: /assets/images/resume-summary.jpg
 ---
 
 > Seeking an entry-level software engineering role to begin my career in a challenging environment.
