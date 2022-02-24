@@ -13,12 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Dewan's Blog
-email: hey@dewanahmed.com
+title: Dewan's Blog [UNDER CONSTRUCTION]
 description: >- # this means to ignore newlines until "baseurl:"
- Hello! I’m Dewan Ahmed, and I’m a software engineer and open-source developer advocate at Red Hat. Before starting at Red Hat, I have worked at IBM for six years as a developer, QA lead, consultant and developer advocate.
- Besides work, I offer career coaching to students, newgrads and professionals who are trying to transition to the software industry. This site serves my blog, where I share my technical experience, articles on career as well as some random thoughts. 
- When I’m not working, I spend quality time with my wife and toddler 👨‍👩‍👦 and play 🎱.
+I'm working as a Senior Developer Advocate at Aiven simplifying data infrastructure.
+I write about app/data infrastructure, developer advocacy, and my thoughts around a career in tech.
 twitter_username: DewanAhmed
 github_username: dewan-ahmed
 minimal_mistakes_skin: default
