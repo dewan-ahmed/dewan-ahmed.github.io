@@ -2,10 +2,9 @@
 title: "How to make a GitHub issue creator follow your rules?"
 last_modified_at: 2020-08-16T0:00:00-05:00
 author: Dewan Ahmed
-categories:
-  - Blog
 tags:
-  - GitHub Actions
+  - automation
+  - devops
 ---
 
 One of my friend sets up build infrastructure for his team and the process is initiated from a GitHub issue. Although the issue description states the required reading each user needs to do before using this infrastructure, many don’t take the time to actually read the docs and start messaging my friend with questions. In this tutorial-style blog, I offer my friend help through GitHub Actions where the issue creator is forced to check-off a checklist (of the required reading) or else their issues would be tagged with Incomplete Checklist label.

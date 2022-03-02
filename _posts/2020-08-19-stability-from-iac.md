@@ -2,11 +2,9 @@
 title: "Stability comes from making changes - A tale of infrastructure as code"
 last_modified_at: 2020-08-19T0:00:00-05:00
 author: Dewan Ahmed
-categories:
-  - Blog
 tags:
-  - Infrastructure as Code
-  - GitOps
+  - infrastructure-as-code
+  - devops
 ---
 
 When mentioning **code**, it’s commonly understood as application code. What about the system your application runs on? Infrastructure as Code(IaC) applies the same software engineering principles used for application code to the infrastructure. Simply put, it means to codify your IT infrastructure to better manage large-scale, distributed systems and cloud-native platforms. In part one of Infrastructure as Code blog series, I talk about the need for dynamic infrastructure to be able to handle change and point out some of the common objections to Infrastructure as Code.

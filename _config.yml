@@ -13,23 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Dewan's Blog [UNDER CONSTRUCTION]
+title: Dewan's Blog
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm working as a Senior Developer Advocate at Aiven simplifying data infrastructure.
-  I write about app/data infrastructure, developer advocacy, and my thoughts around a career in tech.
+  Read about app/data infrastructure, developer advocacy, and my thoughts around a career in tech.
 twitter_username: DewanAhmed
 github_username: dewan-ahmed
+
 minimal_mistakes_skin: default
 search: true
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Moncton
 
 include:
   - _pages
@@ -57,7 +58,7 @@ plugins:
 
 author:
   name   : "Dewan Ahmed"
-  avatar : "/assets/images/IBM_100_1002112731.jpg"
+  avatar : "/assets/images/dewans-photo.jpg"
   bio    : "I love to learn, build and share my experiences."
   links:
     - label: "LinkedIn"
@@ -71,7 +72,7 @@ author:
       url: "https://github.com/dewan-ahmed"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hey@dewanahmed.com"
+      url: "mailto:dewan.ishtiaque@gmail.com"
 
 footer:
   links:
@@ -86,7 +87,7 @@ footer:
       url: "https://github.com/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hey@dewanahmed.com"
+      url: "mailto:dewan.ishtiaque@gmail.com"
 
 defaults:
   # _posts
@@ -97,7 +98,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages

@@ -2,14 +2,12 @@
 title: "7 OpenShift Questions and 8 Answers"
 date: 2021-01-29T20:14:00-04:00
 author: Dewan Ahmed
-categories:
-  - Blog
 tags:
-  - OpenShift
-  - Kubernetes
+  - openshift
+  - kubernetes
 ---
 
-Few weeks ago, I gave an IBM-internal talk on [OpenShift](https://www.openshift.com/). During my favorite part of the talk (the Q&A), a number of good questions came up. I took away some of the questions I didn't have answers for, as a to-do and gathered answers from my Red Hat colleagues. This blog is a collection of those questions and their answers as the information would be useful to many others. If you'd like to improve any of the answer(s), please [reach out to me](https://linkedin.com/in/diahmed) and I'll update this post. 
+Few years ago, I gave an IBM-internal talk on [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift). During my favorite part of the talk (the Q&A), a number of good questions came up. I took away some of the questions I didn't have answers for, as a to-do and gathered answers from my Red Hat colleagues. This blog is a collection of those questions and their answers as the information would be useful to many others. 
 
 ![Photo by Edwin Andrade on Unsplash](/assets/images/openshift-questions-image.jpg)
 

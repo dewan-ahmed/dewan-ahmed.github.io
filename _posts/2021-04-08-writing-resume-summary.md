@@ -1,11 +1,8 @@
 ---
 title: "How to write an amazing resume summary statement"
 date: 2021-04-08T22:50:00-04:00
-categories:
-  - Blog
 tags:
-  - Career
-  - Resume
+  - career
 twitter:
   image: /assets/images/resume-summary.jpg
   card: summary
@@ -45,7 +42,7 @@ Some suggest that if you're just entering the workforace or switching careers an
 You might be right. But imagine this...it's Friday evening and the recruiter has been going through mountains of resumes. By the time they get to yours, they’re just skimming...trying to make it through. They glance at your resume but, in their tired overwhelmed rush to get done, don't find the relevant skills buried deep in your resume. Your resume, and your prospects at the company, are accidentally ignored.
 
 <p align="center">
-<img src="/assets/images/noooooo.jpg" width="400">
+<img src="/assets/images/dog-sad.jpg" width="400">
 </p>
 
 None of us want that, do we :) ?
