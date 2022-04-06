@@ -3,7 +3,7 @@ title: "Five reasons why YOU should consider a career in the software industry"
 date: 2020-08-13T00:00:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/iac-part1.jpg"
+  teaser: "/assets/images/five-reasons-why.jpg"
 tags:
   - career
 ---
