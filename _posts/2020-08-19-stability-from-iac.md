@@ -4,6 +4,7 @@ last_modified_at: 2020-08-19T0:00:00-05:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/iac-part1.jpg"
+  caption: "Photo credit: Chris Briggs on Unsplash"
 tags:
   - infrastructure-as-code
   - devops
