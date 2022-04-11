@@ -1,6 +1,9 @@
 ---
 title: "Dewan learns Kafka - Let's talk to Kafka"
 date: 2022-01-27T22:50:00-04:00
+author: Dewan Ahmed
+header:
+  teaser: "/assets/images/kafka006.png"
 tags:
   - kafka
 ---

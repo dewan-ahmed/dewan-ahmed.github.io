@@ -1,6 +1,9 @@
 ---
 title: "10 steps to a better Dockerfile"
 date: 2021-11-10T22:50:00-04:00
+author: Dewan Ahmed
+header:
+  teaser: "/assets/images/containers.jpg"
 tags:
   - devops
   - containers

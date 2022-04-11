@@ -1,6 +1,9 @@
 ---
 title: "Dewan learns Kafka - architecture principles and recent changes"
 date: 2022-01-16T22:50:00-04:00
+author: Dewan Ahmed
+header:
+  teaser: "/assets/images/kafka005.png"
 tags:
   - kafka
 ---

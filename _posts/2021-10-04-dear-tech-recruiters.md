@@ -2,6 +2,8 @@
 title: "Dear tech recruiters,"
 date: 2021-10-04T00:00:00-04:00
 author: Dewan Ahmed
+header:
+  teaser: "/assets/images/dear-recruiter.jpg"
 tags:
   - career
 ---

@@ -2,6 +2,8 @@
 title: "7 OpenShift Questions and 8 Answers"
 date: 2021-01-29T20:14:00-04:00
 author: Dewan Ahmed
+header:
+  teaser: "/assets/images/openshift-questions-image.jpg"
 tags:
   - openshift
   - kubernetes

@@ -1,6 +1,9 @@
 ---
 title: "Dewan learns Kafka - Basics"
 date: 2022-01-09T22:50:00-04:00
+author: Dewan Ahmed
+header:
+  teaser: "/assets/images/kafka003.png"
 tags:
   - kafka
 ---
