@@ -21,13 +21,21 @@ For reference, the following table lists things found on a server:
  
  
 ## Infrastructure as Code Principles
+
 The ability to effortlessly create, destroy, and rebuild servers and other related resources depends on sound principles.
+
 The first principle is that **systems can be easily reproduced**. Your IaC tooling/scripts should handle the build/rebuild of systems, and your engineers should not waste time arguing about how to choose a hostname.
+
 The next principle states **systems are disposable** which is related to the common expression *cattles, not pets*. In large-scale cloud infrastructure, the failure of underlying hardware is not a matter of *if* but *when*. Software should continue running even if some of the underlying hardware is modified. Service continuity in the cloud era depends on embracing disposable infrastructure.
+
 In order to trust your automation, the third principle is **systems are consistent**. If your test environment and the production environment differ (in terms of vCPU, memory, or network performance), you cannot predict the reliability of your applications. Inconsistent infrastructure leads to configuration drift and vice versa. 
+
 The fourth principle is **processes are repeatable**. Effective infrastructure teams have a strong automation culture. It's easier to click-ops* a one-off request rather than writing (and testing) a script. But what if you have 20 future requests to do the same task? Manual processes are also enemies of consistent systems, as you might not recall the exact configuration.
+
 The final IaC principle is **design is always changing**. One way to ensure that a system can be changed safely and quickly is to make frequent changes. The benefit of a dynamic infrastructure is that change is not dreaded; it's expected.
+
 ## Infrastructure as Code patterns
+
 While it's important to know the principles of infrastructure-as-code, you also need to know the patterns of provisioning, updating, and decommissioning servers. The patterns mentioned for servers can be applied to other infrastructure resources as well.
  
 The first pattern is to **create a server template image** when provisioning servers that can be used to create multiple servers. Templates can be as simple as specifying an operating system image or customized with all the software and packages that will run on that server. As much as your ops team loves, do not hot clone servers (that's an anti-pattern). They are one of the main reasons for server sprawl and configuration drift. Cloned servers also suffer from all the runtime data from the original servers.
