@@ -46,9 +46,5 @@ infrastructure. Continuous synchronization model means that **a tool runs on an 
 In this blog, I covered some of the main principles around Infrastructure-as-Code (IaC) and a tiny subset of the patterns to implement IaC in your organization. The above is not an exhaustive list, but rather the most important ones to help you get started. In my next blog of the IaC blog series, I'll talk about the best practices on this topic.
  
 I really hope to not make you wait two years this time ;)
- 
- 
----
- 
 
 *click-ops: An ops task that is accomplished by clicking on a GUI rather than automation.
