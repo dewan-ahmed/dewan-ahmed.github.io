@@ -22,8 +22,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-theme: minima
-# remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
 permalink: /:categories/:title/
