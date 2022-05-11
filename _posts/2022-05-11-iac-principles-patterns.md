@@ -15,9 +15,9 @@ For reference, the following table lists things found on a server:
  
 | Type  | Description  | Keep in mind  |
 |---|---|---|
-| Software  | Applications, libraries, and other code  | Makes sure itâ€™s the same on every relevant server  |
-| Configuration  | Files used to control how the system and/or applications work.  | Make sure itâ€™s consistent and correct  |
-| Data  | Files generated and updated by the system, applications, and so on. It may change frequently  | Naturally occuring and changing; may need to preserve it, but wonâ€™t try to manage whatâ€™s inside  |
+| Software  | Applications, libraries, and other code  | Makes sure it's the same on every relevant server  |
+| Configuration  | Files used to control how the system and/or applications work.  | Make sure it's consistent and correct  |
+| Data  | Files generated and updated by the system, applications, and so on. It may change frequently  | Naturally occuring and changing; may need to preserve it, but won't try to manage what's inside  |
  
  
 ## Infrastructure as Code Principles
@@ -44,10 +44,10 @@ The second pattern is around updating servers, and that says **server updates sh
  
 The process of updating servers should be the same **regardless of how many servers are affected by this change**. This is the third IaC pattern that relies on the design of your system and the scalability of the IaC tool you're using.
  
-To avoid configuration drift, the fourth IaC pattern is based on immutability. The configuration files, system packages, and software are not modified on the running server instance once a server is created from a template. In case of a required change, **a new server instance is created from the modified template rather than modifying the existing server instance**. Of course, immutable servers arenâ€™t truly immutable. The transitory runtime state, application and system data constantly change among running servers.
+To avoid configuration drift, the fourth IaC pattern is based on immutability. The configuration files, system packages, and software are not modified on the running server instance once a server is created from a template. In case of a required change, **a new server instance is created from the modified template rather than modifying the existing server instance**. Of course, immutable servers aren't truly immutable. The transitory runtime state, application and system data constantly change among running servers.
  
 Continuous synchronization helps to maintain the discipline for a well-automated
-infrastructure. Continuous synchronization model means that **a tool runs on an unattended schedule, usually at least once an hour, and it applies the current set of definitions**. This prevents configuration drift or at least catches the drift fast. This is the fifth IaC pattern. Writing and maintaining configuration definitions, however, is time-consuming. There is a limit to how much of a serverâ€™s surface area can be reasonably managed by definitions. Any areas not explicitly managed by configuration definitions might be vulnerable to configuration drift. When using continuous synchronization, itâ€™s important to be aware that the majority of a server will not be managed by the configuration definitions. If you find an urge to modify parts of an unmanaged server, remember the second pattern around updating servers.
+infrastructure. Continuous synchronization model means that **a tool runs on an unattended schedule, usually at least once an hour, and it applies the current set of definitions**. This prevents configuration drift or at least catches the drift fast. This is the fifth IaC pattern. Writing and maintaining configuration definitions, however, is time-consuming. There is a limit to how much of a server's surface area can be reasonably managed by definitions. Any areas not explicitly managed by configuration definitions might be vulnerable to configuration drift. When using continuous synchronization, it's important to be aware that the majority of a server will not be managed by the configuration definitions. If you find an urge to modify parts of an unmanaged server, remember the second pattern around updating servers.
  
 ## Wrap up
  
