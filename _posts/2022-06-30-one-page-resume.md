@@ -1,6 +1,6 @@
 ---
-title: "Coach yourself - how long should my resume be?"
-date: 2022-06-29T06:50:00-04:00
+title: "Coach yourself - how long should the resume be?"
+date: 2022-06-30T06:50:00-04:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/stack-of-resumes.jpg"
@@ -9,27 +9,27 @@ tags:
 - resume
 ---
 
-In the last 8 years, I have reviewed over 800 resumes as part of my free resume review service on [LinkedIn](https://www.linkedin.com/in/diahmed/). I've also followed dozens of hiring managers and technical recruiters and read their contents on resume page count.  In this blog, I'll go to great lengths (pun alert) to share my opinion about the ideal resume length and make some suggestions on how to write a concise, yet impactful resume. The scope of my blog is within the software industry and North American region. If you're a doctor or a professor, what I write might not apply to you. For certain countries, the North American resume do's and don'ts might not apply.
+In the last 8 years, I have reviewed over 800 resumes as part of my free resume review service on [LinkedIn](https://www.linkedin.com/in/diahmed/). I've also followed dozens of hiring managers and technical recruiters and read their contents on resume page count.  In this blog, I'll go to great lengths (pun alert) to share my opinion about the ideal resume length and make some suggestions on how to write a concise yet impactful resume. The scope of my blog is within the software industry and North American region. If you're a doctor or a professor, what I write might not apply to you. For certain countries, the North American resume do's and don'ts might not apply.
 
 ## Audience and purpose
 
-The audience of your resume are recruiters and hiring managers. These are busy individuals and they have a stack of resumes to go through. 
+The audience for your resume is recruiters and hiring managers. These are busy individuals, and they have a stack of resumes to go through. 
 
-The purpose of your resume is to **get you an interview; not land you a job**. The resume should satisfy three golden rules:
+The purpose of your resume is to **get you an interview, not land you a job**. The resume should satisfy three golden rules:
 
 1. **Avoiding BS**: Leave unnecessary or irrelevant information out.
 2. **Meeting requirements**: Convince the reader that you are able to do the job.
 3. **Staying concise**: Reading a resume is grunt work. Don't make it any more grunter (new word of the day) by making it *too long*.
 
-I'll assume that you meet the requirements for the job. This blog is not about what to include in the resume rather what not to (which relates to the page length discussion). Therefore, let's keep the focus on points 1 & 3.
+I'll assume that you meet the requirements for the job. This blog is not about what to include in the resume, but rather what not to (which relates to the page length discussion). Therefore, let's keep the focus on points 1 and 3.
 
 ## Write a resume; not a CV
 
-A CV (the full form curriculum vitae means “course of life” in Latin) is often for academic purposes and can span over multiple pages because it lists all your credentials. It would contain details about your education, courses you took, papers your published, honors, and other achievements. The fact that you're reading this blog indicates that you're not pursuing a career in the academia. For the industry, you need a resume and not a CV. A resume highlights your **competencies** rather than your credentials.  
+A CV (the full form curriculum vitae means “course of life” in Latin) is often for academic purposes and can span over multiple pages because it lists all your credentials. It would contain details about your education, courses you took, papers you published, honors, and other achievements. The fact that you're reading this blog indicates that you're not pursuing a career in academia. For the industry, you need a resume and not a CV. A resume highlights your **competencies** rather than your credentials.  
 
 ## The hiring manager might never see your resume
 
-It's true! When you upload your resume to a job portal, the system fetches relevant information from that document and adds an entry to a candidate dashboard. The hiring manager sees that dashboard and not your actual PDF resume. For example, you listed two items under "Work Experience" and seven items under "Volunteer Experience". The system might put the "Volunteer Experience" in "Other" category and the hiring manager might never check that section because it might not be relevant to the role. An exception to this is when you're being referred and someone sends your PDF resume to the hiring manager directly. More on that in the next section. 
+It's true! When you upload your resume to a job portal, the system fetches relevant information from that document and adds an entry to a dashboard. The hiring manager sees that dashboard and not your actual PDF resume. For example, you listed two items under "Work Experience" and seven items under "Volunteer Experience". The system might put the "Volunteer Experience" in "Other" category, and the hiring manager might never check that section because it might not be relevant to the role. An exception to this is when you're being referred and someone sends your PDF resume to the hiring manager directly. More on that in the next section. 
 
 ## How does your resume reach the company?
 
@@ -47,15 +47,15 @@ If the hiring manager had to go through hundreds of online applications, they mi
 
 ## The never-ending debate on page count
 
-You'll find countless contents like this one claiming "based on research":
+You'll find countless articles like this one claiming to be "based on research":
 
 ![two-page-over-one-page](/assets/images/resume-page-count.png)
 
-However, a quick search on that company's blog shows the following content:
+However, a quick search of that company's blog shows the following content:
 
 ![exactly-one-page](/assets/images/resume-page-count-contradict.png)
 
-Confused? The internet has made the topic of the length of resume similar to topics like "Is coffee good for health?" There are tons of opinions BUT I won't leave you with "it depends". I have a definitive answer for you in the next-next section. 
+Confused? The internet has made the topic of the length of a resume similar to topics like "Is coffee good for health?" But I won't leave you with "it depends". I have a definitive answer for you in the next-to-next section. 
 
 ## Resume should have relevant information
 
@@ -68,23 +68,23 @@ What if you have 20 years of experience and you worked at 12 companies? How abou
 
 ## Resume should be between 1-2 pages
 
-There you go. The cat is out of the bag and time to tell you my reasoning behind this claim. I firmly believe that resume is NOT the place to list your entire work/academic history. Everyone should maintain some sort of website, personal blog, or digital portfolio. If you're not going for a senior leadership role, my recommendation would be to keep your resume to a single page. Contacts, resume summary, skills, 2-3 work experiences, project or open-source contributions, and education should nicely fit into a single page (I know it's possible because I spend a large amount of time reviewing resumes). 
+There you go. The cat is out of the bag and time to tell you my reasoning behind this claim. I firmly believe that a resume is NOT the place to list your entire work/academic history. Everyone should maintain some sort of website, personal blog, or digital portfolio. If you're not going for a senior leadership role, my recommendation would be to keep your resume to a single page. Contacts, resume summary, skills, 2-3 work experiences, project or open-source contributions, and education should nicely fit into a single page (I know it's possible because I spend a large amount of time reviewing resumes). 
 
 If you have 10+ years of experience (don't get fixated on the number. I had to pick a number) and you feel crammed into a single page, you can use the second page. Keep in mind that the information should be thoroughly distributed and don't just use the second page for three lines of your volunteering experience. Fill up at least 70% of the second page and remember rules 1 & 3 - no BS and stay concise.
 
-If you're a CEO or a research scientist who needs to add the patents to your resume, this blog is not for you. Feel free to take up multiple pages because people who review your resume, have all the times in the world to do so. 
+If you're a CEO or a research scientist who needs to add the patents to your resume, this blog is not for you. Feel free to take up multiple pages because people who review your resume have all the time in the world to do so. 
 
 ## How to keep the resume concise?
 
-If you've read carefully so far, I've spilled some secrets to trim your resume already. Here's my suggestions on how to keep the resume short, sweet, and concise:
+If you've read carefully so far, I've spilled some secrets to trim your resume already. Here are my suggestions on how to keep the resume short, sweet, and concise:
 
-1. Take the focus off you and focus on the company. Make a list of skills/experiences they seek and include ONLY those ones that are valuable to the hiring manager.
+1. Take the focus off of you and focus on the company. Make a list of skills and experiences they seek and include ONLY those ones that are valuable to the hiring manager.
 
-2. Do you have multiple items under the academic section? Listing the most recent academic experience will suffice. 
+2. Do you have multiple items under the "education" section? Listing the most recent academic experience will suffice. 
 
 3. Did you take 15 Udemy courses this year? Good for you. Please please please don't list all 15 on your resume. You can list a few projects you did within those Udemy courses that are relatable to the job.
 
-4. Do not use your own custom template. Use a resume template. Just like you don't want a resume with insanely large font; you also don't want to have a single-page resume with size 6 font. Do not sacrifice readability for conciseness. 
+4. Do not use your own custom template. Use a resume template. Just like you don't want a resume with an insanely large font; you also don't want to have a single-page resume with a size 6 font. Do not sacrifice readability for conciseness. 
 
 5. Although my own resume is two-columns, I see many professionals advise against this practice. My suggestion would be to use two-columns only if it's done by a resume builder or template. 
 
