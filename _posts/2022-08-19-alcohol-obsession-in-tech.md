@@ -1,6 +1,6 @@
 ---
 title: "Let's NOT have a beer"
-date: 2020-08-19T00:00:00
+date: 2022-08-19T00:00:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/alcohol.jpg"
