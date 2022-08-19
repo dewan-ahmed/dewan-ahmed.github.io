@@ -1,0 +1,23 @@
+---
+title: "Let's NOT have a beer"
+date: 2020-08-19T00:00:00
+author: Dewan Ahmed
+header:
+  teaser: "/assets/images/alcohol.jpg"
+tags:
+  - culture
+---
+
+For the first time, I won a major raffle at a recent conference. However, I had to give the prize back since it was a beer dispenser and I don't drink. If your reaction after reading the last line was "Why don't you drink?" or "Most of us do and it's your choice that you missed out.", then this blog is for you. I'm calling out the alcohol obsession we have in the tech industry and how it's causing a serious problem for many.
+
+Let's start with a beer dispenser as a prize. To be fair to the organizers (who hosted an awesome conference), all but this gift were regular ones, and by pure coincidence, the only alcohol-related prize was won by the person who doesn't drink. However, selecting a beer dispenser as a prize implies that "everyone drinks" or "drinking is the **default** and opting out is **optional**. That's a pattern I've seen at conferences, meetups, and even during hiring. 
+
+You might ask, "What's the problem if folks drink? Others don't have to, and they can choose a non-alcoholic drink." Let me recall my last networking event from a conference (yup, the same one where I won a beer dispenser, but the experience is the same for any networking socials). People were handed out a beer ticket, and the servers were going around taking drink orders. By the time I stopped a server to ask if there were any non-alcoholic drinks, all the folks in my circle had a glass in their hands. The server (who was a little amused by my request) had to think about what they had that wasn't alcohol but was gracious enough to bring me a pineapple juice.  
+
+Opting for a non-alcoholic beverage is a minor issue. While it was a networking event for a tech event, almost all the discussions revolved around different types of alcohol - taste, brewing techniques, etc. Needless to say, I had zero opinion on this topic and it barred me from engaging in most discussions. I made some failed attempts to steer the conversation back to something generic like tech, the area, food, etc. But somehow, the topic of alcohol seems to overpower all other topics in networking socials. 
+
+The work culture in general is alcohol-focused, especially in consulting and sales organizations. Closed a deal? Let's open up a champagne bottle! Friday night? Let's have a beer after work! Most folks don't understand the effect of peer pressure on those who don't drink or are in an early stage of recovery from alcohol problems. Having an event in a bar or a pub is problematic in and of itself. The counterargument is that "Most folks have a good time with a drink". If one needs alcohol to have a good time, then there's a bigger problem to deal with. Small cities might not have a variety of restaurants or meeting places, and a bar or pub might be the only option. Even then, you can make arrangements to have a wider option of non-alcoholic beverages and make an active effort so that the discussions don't center around alcohol.
+
+I remember an ex-colleague who used to say, "I want to hire someone with whom I can have a beer after work". I totally understand that the underlying meaning was to hire like-minded folks and not dismiss folks who don't drink. With remote work, this is much less of a problem. But if you're in sales or consulting, you know that many important decisions are made over a glass of beer. If you don't drink, you're an outcast, and you'll miss out on a lot of opportunities. This is not limited to sales or consulting departments. You might say that your team or organization doesn't have this culture. Please know that you're an exception. Kudos to your team, but your individual experience doesn't reflect the majority. From hiring to promoting employees, culture fit plays a key role, and alcohol is a silent but significant contributor to culture fit.
+
+Drinking alcohol is legal in many parts of the world. Canada legalized cannabis in October, 2018. Imagine going to a meetup or work event where everyone is smoking weed and they're discussing how to grow good quality cannabis. If you are not a cannabis user, you will feel out of place at that event. Many of us feel the same at work events where alcohol is served and celebrated. You're well within your rights to enjoy alcohol. Please, however, make certain that your enjoyment does not come at the expense of inclusivity and the safety of others.
