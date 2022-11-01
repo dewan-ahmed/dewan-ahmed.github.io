@@ -102,7 +102,9 @@ This is `Dewan's blog <https://www.dewanahmed.com>`_.
 
 Link in Asciidoc:
 
+```
 https://www.dewanahmed.com[Dewan's blog]
+```
 
 Link in Markdown:
 
@@ -149,7 +151,7 @@ Setting aside the annoyance of having to hold down the “=”, "~", or another 
 
 Many tech companies love the rich ecosystem of [Remark](https://github.com/remarkjs) to transform Markdown with plugins. Still, **extendability** is the subject where Markdown scores the lowest. Most folks mention that Markdown is not suitable for serious documentation projects. If your project uses some form of workflow and you'd like to run some scripts within your Markdown, your choice of scripting language might vary from JavaScript (Jekyll or Markdoc) to GoLang (Hugo) to Python (MKDocs). Some teams might be tempted to include custom HTML and CSS within Markdown and then get stuck into a messy situation during migration to another framework. I can see that some frameworks like [Hugo offer localization](https://gohugo.io/content-management/multilingual/) but from the survey responses, Markdown isn't the first choice when folks think of complex documentation projects involving localization. 
 
-### reStructuredText - mostly for Python-based projects that requires extendability
+### reStructuredText - mostly for Python-based projects that require extendability
 
 #### Python
 
