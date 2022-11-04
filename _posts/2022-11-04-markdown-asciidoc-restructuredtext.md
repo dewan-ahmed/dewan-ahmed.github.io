@@ -1,5 +1,5 @@
 ---
-title: "Markdown, asciidoc, or reStructuredText - a tale of docs-as-code"
+title: "Markdown, Asciidoc, or reStructuredText - a tale of docs-as-code"
 date: 2022-11-04T00:00:00
 author: Dewan Ahmed
 header:
@@ -193,4 +193,4 @@ Do you have parts of the documentation behind a firewall that require authentica
 
 ## Wrap up
 
-In this blog, I covered three popular markup languages, some frameworks, and my opinion on the choice of markup language based on use cases. If there's one thing you want to take away from this blog, it will be to find the balance between the ease of getting started (simplicity) and the support for future growth (extendability) when choosing a markup language. If you liked this article, please [give a shout-out](https://twitter.com/DewanAhmed).  
+In this blog, I covered three popular markup languages, some frameworks, and my opinion on the choice of markup language based on use cases. If there's one thing you want to take away from this blog, it will be to find the balance between the ease of getting started (simplicity) and the support for future growth (extendability) when choosing a markup language. If you liked this blog or have any feedback, please [reach out](https://twitter.com/DewanAhmed).  
