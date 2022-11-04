@@ -27,7 +27,7 @@ In the first part of my docs-as-code series, I'll talk about the choice of marku
 
 ## The choices - md, adoc, rST
 
-Before choosing a markup language, you'll need to choose either a desktop code editor like [VSCode](https://code.visualstudio.com/) or stay in your terminal and use something like [~Emacs~ VIM](https://www.vim.org/). Most code editors will have plug-ins for popular markup languages which will offer you syntax highlighting, preview, etc. If you're testing or learning a specific syntax, there are many online editors, such as, [StackEdit for Markdown](https://stackedit.io/). 
+Before choosing a markup language, you'll need to choose either a desktop code editor like [VSCode](https://code.visualstudio.com/) or stay in your terminal and use something like ~Emacs~ [VIM](https://www.vim.org/). Most code editors will have plug-ins for popular markup languages which will offer you syntax highlighting, preview, etc. If you're testing or learning a specific syntax, there are many online editors, such as, [StackEdit for Markdown](https://stackedit.io/). 
 
 The main choices for document markup languages are:
 
