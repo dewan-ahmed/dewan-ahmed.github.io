@@ -78,7 +78,7 @@ Does DevRel look glamorous from the outside? The travel, staying at nice hotels,
 </p>
 
 <p align="center"> 
-Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/) 
+"Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/)" 
 </p>
 
 Based on 2022 State of Developer Relations report, [Taylor wrote on Twitter](https://twitter.com/taylor_atx/status/1575218433632804864?s=20&t=WwyR42KTOQPJ4zWn4mqmrw) about her hypothesis on why companies with new DevRel programs are hiring inexperienced folks 
