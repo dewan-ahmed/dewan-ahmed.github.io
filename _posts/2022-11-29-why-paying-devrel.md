@@ -73,9 +73,13 @@ Your path can be very different. You can be a CS grad or a college dropout, a Ph
 
 Does DevRel look glamorous from the outside? The travel, staying at nice hotels, and the "influence" on social media might give all the wrong signals to someone looking to break into tech. Maybe we should talk more about the invisible hard stuff in the job. When I'm in my hotel room, I'm practising in front of a mirror for my talk the next morning and not sipping on pina colada by the pool. I've spent countless nights at airports and on economy flights without much sleep. I've had layovers at airports without a proper restaurant and survided on granola bars and coke zero. The economy flights wearing N95 masks can be anything but glamorous. 
 
-<img src="/assets//images/program-age-vs-employee-experience-devrel.jpeg" alt="Program Age vs. Employee Years of DevRel Experience" width="200"/>
+<p align="center">
+<img src="/assets//images/program-age-vs-employee-experience-devrel.jpeg" alt="Program Age vs. Employee Years of DevRel Experience" width="600"/>
+</p>
 
-<p align="center">Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/)</p>
+<p align="center"> 
+Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/) 
+</p>
 
 Based on 2022 State of Developer Relations report, [Taylor wrote on Twitter](https://twitter.com/taylor_atx/status/1575218433632804864?s=20&t=WwyR42KTOQPJ4zWn4mqmrw) about her hypothesis on why companies with new DevRel programs are hiring inexperienced folks 
 
