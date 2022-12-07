@@ -39,7 +39,7 @@ In the following three sections, I will discuss the reasonings behind my definit
 
 ## Developer advocates MUST be technical 
 
-In Canada, the term "Engineer" is protected and reserved only to those licensed by a provincial or territorial engineering regulator. Let's use the term "builder" instead. A builder is someone who has experience building software systems. Whether it's for two years or twenty years, legacy enterprise development or freelance open-source contributions, a developer advocate must have **done the thing** which they are hoping to teach others. Without being technical yourself, how can you teach a bunch of techies? [Angie Jones writes](https://github.com/readme/guides/angie-jones-demystifying-developer-advocacy):
+In Canada, the term "Engineer" is protected and reserved only to those licensed by a provincial or territorial engineering regulator. Let's use the term "builder" instead. A builder is someone who has experience building software systems. Before I transitioned into tech, I worked as an electrical engineer building renewable energy systems. Before that, I spent 10 years at engineering schools in two countries where my brain was hammered to learn new things by reading documentation (a.k.a books) and then I built systems (a.k.a lighting up an LED) using that knowledge. Even with all that technical experience, it would be impossible for me to start my tech career as a developer advocate. I started as an intern at IBM, worked my way as a Java developer, and then transitioned to technical consulting. After 4 years of experience as a developer and consultant, I was able to start my developer advocacy career. Your path can be very different. You can be a CS grad or a college dropout, a Physics PhD or a musician - you need the experience of building software systems. Whether it's for two years or twenty years, legacy enterprise development or freelance open-source contributions, a developer advocate must have **done the thing** which they are hoping to teach others. Without being technical yourself, how can you teach a bunch of techies? [Angie Jones writes](https://github.com/readme/guides/angie-jones-demystifying-developer-advocacy):
 
 > Developer advocates have to build and maintain credibility with their engineering peers, understand their pain points, and foresee how given solutions would address their needs. Without engineering experience, this is hard to do. Not impossible, but definitely hard.
 
@@ -53,11 +53,12 @@ Do you have a favorite developer advocate? I follow and respect a number of deve
 
 | Name  | Roles before DevRel  |
 |---|---|
-| [Kelsey Hightower](https://en.wikipedia.org/wiki/Kelsey_Hightower)  | SysAdmin, IT Consultant, Software Engineer  |
+| [Kelsey Hightower](https://en.wikipedia.org/wiki/Kelsey_Hightower)  | Software Engineer, IT Consultant, SysAdmin  |
 | [Angie Jones](https://twitter.com/techgirl1908)  | Java Champion, GitHub Star, Inventor {26 patents}  |
 | [Matty Stratton](https://www.linkedin.com/in/mattstratton/)  | Lead Engineer, Software Architect, Technical Consultant  |
 | [Lorna Jane](https://lornajane.net/)  | PHP Consultant, Principal Developer, Senior Web Developer  |
 | [Sai Vennam](https://www.linkedin.com/in/saivennam/)  | Software Engineer, Web Developer  |
+
 
 
 ## Developer advocacy - NOT an entry-level role
