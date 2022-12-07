@@ -57,7 +57,7 @@ Do you have a favorite developer advocate? I follow and respect a number of deve
 |---|---|
 | [Kelsey Hightower](https://en.wikipedia.org/wiki/Kelsey_Hightower)  | Software Engineer, IT Consultant, SysAdmin  |
 | [Angie Jones](https://twitter.com/techgirl1908)  | Java Champion, Software Engineer, Inventor {26 patents}  |
-| [Matty Stratton](https://www.linkedin.com/in/mattstratton/)  | Lead Engineer, Software Architect, Technical Consultant  |
+| [Matty Stratton](https://www.linkedin.com/in/mattstratton/)  | Lead Engineer, Infrastructure Architect, Technical Consultant  |
 | [Lorna Jane](https://lornajane.net/)  | PHP Consultant, Principal Developer, Senior Web Developer  |
 | [Sai Vennam](https://www.linkedin.com/in/saivennam/)  | Software Engineer, Web Developer  |
 
