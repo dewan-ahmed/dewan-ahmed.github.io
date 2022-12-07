@@ -39,29 +39,38 @@ In the following three sections, I will discuss the reasonings behind my definit
 
 ## Developer advocates MUST be technical 
 
-In Canada, the term "Engineer" is protected and reserved only to those licensed by a provincial or territorial engineering regulator. Let's use the term "builder" instead. A builder is someone who has experience building software systems. Before I transitioned into tech, I worked as an electrical engineer building renewable energy systems. Before that, I spent 10 years at engineering schools in two countries where my brain was hammered to learn new things by reading documentation (a.k.a books) and then I built systems (a.k.a lighting up an LED) using that knowledge. Even with all that technical experience, it would be impossible for me to start my tech career as a developer advocate. I knew a lot about circuits, diodes, and huge transformers but nothing about SQL or git, let alone cloud and Kubernetes. I started as an intern at IBM, worked my way as a Java developer, and then transitioned to technical consulting. After 4 years of experience as a developer and consultant, I was able to start my developer advocacy career. Your path can be very different. You can be a CS grad or a college dropout, a Physics PhD or a musician - you need the experience of building software systems. Whether it's for two years or twenty years, legacy enterprise development or freelance open-source contributions, a developer advocate must have **done the thing** which they are hoping to teach others. Without being technical yourself, how can you teach a bunch of techies? [Angie Jones writes](https://github.com/readme/guides/angie-jones-demystifying-developer-advocacy):
-
-> Developer advocates have to build and maintain credibility with their engineering peers, understand their pain points, and foresee how given solutions would address their needs. Without engineering experience, this is hard to do. Not impossible, but definitely hard.
+In Canada, the term "Engineer" is protected and reserved only to those licensed by a provincial or territorial engineering regulator. Let's use the term "builder" instead. A builder is someone who has experience building software systems. 
 
 Developer advocates are storytellers. Oftentimes, these stories are their own experiences of solving critical technical challenges. Even when they're building a demo application, their previous experience as a builder helps them architect the application to follow the best practices. Most talks follow a question/answer period where the audience asks the developer advocate questions about the technology they talked about. Even if someone manages to rehearse and deliver a technical talk, it'll be incredibly difficult for them to answer the deep technical questions from the audience.
 
-If you think that not all developer advocates need to be technical and some folks might be more on the community side, you might be mixing community managers with developer advocates. Community managers are also part of a developer relations team and their work overlaps some of the work of developer advocates around community. 
+If you think that not all developer advocates need to be technical and some folks might be more on the community side, you might be mixing community managers with developer advocates. Community managers are also part of a developer relations team and their work overlaps some of the work of developer advocates around community. If you've seen a developer advocate doing 100% community work without producing code or technical contents, they might using the wrong title for whatever reasons. I've seen a sales representative on LinkedIn using "Sales Rep / Developer Advocate" as their title. 
 
-When I was interviewing for my first job switch after 8 years in 2020, I was privileged to get a ton of InMails for DevRel roles. Unfortunately, a good percentage of these roles were for blockchain/crypto/NFT companies. What's unfortunate about it? I respect all technologies and legal companies. Here is the **unfortunate** bit. Every single recruiter from these companies assured me that I don't need to know ANYTHING about blockchain or the underlying technology to join their companies. This is after I mentioned that I don't have a clue about blockchain. What was important for these companies then? A large social media following and an ability to create endless marketing contents. I don't follow that industry but I can make a guess that without the technical foundation, most of the blockchain/crypto/NFT DevRel hires were unsuccessful at building the **trust** of their communities. 
+What do I mean by producing code or technical contents? In the current time and market, almost everyone at a tech company can talk technical. Even basic git and GitHub are considered as general skills. To find the bar of code and technical content, you have to go back to your audience - the developers. Developers have evolved to grow an uncanny ability to smell sales and marketing tactics. However, they constantly seek technical knowledge and (reluctantly) skims through developer documentations. Your developer audience is the litmus test for the code and contents your developer advocate creates.  
+
+Why I am trying to be a gatekeeper though? I don't think anyone can/should be a gatekeeper in tech but my opinions in this blog are coming from a genuine concern that some folks might be devaluing the developer advocacy role. When I was interviewing for my first job switch after 8 years in 2020, I was privileged to get a ton of InMails for DevRel roles. Unfortunately, a good percentage of these roles were for blockchain/crypto/NFT companies. What's unfortunate about it? 
+
+I respect all technologies and legal companies. Here is the **unfortunate** bit. Almost every single recruiter from these companies assured me that I don't need to know ANYTHING about blockchain or the underlying technology to join their companies. This is after I mentioned that I don't have a clue about blockchain. What was important for these companies then? A large social media following and an ability to create endless marketing contents. I don't follow that industry but I can make a guess that without the technical foundation, most of the blockchain/crypto/NFT DevRel hires were unsuccessful at building the **trust** of their communities. 
 
 Do you have a favorite developer advocate? I follow and respect a number of developer advocates in the industry. Let's take a look at their background and try to deduce if a technical background is needed or not to become a successful developer advocate.
 
 | Name  | Roles before DevRel  |
 |---|---|
 | [Kelsey Hightower](https://en.wikipedia.org/wiki/Kelsey_Hightower)  | Software Engineer, IT Consultant, SysAdmin  |
-| [Angie Jones](https://twitter.com/techgirl1908)  | Java Champion, GitHub Star, Inventor {26 patents}  |
+| [Angie Jones](https://twitter.com/techgirl1908)  | Java Champion, Software Engineer, Inventor {26 patents}  |
 | [Matty Stratton](https://www.linkedin.com/in/mattstratton/)  | Lead Engineer, Software Architect, Technical Consultant  |
 | [Lorna Jane](https://lornajane.net/)  | PHP Consultant, Principal Developer, Senior Web Developer  |
 | [Sai Vennam](https://www.linkedin.com/in/saivennam/)  | Software Engineer, Web Developer  |
 
-
+I hope I was able to explain why developer advocacy is and will remain a highly technical role.    
 
 ## Developer advocacy - NOT an entry-level role
+
+
+Before I transitioned into tech, I worked as an electrical engineer building renewable energy systems. Before that, I spent 10 years at engineering schools in two countries where my brain was hammered to learn new things by reading documentation (a.k.a books) and then I built systems (a.k.a lighting up an LED) using that knowledge. Even with all that technical experience, it would be impossible for me to start my tech career as a developer advocate. I knew a lot about circuits, diodes, and huge transformers but nothing about SQL or git, let alone cloud and Kubernetes. I started as an intern at IBM, worked my way as a Java developer, and then transitioned to technical consulting. After 4 years of experience as a developer and consultant, I was able to start my developer advocacy career. 
+
+Your path can be very different. You can be a CS grad or a college dropout, a Physics PhD or a musician - but you need the experience of building software systems. Whether it's for two years or twenty years, legacy enterprise development or freelance open-source contributions, a developer advocate must have **done the thing** which they are hoping to teach others. Without the technical experience, how can you teach a bunch of techies? [Angie Jones writes](https://github.com/readme/guides/angie-jones-demystifying-developer-advocacy):
+
+> Developer advocates have to build and maintain credibility with their engineering peers, understand their pain points, and foresee how given solutions would address their needs. Without engineering experience, this is hard to do. Not impossible, but definitely hard.
 
 ## Cost of DevRel depends on how you value them 
 
