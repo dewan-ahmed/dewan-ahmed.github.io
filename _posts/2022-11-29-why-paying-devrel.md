@@ -87,6 +87,14 @@ There can be a handul of exceptions like Twilio back in the days or GitHub in th
 <img src="/assets//images/devrel-layoffs.jpg" alt="DevRel mass layoffs in 2022" width="600"/>
 </p>
 
-## DevRel - for every developer, not for every company
+2022 was a troubling year for tech. However, with all the mass layoffs, don't associate the troubling trend of DevRel layoffs only with mass layoffs. DevRel layoffs happened this year, the year before, and the year before. In my observations, there are three main reasons behind DevRel layoffs:
 
-Why do you think you need a developer relations team? Did you get a series A funding and one of the investors suggested you get one of those developer advocate thing? In this section, I'll give you an overview of developer relations and developer advocacy so that you can decide if your company (really) needs one. 
+1. Company-wide mass layoffs
+2. The company never needed DevRel
+3. The leadership didn't understand DevRel
+
+When the company needs to tighten the belt, only the folks directly contributing to the revenue makes the cut and their colleagues find a place on the chopping board. I will be out of my mind to say that a company should let go a developer or a sales rep over a developer advocate. Mass layoffs are ugly, brutal, and often result from the Silicon Valley rush to become the next unicorn. But that is, sometimes, the unfortunate reality and cannot be avoided.
+
+> DevRel - for every developer, not for every company
+
+Why do you think you need a developer relations team? Did you get a series A funding and one of the investors suggested you get one of those developer advocate thing? The question to ask is pretty simple. **Does your company have a product or (open-source) project whose users are developers?** For example, Gmail is used by general population but Google Cloud is used by developers. Adam FitzGerald, Vice President of Developer Relations at HashiCorp, [mentioned to GGV](https://www.ggvc.com/insights/five-tips-for-building-a-successful-developer-relations-program-from-hashicorp/) that the right time to formally create a developer relations program is when your company has about 25-50 people. Adam added that by the time your company has 100 employees, you almost certainly should have a head of developer relations, if you don’t already. While this is not exact science, this formular has worked well for many companies including HashiCorp who are seen as the posterchild of building successful open-source and developer relations programs.   
