@@ -77,7 +77,9 @@ Does DevRel look glamorous from the outside? The travel, staying at nice hotels,
 <img src="/assets//images/program-age-vs-employee-experience-devrel.jpeg" alt="Program Age vs. Employee Years of DevRel Experience. Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/)" width="600"/>
 </p>
 
-Based on 2022 State of Developer Relations report, [Taylor wrote on Twitter](https://twitter.com/taylor_atx/status/1575218433632804864?s=20&t=WwyR42KTOQPJ4zWn4mqmrw) about her hypothesis on why companies with new DevRel programs are hiring inexperienced folks 
+Based on the 2022 State of Developer Relations report, [Taylor wrote on Twitter](https://twitter.com/taylor_atx/status/1575218433632804864?s=20&t=WwyR42KTOQPJ4zWn4mqmrw) about her hypothesis on why companies with new DevRel programs are hiring inexperienced folks. She mentioned that this is dangerous to the person they are hiring (more likely to leave the field), dangerous to the industry, and just dangerous to the company success. On her blog, [Taylor wrote](https://taylorbar.net/posts/adventures-in-solo-devrel-notes/) about the challenges of DevRel. Although aimed towards solo DevRels, developer advocates in general, are likely to burnout due to unclear prioritization and lack of support/understanding from the larger teams (marketing, eng, product, etc.). This likelihood of burnout increases by a few magnitudes if this DevRel person is an intern or have very little experience.  
+
+There can be a handul of exceptions like Twilio back in the days or GitHub in the present days where they had/have programs to hire, support, and grow junior DevRel talents. But this is an exception and not an excuse for companies to hire cheap DevRel talent and then set them up for failures. 
 
 ## Cost of DevRel depends on how you value them 
 
