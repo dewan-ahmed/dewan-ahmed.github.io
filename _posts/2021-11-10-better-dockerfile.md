@@ -9,6 +9,16 @@ tags:
   - containers
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 The journey to the cloud typically starts with containerizing your apps. One of the first challenges developers face is writing the blueprint for those container images—aka a Dockerfile. This article guides you through ten steps to writing better Dockerfiles. The basis for our example is a  [popular Spring application](https://developers.redhat.com/courses/spring-boot).
 
 ![containers](../assets/images/containers.jpg)

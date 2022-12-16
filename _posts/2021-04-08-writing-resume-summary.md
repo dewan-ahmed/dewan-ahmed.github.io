@@ -8,6 +8,16 @@ tags:
   - career
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 > Seeking an entry-level software engineering role to begin my career in a challenging environment.
 
 Don't feel bad if your resume summary/objective reads like above. This blog aims to help you improve your resume summary/objective that can take your resume from zero to hero (couldn't resist using this overly used phrase). 

@@ -9,6 +9,16 @@ tags:
 - resume
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 In the last 8 years, I have reviewed over 800 resumes as part of my free resume review service on [LinkedIn](https://www.linkedin.com/in/diahmed/). I've also followed dozens of hiring managers and technical recruiters and read their contents on resume page count.  In this blog, I'll go to great lengths (pun alert) to share my opinion about the ideal resume length and make some suggestions on how to write a concise yet impactful resume. The scope of my blog is within the software industry and North American region. If you're a doctor or a professor, what I write might not apply to you. For certain countries, the North American resume do's and don'ts might not apply.
 
 ## Audience and purpose

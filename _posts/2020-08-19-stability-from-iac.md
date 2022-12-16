@@ -9,6 +9,16 @@ tags:
   - devops
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 When mentioning **code**, it’s commonly understood as application code. What about the system your application runs on? Infrastructure as Code(IaC) applies the same software engineering principles used for application code to the infrastructure. Simply put, it means to codify your IT infrastructure to better manage large-scale, distributed systems and cloud-native platforms. In part one of Infrastructure as Code blog series, I talk about the need for dynamic infrastructure to be able to handle change and point out some of the common objections to Infrastructure as Code.
 
 > The only constant in life is change - Heraclitus

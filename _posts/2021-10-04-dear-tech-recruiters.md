@@ -8,6 +8,16 @@ tags:
   - career
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 Are Developer Advocates the same as Developers? How do a Project Manager, Program Manager, and Product Manager differ in their roles? How about a UX Designer versus a UI Engineer?
 
 The software industry is growing at an exploding rate and it seems that this is the hottest job market since the dot-com era. While it's a great time to be a candidate; it can be challenging and frustrating to be recruiting for top tech talent in this red-hot market. I'm writing this letter to help you:

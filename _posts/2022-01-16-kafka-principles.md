@@ -8,6 +8,16 @@ tags:
   - kafka
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 Last week, I learned the [basics of Kafka](https://www.dewanahmed.com/kafka-basics) and continued my learning journey this week with Kafka's architecture principles and issues around stability and scalability. I also learned about [Kafka Improvement Proposals (KIP)](https://cwiki.apache.org/confluence/display/kafka/kafka+improvement+proposals) - major changes in Kafka suggested by the community. In the second part of the **Dewan learns Kafka** blog series, I share these learnings and hope that you are learning with me.
 
 

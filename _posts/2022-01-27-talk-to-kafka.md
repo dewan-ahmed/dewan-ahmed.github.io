@@ -8,6 +8,16 @@ tags:
   - kafka
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 In this week's blog, I try to make sense of Apache Kafka® [ProducerAPI](https://kafka.apache.org/documentation/#producerapi) and [ConsumerAPI](https://kafka.apache.org/documentation/#consumerapi). In an effort to do so, I use a simple Java program to produce some messages to Kafka and consume those messages. After two weeks of theory in the **Dewan learns Kafka** series, I just NEED to dive in to some code before learning advanced Kafka topics. Yes, that was a “topic” pun… I’ll see myself out. 
 
 ## What do you need to get started? 

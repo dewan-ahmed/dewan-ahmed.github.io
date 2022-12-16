@@ -8,6 +8,16 @@ tags:
   - culture
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 For the first time, I won a major raffle at a recent conference. However, I had to give the prize back since it was a beer dispenser and I don't drink. If your reaction after reading the last line was "Why don't you drink?" or "Most of us do and it's your choice that you missed out.", then this blog is for you. I'm calling out the alcohol obsession we have in the tech industry and how it's causing a serious problem for many.
 
 Let's start with a beer dispenser as a prize. To be fair to the organizers (who hosted an awesome conference), all but this gift were regular ones, and by pure coincidence, the only alcohol-related prize was won by the person who doesn't drink. However, selecting a beer dispenser as a prize implies that "everyone drinks" or "drinking is the **default** and opting out is **optional**. That's a pattern I've seen at conferences, meetups, and even during hiring. 

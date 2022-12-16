@@ -8,6 +8,16 @@ tags:
   - career
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 > It’s tough to make predictions, especially about the future (Yogi Berra)
 
 I will take a leap of faith and predict this: **You will have a much higher chance of finding and retaining a job in the software industry compared to any other industry. As years progress, this probability will be going up.** In this blog, I’ll try to make a case about the prediction I just made.

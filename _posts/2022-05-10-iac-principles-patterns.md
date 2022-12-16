@@ -9,6 +9,16 @@ tags:
 - devops
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Y8EX6JQCW');
+</script>
+
 A few years ago, I wrote about common objections to infrastructure-as-code (IaC) and how [stability comes from making changes](https://www.dewanahmed.com/stability-from-iac/). If your leadership is now convinced to adopt IaC, how do you implement this in your organization? In the second part of the IaC blog series, I will discuss the principles and patterns of IaC.
 For reference, the following table lists things found on a server:
  
