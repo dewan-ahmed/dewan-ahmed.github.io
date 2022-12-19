@@ -9,16 +9,6 @@ tags:
   - devrel
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 > I don’t have a technical background, so I’m looking to apply for a project manager, product owner, or developer advocate type of role.
 
 I offer pro bono career coaching outside of work hours, so I interact with a lot of jobseekers on a regular basis. Over the last few months, I’ve been observing a troubling trend. Folks who are trying to transition into tech from a non-technical background have mentioned something like the above. I had a mixed reaction to hearing this. On one end, I was super happy that more people know about developer advocacy and are interested in a career in it. However, on a more troubling end, I thought to myself, "Are these folks seriously thinking of developer advocacy as an **easy way in**?" Folks who are new to this industry might not know much about developer advocacy. It’ll be scary, however, if the tech leadership also sees developer advocates as fluff. In this blog, I will share my thoughts and provide reasoning to make three claims:

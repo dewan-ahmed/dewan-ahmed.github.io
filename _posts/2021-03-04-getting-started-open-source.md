@@ -9,16 +9,6 @@ tags:
   - community
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 Recently, a student reached out to me and asked:
 > Could you guide me in terms of how I can get started with contributing to open source projects?
 

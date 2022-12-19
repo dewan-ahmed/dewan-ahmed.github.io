@@ -12,16 +12,6 @@ tags:
 
 ## Why CI/CD?
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 The modern software delivery is **FAST**. Most of the software companies will claim to work in an agile way while having good DevOps practices. However, the “fastness” of software delivery for the industry is a wide spectrum. It can range from hundreds of deployments every day via complex CI/CD pipeline to having a manual upload of .war files to some servers.
 
 Even without considering the speed of delivery, as the codebase and number of engineers pushing code grow, your team will require some CI/CD process to avoid bottlenecks (i.e. pinging the “DevOps Guy” to upload the binary to the prod server). The main benefit of continuous integration and delivery is neither the speed of delivery nor the ease of collaboration. It is the fast feedback loop. The faster you can ship your product (even with bugs), the faster you can identify the bugs and fix ‘em (or get feedback on improving the features). In this blog, I’ll write about the dilemma clients face when choosing CI/CD tools and make a few comparisons between traditional CI/CD tools and K8s-native CI/CD tools.

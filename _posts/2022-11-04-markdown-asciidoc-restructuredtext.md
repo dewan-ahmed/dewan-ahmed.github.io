@@ -11,16 +11,6 @@ tags:
   - devrel
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 Who writes the developer documentation for your product? During the early days of my tech career, I worked on a database replication product at IBM. My immediate team had developers and testers but not a single technical writer. I can speak for myself when I say that I never bothered to know who keeps writing the lengthy and complex documentation for every release. Since then, many companies in tech (including companies like IBM) have taken a modern approach to documentation. This "modernization" started when more and more developers started writing documentation (not all developers hate writing docs 🤭). Having git running in their DNA, these developers wanted to bring in collaboration, version control, scripting, and easier bug tracking within developer documentation.
 
 > :information_source: Note that I'm not using the term "product documentation", rather "developer documentation". If your users are developers, it's more likely that they would appreciate reading docs written by other developers. 

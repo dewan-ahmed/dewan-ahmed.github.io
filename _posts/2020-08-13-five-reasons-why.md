@@ -8,19 +8,11 @@ tags:
   - career
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 > It’s tough to make predictions, especially about the future (Yogi Berra)
 
 I will take a leap of faith and predict this: **You will have a much higher chance of finding and retaining a job in the software industry compared to any other industry. As years progress, this probability will be going up.** In this blog, I’ll try to make a case about the prediction I just made.
+
+<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
 
 [Here](https://www.forbes.com/global2000) are the world’s top 2000 companies and **all of these companies are software companies**. My google-savvy readers must be opening up a new tab to fact-check the above stat so I will save you some time with this quote from Satya Nadella which he made during Mobile World Congress 2019:
 

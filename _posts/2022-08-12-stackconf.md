@@ -8,16 +8,6 @@ tags:
 - devrel
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 Last month I travelled across the pond to attend and give a talk at [StackConf EU 2022](https://www.youtube.com/watch?v=I_xBBGeFULU) - an open-source infrastructure-focused conference. After two virtual events in 2020 and 2021, the conference took place live this year in the capital city of Berlin. The two-day conference was packed with exciting talks from industry leaders in the areas of cloud, DevOps, databases, machine learning, and other areas. You can check out the [conference archive](https://stackconf.eu/archives/2022-2/) for recordings of all the talks. In this blog, I write about my favorite talks and moments from StackConf. 
 
 ![Speakers' dinner](/assets/images/stackconf-speakers-dinner.jpg)

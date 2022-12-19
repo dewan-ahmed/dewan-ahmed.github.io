@@ -8,16 +8,6 @@ tags:
   - kafka
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 I am NOT a Kafka expert. The fact is, I've just started learning this topic. I believe that the best way to learn something is to learn in public. In this first blog of **Dewan learns Kafka** series, I share with you what the heck is Kafka, why does it exist, and some basic concepts of Kafka.
 
 ## What is Kafka?

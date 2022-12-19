@@ -9,16 +9,6 @@ tags:
   - kubernetes
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Y8EX6JQCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6Y8EX6JQCW');
-</script>
-
 Few years ago, I gave an IBM-internal talk on [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift). During my favorite part of the talk (the Q&A), a number of good questions came up. I took away some of the questions I didn't have answers for, as a to-do and gathered answers from my Red Hat colleagues. This blog is a collection of those questions and their answers as the information would be useful to many others. 
 
 ![Photo by Edwin Andrade on Unsplash](/assets/images/openshift-questions-image.jpg)
