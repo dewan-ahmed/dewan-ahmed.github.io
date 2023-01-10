@@ -205,7 +205,7 @@ Do you have parts of the documentation behind a firewall that require authentica
 
 Let's look at some documentation sites with great UX:
 
-Jekyll  | Docusaurus  | Antora  | Sphinx  |
+| Jekyll  | Docusaurus  | Antora  | Sphinx  |
 |---|---|---|---|
 | [Sketch](https://sketch.com/)  | [Algolia](https://docsearch.algolia.com/)  | [Apache Solr](https://solr.apache.org/guide/solr/latest/)  | [ReadTheDocs](https://readthedocs.org/)  |
 | [Spotify](https://developer.spotify.com/)  | [Hasura](https://hasura.io/docs/)  | [Apache Cassandra](https://cassandra.apache.org/_/development/documentation.html)  | [WriteTheDocs](https://github.com/writethedocs/www)  |
