@@ -82,7 +82,7 @@ After the first version of this blog went out, I received a number of praises on
 >
 > With Markdoc, I have built: * a higher level utility for creating a "library" of content with consistent ids for stable and validated links * a validation library to ensure that doc structures follows best practices like having metadata tags in the frontmatter, properly nests headers and doesn't skip H3s, etc * an integration for authoring and reusing doc content in [spectacle](https://formidable.com/open-source/spectacle/) presentations * have a clear direction of how to "scale" docs-as-code as we were struggling to do that with a simple, flat file of markdown files.
 
-4. Configured with a single YAML file, [MKDocs](https://www.mkdocs.org/) is the third Markdown framework on my list, which falls in the category of SSG.  Although there are not as many as in Hugo, MKDocs offers a [few official themes](https://www.mkdocs.org/user-guide/choosing-your-theme/) and a number of [third party themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). As a Python-based framework, you can use `pip` to install [MKDocs plugins](https://www.mkdocs.org/dev-guide/plugins/). You can follow [this getting started guide](https://www.mkdocs.org/getting-started/) for your first MKDocs project.
+4. Configured with a single YAML file, [MKDocs](https://www.mkdocs.org/) is the fourth Markdown framework on my list, which falls in the category of SSG.  Although there are not as many as in Hugo, MKDocs offers a [few official themes](https://www.mkdocs.org/user-guide/choosing-your-theme/) and a number of [third party themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). As a Python-based framework, you can use `pip` to install [MKDocs plugins](https://www.mkdocs.org/dev-guide/plugins/). You can follow [this getting started guide](https://www.mkdocs.org/getting-started/) for your first MKDocs project.
 
 5. Last, but certainly not least, among my favorite frameworks is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let’s understand what is MDX and how does it vary from MD.
 
@@ -101,6 +101,24 @@ Besides these five frameworks, [Notaku](https://notaku.so/) gets an honorable me
 2. [Asciidoctor](https://asciidoctor.org/) is a Ruby-based text processor for parsing AsciiDoc into a document model and converting it to HTML5, PDF, EPUB3, and other formats. Built-in converters for HTML5, DocBook5, and man pages are available in Asciidoctor. Asciidoctor has an out-of-the-box default stylesheet and built-in integrations for MathJax (display beautiful math in your browser), highlight.js, Rouge, and Pygments (syntax highlighting), as well as Font Awesome (for icons). Although Asciidoctor is written in Ruby, that does not mean you need to know Ruby to use it. Asciidoctor can be executed on a JVM using [AsciidoctorJ](https://docs.asciidoctor.org/asciidoctorj/latest/) or in any JavaScript environment (including the browser) using [Asciidoctor.js](https://docs.asciidoctor.org/asciidoctor.js/latest/). You can choose any one of three Asciidoctor processors (Ruby, JavaScript, Java/JVM) and get the same experience. You can also use the [Asciidoctor Maven Plugin](https://docs.asciidoctor.org/maven-tools/latest/) to convert your Asciidoc documentation using Asciidoctor from an Apache Maven build.
 
 3. Unlike docToolchain or Asciidoctor, [Antora](https://antora.org/) is a true framework for Asciidoc that can store, retrieve, and aggregate all Asciidoc content from multiple git repositories. Antora’s page referencing system isn’t coupled to filesystem paths or URLs. You are able to cross reference pages across a local machine, a staging environment, and a production environment. To generate a site with Antora, you need the [Antora CLI](https://www.npmjs.com/package/@antora/cli) and [Antora site generator](https://gitlab.com/antora/antora). 
+
+One of the Antora praise from HackerNews:
+
+> I've done a lot of research and testing with Markdown, Asciidoc, and reStructuredText to see which would work best for my company's documentation needs. We ended up going with Asciidoc and Antora for the following reasons.
+Asciidoc:
+* Almost as simple as Markdown.
+* Less convoluted than reStructuredText.
+* Excellent support for complex tables, captions, callouts, etc.
+* We prefer Asciidocs table structure to Markdown's since it is easier to create and maintain.
+* Excellent documentation.
+Antora:
+* Comes with a default template, which makes building prototypes easier.
+* Ability to pull from multiple git repositories.
+* Native Asciidoc support.
+* Fast compile times.
+* Good documentation.
+>
+> Based on our research, I even migrated my personal 11ty sites from Markdown to Asciidoc and have been quite happy with it.
 
 ## reStructuredText Framework
 
