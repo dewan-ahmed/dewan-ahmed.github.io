@@ -23,7 +23,7 @@ With the text files for documentation in version control system and changes goin
 4. Automate the build (optional but highly recommended): Add a CI with spelling, prose, link checks, etc.
 5. Publish: Deploy your documentation live using platforms like GitHub (Pages), Vercel, or Netlify. 
 
-In the first part of my docs-as-code series, I'll talk about the choice of markup languages, the available frameworks, and do a comparison among Markdown (md), Asciidoc (adoc), and reStructuredText (reST) based on some use cases. I'll skip the history but in case you're interested, my friend and colleague Tibs delivered a talk on the [history of text markup languages](https://www.youtube.com/watch?v=P-7hwjocEpM). My hope is to provide you with a detailed analysis of these choices of markup languages and frameworks so that you can make an informed decision when selecting one for your next developer documentation project. If you don't need a brief intro and would like to skip the appetizer, you can go straight to the entrée - [Choose the right markup](#choose-the-right-markup) section. 
+In the first part of my docs-as-code series, I'll talk about the choice of markup languages, the available frameworks, and do a comparison among Markdown (md), Asciidoc (adoc), and reStructuredText (reST) based on some use cases. I'll skip the history but in case you're interested, my friend and colleague Tibs delivered a talk on the [history of text markup languages](https://www.youtube.com/watch?v=P-7hwjocEpM). My hope is to provide you with a detailed analysis of these choices of markup languages and frameworks so that you can make an informed decision when selecting one for your next developer documentation project. If you don't need a brief intro and would like to skip the appetizer, you can go straight to the entrée - [Choose the right markup](#choose-the-right-markup-and-framework) section. 
 
 # The choices - md, adoc, reST
 
@@ -74,11 +74,17 @@ Considering that the end result of a documentation project is often a static sit
 
 2. [Hugo](https://gohugo.io/) is probably the most popular open-source static site generator. Written in Go, Hugo builds sites at a blistering speed. It has a native support for a variety of content types, menus, and dynamic API-driven content. These don't require you to use an additional plugin. You can select a theme that suits your project from [a wide selection](https://gohugo.io/showcase/). Check out [some of the project websites](https://gohugo.io/showcase) that are built with Hugo.
 
-3. Released in 2022, [Markdoc](https://markdoc.dev/) is a relatively new Markdown-based authoring framework. The Markdoc project is [open-source](https://github.com/markdoc/markdoc) and it powers [Stripe's documentation](https://stripe.com/docs). Their website has a [live edit](https://markdoc.dev/) button which makes the website a playground for you to give Markdoc a try. Documentations created with Markdoc will automatically render with your [React](https://markdoc.dev/docs/examples/react) app and using `@markdoc/next.js` for your [Next.js](https://markdoc.dev/docs/nextjs) app.  
+3. Released in 2022, [Markdoc](https://markdoc.dev/) is a relatively new Markdown-based authoring framework. The Markdoc project is [open-source](https://github.com/markdoc/markdoc) and it powers [Stripe's documentation](https://stripe.com/docs). Their website has a [live edit](https://markdoc.dev/) button which makes the website a playground for you to give Markdoc a try. Documentations created with Markdoc will automatically render with your [React](https://markdoc.dev/docs/examples/react) app and using `@markdoc/next.js` for your [Next.js](https://markdoc.dev/docs/nextjs) app.
+
+After the first version of this blog went out, I received a number of praises on Markdoc. Here is a quote from [Addison](https://github.com/addisonj):
+
+> I have spent a lot of time looking in this space recently for helping to revamp documentation and I really really have fallen in love with Markdoc. Markdoc just hits the sweet spot of being super easy to get started with but elegantly extensible that makes it scale. I think the OP here simplifies a bit though of what Markdoc is. While it is pretty simple to integrate into a next.js site for a SSG doc site, it is more of a library that can be integrated into almost any site or rendering framework... With the ability to create custom tags easily and then the ability to analyze and transform an AST in a simple, but easy to understand way, I think markdoc is actually a great option for more than just building a doc site, but as a more general purpose tool for authoring any text-heavy content.
+>
+> With Markdoc, I have built: * a higher level utility for creating a "library" of content with consistent ids for stable and validated links * a validation library to ensure that doc structures follows best practices like having metadata tags in the frontmatter, properly nests headers and doesn't skip H3s, etc * an integration for authoring and reusing doc content in [spectacle](https://formidable.com/open-source/spectacle/) presentations * have a clear direction of how to "scale" docs-as-code as we were struggling to do that with a simple, flat file of markdown files.
 
 4. Configured with a single YAML file, [MKDocs](https://www.mkdocs.org/) is the third Markdown framework on my list, which falls in the category of SSG.  Although there are not as many as in Hugo, MKDocs offers a [few official themes](https://www.mkdocs.org/user-guide/choosing-your-theme/) and a number of [third party themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). As a Python-based framework, you can use `pip` to install [MKDocs plugins](https://www.mkdocs.org/dev-guide/plugins/). You can follow [this getting started guide](https://www.mkdocs.org/getting-started/) for your first MKDocs project.
 
-5. Last, but certainly not the least, of my favorite framework(s) is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let's understand what is MDX and how does it vary from MD. Quoting from [MDXJS](https://mdxjs.com/):
+5. Last, but certainly not least, among my favorite frameworks is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let’s understand what is MDX and how does it vary from MD.
 
 > [JSX](https://reactjs.org/docs/introducing-jsx.html) is an extension to JavaScript that looks like HTML but makes it convenient to use components (reusable things). MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
 
@@ -106,9 +112,9 @@ However, [many folks complained](https://twitter.com/choldgraf/status/1212054861
 
 # Choose the right markup and framework
 
-If you're a developer, learning the syntax and styling of a markup language is relatively easy compared to a programming language. When you learn the syntax of a markup language and can render an HTML page locally, you reach the `hello world` nirvana of documentation. However, the difficulty doesn't necessarily start when you write the first documentation file. As you try more advanced tasks for your developer documentation project, you lean more on the ~~framework~~ community behind the framework.
+If you're a developer, learning the syntax and styling of a markup language is relatively easy compared to learning a programming language. When you learn the syntax of a markup language and can render an HTML page locally, you reach the `hello world` nirvana of documentation. However, the difficulty doesn't necessarily start when you write the first documentation file. As you try more advanced tasks for your developer documentation project, you lean more on the ~~framework~~ community behind the framework.
 
-I [asked on Twitter](https://twitter.com/DewanAhmed/status/1583465169006448640?s=20&t=kOdJ_vOoZiZ_TJK0vJDK9A) about the choice among Markdown, AsciiDoc, and reStructuredText and the first version of this blog summarized the findings. When I  published this blog back in November 2022, it got quite a few attentions and was trending on the [first page of HackerNews](https://news.ycombinator.com/item?id=33468213). Besides the satisfaction from the blog's success, I felt terrible for missing out tools like Jekyll, docToolchain, and Docusaurus. Thanks to [Dan Moore](https://twitter.com/mooreds), [Ralf D. Müller](https://twitter.com/RalfDMueller), [Sebastien Lorber](https://twitter.com/sebastienlorber), and the HackerNews commenters, I've updated this blog to include the missing tools.
+I [asked on Twitter](https://twitter.com/DewanAhmed/status/1583465169006448640?s=20&t=kOdJ_vOoZiZ_TJK0vJDK9A) about the choice among Markdown, AsciiDoc, and reStructuredText and the first version of this blog summarized the findings. When I  published this blog back in November 2022, it got quite a few attentions and was trending on the [first page of HackerNews](https://news.ycombinator.com/item?id=33468213). Besides the satisfaction from the blog's success, I felt terrible for missing out on tools like Jekyll, docToolchain, and Docusaurus. Thanks to [Dan Moore](https://twitter.com/mooreds), [Ralf D. Müller](https://twitter.com/RalfDMueller), [Sebastien Lorber](https://twitter.com/sebastienlorber), and the HackerNews commenters, I've updated this blog to include the missing tools.
 
 ## Scripting language preference
 
@@ -185,15 +191,15 @@ Many tech companies love the rich ecosystem of [Remark](https://github.com/remar
 
 Let's think for a moment here 🤔 ... 
 
-How often do you migrate your docs? Migrating any mature documentation project that uses some sort of framework is never easy. If you choose the wrong framework or overload your project with custom HTML/CSS/JS without taking the advantage of a framework's built-in feature, Markdown is not to blame here. 
+How often do you migrate your docs? Migrating any mature documentation project that uses some sort of framework is never easy. If you choose the wrong framework or overload your project with custom HTML/CSS/JS without taking advantage of a framework's built-in feature, Markdown is not to blame here. 
 
-If you're migrating your documentation project from one markup to another, you'll want to know about projects like [Pandoc](https://pandoc.org/). If your build process includes a process to convert markups, Pandoc can be [run with GitHub Actions](https://github.com/pandoc/pandoc-action-example). If you're planning on [converting Asciidoc files to Markdown](https://codeahoy.com/q/q502/How-to-convert-asciidoc-to-Markdown), you'll have to take a detour via the XML route. The proces will be: `Asciidoc ---> XML ---> Markdown`. 
+If you're migrating your documentation project from one markup to another, you'll want to know about projects like [Pandoc](https://pandoc.org/). If your build process includes a process to convert markup, Pandoc can be [run with GitHub Actions](https://github.com/pandoc/pandoc-action-example). If you're planning on [converting Asciidoc files to Markdown](https://codeahoy.com/q/q502/How-to-convert-asciidoc-to-Markdown), you'll have to take a detour via the XML route. The proces will be: `Asciidoc ---> XML ---> Markdown`. 
 
-[MyST-parser](https://myst-parser.readthedocs.io/en/latest/), which is both completely compatible with CommonMark, and also supports all ReStructured Text directives, can be used to convert reST to Markdown. 
+[MyST-parser](https://myst-parser.readthedocs.io/en/latest/), which is both completely compatible with CommonMark and also supports all ReStructured Text directives, can be used to convert reST to Markdown. 
 
 ## Internationalization (i18n)
 
-Internationalization (i18n) pain for a documentation project is a process problem, not a feature gap. Documentation framework are not meant to translate your developer docs for you in the language of your choice. Some frameworks might offer i18n **support**, like the [Crowdin support in Docusauraus v2](https://docusaurus.io/docs/i18n/crowdin). With Jekyll, you have to pick a theme [like this one](https://github.com/kurtsson/jekyll-multiple-languages-plugin). I doubt if reST or adoc frameworks would differ much from this process. Besides the framework support, you'll need a localization vendor like [lokalise](https://lokalise.com/) or a community driven platform like [Crowdin](https://crowdin.com/) to actually **do** the translation. Sébastien goes into great details in this [Docusaurus RFC](https://github.com/facebook/docusaurus/issues/3317) when discussing i18n support in Docusaurus v2.  
+Internationalization (i18n) pain for a documentation project is a process problem, not a feature gap. Documentation frameworks are not meant to translate your developer docs for you into the language of your choice. Some frameworks might offer i18n **support**, like the [Crowdin support in Docusauraus v2](https://docusaurus.io/docs/i18n/crowdin). With Jekyll, you have to pick a theme [like this one](https://github.com/kurtsson/jekyll-multiple-languages-plugin). I doubt if the reST or adoc frameworks would differ much from this process. Besides the framework support, you'll need a localization vendor like [lokalise](https://lokalise.com/) or a community driven platform like [Crowdin](https://crowdin.com/) to actually **do** the translation. Sébastien goes into great detail in this [Docusaurus RFC](https://github.com/facebook/docusaurus/issues/3317) when discussing i18n support in Docusaurus v2.  
 
 ## Other factors when considering a markup
 
@@ -215,19 +221,19 @@ Humble brag that the last one in the list ([Aiven](https://docs.aiven.io/) 🦀)
 
 What makes a great user experience for a documentation site? The factors affecting your users are:
 
-1. General look and feel of your website
-2. Proper use of interactive components (although this is completely optional)
-3. Ease of finding information (including the correctness of the information)
-4. Features like **copy code to clipboard**, syntax highlighting on code, etc. 
-5. How less annoying your site is with things like pop-ups, tracking, etc.
+1. general look and feel of your website
+2. proper use of interactive components (although this is completely optional)
+3. ease of finding information (including the correctness of the information)
+4. features like **copy code to clipboard**, syntax highlighting on code, etc. 
+5. how less annoying your site is with things like pop-ups, tracking, etc.
 
 I like that you care deeply about your users. How about the folks who work really hard to build these docs? If the emoji is loading properly, you'll see that I put a scale icon between authoring experience and user experience on the section heading. Here are the factors affecting your authors:
 
-1. Ease of creating their first PR (you are using docs-as-code approach, right? RIGHT?)
-2. Maturity of the content architecture (Can I easily guess which sub-folder my new file will go under?)
-3. Level of scripting knowledge required to contribute (do I need to be a react dev to contribute to the docs?!)
-4. Automation within the content review/publication process to catch linting, spelling and other errors (this is not related to the markup/framework)
-5. Frequency of large migration projects (ideally "zero")
+1. ease of creating their first PR (you are using docs-as-code approach, right? RIGHT?)
+2. maturity of the content architecture (Can I easily guess which sub-folder my new file will go under?)
+3. level of scripting knowledge required to contribute (do I need to be a react dev to contribute to the docs?!)
+4. automation within the content review/publication process to catch linting, spelling and other errors (this is not related to the markup/framework)
+5. frequency of large migration projects (ideally "zero")
 
 Points 2, 4 and 5 don't relate to the choice of the markup language or framework. Depending on points 1 and 3, your docs contribution will include almost anyone from your company or only the DevRel team and technical writers. 
 
@@ -237,7 +243,7 @@ Writing documentation is different from writing code.
 
 Yes, I needed to repeat that line. As a user, I love the visually appealing documentation sites built using an MDX-based framework. While MDX affords users more power and flexibility, it comes at the cost of complexity. Content can quickly become as complex as regular code, which can lead to maintainability complications or a more difficult authoring environment. You can choose an MDX-based framework for other features and stay away from overscripting. But the temptation (to add more scripts) is harder to resist than one might think. 
 
-With the above discussion, can we form a middle ground that balances both user experience and authoring experience? While all 10 factors are critical, some of the factors I mentioned above don't relate to your choice of markup and framework (for example, content architecture or if you add too many pop-ups). I'll highlight five questions you can ask when selecting a markup and framework.
+With the above discussion, can we find a middle ground that balances both the user experience and authoring experience? While all 10 factors are critical, some of the ones I mentioned above don't relate to your choice of markup and framework (for example, content architecture or if you add too many pop-ups). I'll highlight five questions you can ask when selecting a markup and framework.
 
 Question 1: Do you have a strong reason for NOT using Markdown? 
 
@@ -245,7 +251,7 @@ Question 2: How much do you care about the appearance of your docs site? Do you 
 
 Question 3: What are the features that matter to your users and authors? Search? Internationalization? Versioning? Pick the framework that delivers (most of) these features.
 
-Question 4: Do you have a special need like building docs from multiple git repositories or having authentication on certain parts of the documentation? 
+Question 4: Do you have a special need, like building docs from multiple git repositories or requiring authentication on certain parts of the documentation? 
 
 Question 5: Is the framework open-source? 
 
