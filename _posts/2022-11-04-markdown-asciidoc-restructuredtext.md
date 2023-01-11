@@ -261,7 +261,7 @@ In this blog, I covered three popular markup languages, some very popular framew
 
 Since this blog had its day of fame on HackerNews, it has generated a lot of insightful discussions. It would be a shame not to capture at least some of them.
 
-## [Addison](https://github.com/addisonj) wrote:
+### [Addison](https://github.com/addisonj) wrote:
 
 I have spent a lot of time looking in this space recently for helping to revamp documentation and I really really have fallen in love with Markdoc.
 Markdoc just hits the sweet spot of being super easy to get started with but elegantly extensible that makes it scale. I think the OP here simplifies a bit though of what Markdoc is. While it is pretty simple to integrate into a next.js site for a SSG doc site, it is more of a library that can be integrated into almost any site or rendering framework.
@@ -270,11 +270,16 @@ In some ways, this is the biggest "challenge" of Markdoc right now. It isn't foc
 
 That said though, what is there is really great. With the ability to create custom tags easily and then the ability to analyze and transform an AST in a simple, but easy to understand way, I think markdoc is actually a great option for more than just building a doc site, but as a more general purpose tool for authoring any text-heavy content.
 
-With Markdoc, I have built: * a higher level utility for creating a "library" of content with consistent ids for stable and validated links * a validation library to ensure that doc structures follows best practices like having metadata tags in the frontmatter, properly nests headers and doesn't skip H3s, etc * an integration for authoring and reusing doc content in [spectacle](https://formidable.com/open-source/spectacle/) presentations * have a clear direction of how to "scale" docs-as-code as we were struggling to do that with a simple, flat file of markdown files
+With Markdoc, I have built: 
+
+* a higher level utility for creating a "library" of content with consistent ids for stable and validated links 
+* a validation library to ensure that doc structures follows best practices like having metadata tags in the frontmatter, properly nests headers and doesn't skip H3s, etc 
+* an integration for authoring and reusing doc content in [spectacle](https://formidable.com/open-source/spectacle/) presentations 
+* a clear direction of how to "scale" docs-as-code as we were struggling to do that with a simple, flat file of markdown files
 
 I have started to toy with the idea of a more general purpose CMS built around markdoc... but in general, a really great tool and kudos to stripe team for building it :)
 
-## [innocentoldguy](https://news.ycombinator.com/user?id=innocentoldguy) wrote:
+### [Anonymous1](https://news.ycombinator.com/user?id=innocentoldguy) wrote:
 
 I've done a lot of research and testing with Markdown, Asciidoc, and reStructuredText to see which would work best for my company's documentation needs. We ended up going with Asciidoc and Antora for the following reasons.
 
@@ -304,7 +309,7 @@ Antora:
 
 Based on our research, I even migrated my personal 11ty sites from Markdown to Asciidoc and have been quite happy with it.
 
-## [MilStdJunkie](https://news.ycombinator.com/user?id=MilStdJunkie) wrote:
+### [Anonymous2](https://news.ycombinator.com/user?id=MilStdJunkie) wrote:
 
 I tend to agree with the author's sentiment re: Asciidoc, but that is a subjective impression, driven by my industry and the requirements it imposes. (note that the first version of the blog suggested Asciidoc/Antora as the ideal choice).
 
