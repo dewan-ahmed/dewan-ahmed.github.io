@@ -76,12 +76,6 @@ Considering that the end result of a documentation project is often a static sit
 
 3. Released in 2022, [Markdoc](https://markdoc.dev/) is a relatively new Markdown-based authoring framework. The Markdoc project is [open-source](https://github.com/markdoc/markdoc) and it powers [Stripe's documentation](https://stripe.com/docs). Their website has a [live edit](https://markdoc.dev/) button which makes the website a playground for you to give Markdoc a try. Documentations created with Markdoc will automatically render with your [React](https://markdoc.dev/docs/examples/react) app and using `@markdoc/next.js` for your [Next.js](https://markdoc.dev/docs/nextjs) app.
 
-After the first version of this blog went out, I received a number of praises on Markdoc. Here is a quote from [Addison](https://github.com/addisonj):
-
-> I have spent a lot of time looking in this space recently for helping to revamp documentation and I really really have fallen in love with Markdoc. Markdoc just hits the sweet spot of being super easy to get started with but elegantly extensible that makes it scale. I think the OP here simplifies a bit though of what Markdoc is. While it is pretty simple to integrate into a next.js site for a SSG doc site, it is more of a library that can be integrated into almost any site or rendering framework... With the ability to create custom tags easily and then the ability to analyze and transform an AST in a simple, but easy to understand way, I think markdoc is actually a great option for more than just building a doc site, but as a more general purpose tool for authoring any text-heavy content.
->
-> With Markdoc, I have built: * a higher level utility for creating a "library" of content with consistent ids for stable and validated links * a validation library to ensure that doc structures follows best practices like having metadata tags in the frontmatter, properly nests headers and doesn't skip H3s, etc * an integration for authoring and reusing doc content in [spectacle](https://formidable.com/open-source/spectacle/) presentations * have a clear direction of how to "scale" docs-as-code as we were struggling to do that with a simple, flat file of markdown files.
-
 4. Configured with a single YAML file, [MKDocs](https://www.mkdocs.org/) is the fourth Markdown framework on my list, which falls in the category of SSG.  Although there are not as many as in Hugo, MKDocs offers a [few official themes](https://www.mkdocs.org/user-guide/choosing-your-theme/) and a number of [third party themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). As a Python-based framework, you can use `pip` to install [MKDocs plugins](https://www.mkdocs.org/dev-guide/plugins/). You can follow [this getting started guide](https://www.mkdocs.org/getting-started/) for your first MKDocs project.
 
 5. Last, but certainly not least, among my favorite frameworks is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let’s understand what is MDX and how does it vary from MD.
@@ -101,24 +95,6 @@ Besides these five frameworks, [Notaku](https://notaku.so/) gets an honorable me
 2. [Asciidoctor](https://asciidoctor.org/) is a Ruby-based text processor for parsing AsciiDoc into a document model and converting it to HTML5, PDF, EPUB3, and other formats. Built-in converters for HTML5, DocBook5, and man pages are available in Asciidoctor. Asciidoctor has an out-of-the-box default stylesheet and built-in integrations for MathJax (display beautiful math in your browser), highlight.js, Rouge, and Pygments (syntax highlighting), as well as Font Awesome (for icons). Although Asciidoctor is written in Ruby, that does not mean you need to know Ruby to use it. Asciidoctor can be executed on a JVM using [AsciidoctorJ](https://docs.asciidoctor.org/asciidoctorj/latest/) or in any JavaScript environment (including the browser) using [Asciidoctor.js](https://docs.asciidoctor.org/asciidoctor.js/latest/). You can choose any one of three Asciidoctor processors (Ruby, JavaScript, Java/JVM) and get the same experience. You can also use the [Asciidoctor Maven Plugin](https://docs.asciidoctor.org/maven-tools/latest/) to convert your Asciidoc documentation using Asciidoctor from an Apache Maven build.
 
 3. Unlike docToolchain or Asciidoctor, [Antora](https://antora.org/) is a true framework for Asciidoc that can store, retrieve, and aggregate all Asciidoc content from multiple git repositories. Antora’s page referencing system isn’t coupled to filesystem paths or URLs. You are able to cross reference pages across a local machine, a staging environment, and a production environment. To generate a site with Antora, you need the [Antora CLI](https://www.npmjs.com/package/@antora/cli) and [Antora site generator](https://gitlab.com/antora/antora). 
-
-One of the Antora praise from HackerNews:
-
-> I've done a lot of research and testing with Markdown, Asciidoc, and reStructuredText to see which would work best for my company's documentation needs. We ended up going with Asciidoc and Antora for the following reasons.
-Asciidoc:
-* Almost as simple as Markdown.
-* Less convoluted than reStructuredText.
-* Excellent support for complex tables, captions, callouts, etc.
-* We prefer Asciidocs table structure to Markdown's since it is easier to create and maintain.
-* Excellent documentation.
-Antora:
-* Comes with a default template, which makes building prototypes easier.
-* Ability to pull from multiple git repositories.
-* Native Asciidoc support.
-* Fast compile times.
-* Good documentation.
->
-> Based on our research, I even migrated my personal 11ty sites from Markdown to Asciidoc and have been quite happy with it.
 
 ## reStructuredText Framework
 
@@ -276,3 +252,85 @@ Question 5: Is the framework open-source?
 # Wrap up
 
 In this blog, I covered three popular markup languages, some very popular frameworks, and my opinion on the choice of markup language and framework based on a few key factors. If there's one thing you want to take away from this blog, it will be to find the balance between the ease of getting started (authoring experience) and the ease of finding information (user experience). If you liked this blog or have any feedback, please [reach out](https://twitter.com/DewanAhmed).  
+
+# Appendix
+
+Since this blog had its day of fame on HackerNews, it generated a lot of insightful discussions. It'd be a shame not to capture at least some of them. 
+
+1. [Addison](https://github.com/addisonj) wrote:
+
+I have spent a lot of time looking in this space recently for helping to revamp documentation and I really really have fallen in love with Markdoc.
+Markdoc just hits the sweet spot of being super easy to get started with but elegantly extensible that makes it scale. I think the OP here simplifies a bit though of what Markdoc is. While it is pretty simple to integrate into a next.js site for a SSG doc site, it is more of a library that can be integrated into almost any site or rendering framework.
+
+In some ways, this is the biggest "challenge" of Markdoc right now. It isn't focused on a polished out-of-the-box experience like Docusaurus or MKDocs, but is instead more of a DIY tool.
+
+That said though, what is there is really great. With the ability to create custom tags easily and then the ability to analyze and transform an AST in a simple, but easy to understand way, I think markdoc is actually a great option for more than just building a doc site, but as a more general purpose tool for authoring any text-heavy content.
+
+With Markdoc, I have built: * a higher level utility for creating a "library" of content with consistent ids for stable and validated links * a validation library to ensure that doc structures follows best practices like having metadata tags in the frontmatter, properly nests headers and doesn't skip H3s, etc * an integration for authoring and reusing doc content in [spectacle](https://formidable.com/open-source/spectacle/) presentations * have a clear direction of how to "scale" docs-as-code as we were struggling to do that with a simple, flat file of markdown files
+
+I have started to toy with the idea of a more general purpose CMS built around markdoc... but in general, a really great tool and kudos to stripe team for building it :)
+
+2. Anonymous user wrote:
+
+I've done a lot of research and testing with Markdown, Asciidoc, and reStructuredText to see which would work best for my company's documentation needs. We ended up going with Asciidoc and Antora for the following reasons.
+Asciidoc:
+
+* Almost as simple as Markdown.
+
+* Less convoluted than reStructuredText.
+
+* Excellent support for complex tables, captions, callouts, etc.
+
+* We prefer Asciidocs table structure to Markdown's since it is easier to create and maintain.
+
+* Excellent documentation.
+
+Antora:
+
+* Comes with a default template, which makes building prototypes easier.
+
+* Ability to pull from multiple git repositories.
+
+* Native Asciidoc support.
+
+* Fast compile times.
+
+* Good documentation.
+
+Based on our research, I even migrated my personal 11ty sites from Markdown to Asciidoc and have been quite happy with it.
+
+3. Another anonymous user wrote:
+
+I tend to agree with the author's sentiment re: Asciidoc, but that is a subjective impression, driven by my industry and the requirements it imposes. (note that the first version of the blog suggested Asciidoc/Antora as the ideal choice).
+
+Here. Let me tell you a story.
+
+Some years ago, Leadership in <COMPANY REDACTED> decided to stop paying for the S1000D[1] software. This would make the publications group effectively homeless. The objective of this tactic was to force a move to the PDM system's tech writing system, which had previously been rejected by more or less everyone.
+
+I put out a plan[2] to keep the S1000D architecture (filenames, books, links, etc) but use lightweight markup and open standards from the programming industry, to do the actual writing. Which lightweight markup language? I needed the following:
+
+* Transclusion, need to bring in files (data modules) from a centralized publication module
+
+* Partial Transclusion, need to be able to bring in part of another file, what would be called CIRs in S1000D
+
+* Conditional content, usable inline, so that a step or a figure could be toggled on and off depending on a condition set in the Publication Module. This emulates Applicability in S1000D.
+
+* Complex print output
+
+* Nice-to-haves: an AST that maps to a legacy format aka DocBook/DITA/S1000D/MIL-STD-38784/etc; publishing pipelines capable of weird crap like complex front matter, TOC, indices, header/footer/margin running content; a singular standard that had some life in it
+
+I took pretty much every lightweight markup variant out for a spin with a test migration and publish, on my own time, nights and weekends. I found that there was a Markdown variant that could almost do everything I wanted, but it had a dependency on a document processor. ReST functionality similarly depended on notebooks and Sphinx. LaTeX HTML pipelines were a bit janky and hard to set up on Windows. Neither really tied to a legacy XML format, which limited round-tripping with something as insane as S1000D. And the print options for both ReST and MD were not where I needed them, particularly for tables, but also for running content. Asciidoc came the closest to checking off all the boxes for me.
+
+Anyway, it happened, it worked, I did it. But it hit business process problems. Stuff that would have hit any new instance of a pubs too. Like "we don't actually know which plane parts can work with each other" or "SMEs will never ever ever do a review in a text editor . . or electronically . . or in anything but a dead tree" or "a few writers don't know what the scroll wheel on the mouse does"[3] or . . eh, take your pick. I ate my own gun, though, and left. They're still using it - and probably still cursing my name - to this day. But that had been one of my big goals[4]: S1000D architecture on lightweight markup.
+
+So. Lightweight markup. I haven't continued to shop around, and I probably should. For one, I'm of the growing opinion that inline conditional content is a mistake as a general design, and that the conditionals should probably live in the processing layer. That's a big chunk of the requirement covered by Asciidoc's `include` directive. For another, I won't deny that the Markdown ecosystem is about 100x the Asciidoc ecosystem, due to the much greater dev count with the JS ecosystem vs the Ruby ecosystem. Some of the toys in Markdownland are worth the move all by themselves. And round tripping S1000D? You can't even round trip S1000D with itself.
+
+Then again, there's so many damn MD variants. .
+
+[1] XML vocabulary for documentation of mil/aero systems. Think DITA but a million times more complicated. And a new Issue every two years, without any commonality in the scope.
+
+[2] This was a mistake, as I made lasting enemies of the PDM boosters, who counted some executives among them. I would have been better off keeping my mouth shut and letting the whole thing sink into the ocean.
+
+[3] And had no interest in finding out, either. "You're trying to turn us into programmers, with this git and text stuff!". No, no I am not, and if you ever want to work outside this sector you'll want to learn what git is.
+
+[4] Should probably mention that annual per seat license costs for the big S100D solutions were pushing past 30k, with reviewer licenses lagging not far behind that. Not including the setup costs, or the consultants that will have to fly down for every tweak and button. I could not, for the life of me, figure out how anyone manages to pay for that in avionics, where the margins are razor thin. Turns out they don't, they just deeply discount their products so the OEM can "show them how it's done". Effectively they're paying their suppliers with dollars that can only be spent with the OEM.
