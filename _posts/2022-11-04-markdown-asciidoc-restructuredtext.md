@@ -80,6 +80,8 @@ Considering that the end result of a documentation project is often a static sit
 
 5. Last, but certainly not least, among my favorite frameworks is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let’s understand what is MDX and how does it vary from MD.
 
+According to [mdxjs.com](https://mdxjs.com/docs/what-is-mdx/#jsx):
+
 > [JSX](https://reactjs.org/docs/introducing-jsx.html) is an extension to JavaScript that looks like HTML but makes it convenient to use components (reusable things). MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
 
 With over 40K GitHub starts, [Docusaurus](https://docusaurus.io/) is undeniably one of the most popular modern documentation frameworks based on MDX. Docusaurus orignates from Meta Open Source (f.k.a Facebook) and is packed with content-centric features (docs, blog, pages, versioning, i18n, a11y, SEO...). As a **React + Node.js static site generator**, you can either use MD to get started easily or use MDX to make your docs look interactive. [This showcase](https://docusaurus.io/showcase) of documentation sites using Docusaurus is enough to convince me that the UX and DX of a documentation site is as important as the content itself.  
