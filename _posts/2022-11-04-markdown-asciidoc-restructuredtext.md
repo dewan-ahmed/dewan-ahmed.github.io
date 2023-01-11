@@ -235,15 +235,15 @@ Points 2, 4 and 5 don't relate to the choice of the markup language or framework
 
 Writing documentation is different from writing code.
 
-**Writing documentation is different from writing code.**
+Writing documentation is different from writing code.
 
 Yes, I needed to repeat that line. As a user, I love the visually appealing documentation sites built using an MDX-based framework. While MDX affords users more power and flexibility, it comes at the cost of complexity. Content can quickly become as complex as regular code, which can lead to maintainability complications or a more difficult authoring environment. You can choose an MDX-based framework for other features and stay away from overscripting. But the temptation (to add more scripts) is harder to resist than one might think. 
 
-With the above discussion, can we find a middle ground that balances both the user experience and authoring experience? While all 10 factors are critical, some of the ones I mentioned above don't relate to your choice of markup and framework (for example, content architecture or if you add too many pop-ups). I'll highlight five questions you can ask when selecting a markup and framework.
+With the above discussion, can we find a middle ground that balances both the user experience and authoring experience? While all 10 factors affecting user and authoring experiences are critical, some of the ones I mentioned above don't relate to your choice of markup and framework (for example, content architecture or if you add too many pop-ups). I'll highlight five questions you can ask when selecting a markup and framework.
 
 Question 1: Do you have a strong reason for NOT using Markdown? 
 
-Question 2: How much do you care about the appearance of your docs site? Do you prefer simple and clean docs or beautiful and interactive ones?
+Question 2: How much do you care about the appearance of your docs site? Do you need a beautiful and interactive one that you can maintain over time?
 
 Question 3: What are the features that matter to your users and authors? Search? Internationalization? Versioning? Pick the framework that delivers (most of) these features.
 
