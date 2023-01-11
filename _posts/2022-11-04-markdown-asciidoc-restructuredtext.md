@@ -255,6 +255,8 @@ Question 5: Is the framework open-source?
 
 In this blog, I covered three popular markup languages, some very popular frameworks, and my opinion on the choice of markup language and framework based on a few key factors. If there's one thing you want to take away from this blog, it will be to find the balance between the ease of getting started (authoring experience) and the ease of finding information (user experience). If you liked this blog or have any feedback, please [reach out](https://twitter.com/DewanAhmed).  
 
+---
+
 # Appendix
 
 Since this blog had its day of fame on HackerNews, it has generated a lot of insightful discussions. It would be a shame not to capture at least some of them.
