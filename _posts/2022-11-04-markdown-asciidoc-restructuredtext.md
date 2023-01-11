@@ -1,6 +1,6 @@
 ---
 title: "Markdown, Asciidoc, or reStructuredText - a tale of docs-as-code"
-date: 2022-11-04T00:00:00
+date: 2023-01-10T00:00:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/md-adoc-reST.jpg"
@@ -257,9 +257,9 @@ In this blog, I covered three popular markup languages, some very popular framew
 
 # Appendix
 
-Since this blog had its day of fame on HackerNews, it generated a lot of insightful discussions. It'd be a shame not to capture at least some of them. 
+Since this blog had its day of fame on HackerNews, it has generated a lot of insightful discussions. It would be a shame not to capture at least some of them.
 
-1. [Addison](https://github.com/addisonj) wrote:
+## [Addison](https://github.com/addisonj) wrote:
 
 I have spent a lot of time looking in this space recently for helping to revamp documentation and I really really have fallen in love with Markdoc.
 Markdoc just hits the sweet spot of being super easy to get started with but elegantly extensible that makes it scale. I think the OP here simplifies a bit though of what Markdoc is. While it is pretty simple to integrate into a next.js site for a SSG doc site, it is more of a library that can be integrated into almost any site or rendering framework.
@@ -272,7 +272,7 @@ With Markdoc, I have built: * a higher level utility for creating a "library" of
 
 I have started to toy with the idea of a more general purpose CMS built around markdoc... but in general, a really great tool and kudos to stripe team for building it :)
 
-2. Anonymous user wrote:
+## [innocentoldguy](https://news.ycombinator.com/user?id=innocentoldguy) wrote:
 
 I've done a lot of research and testing with Markdown, Asciidoc, and reStructuredText to see which would work best for my company's documentation needs. We ended up going with Asciidoc and Antora for the following reasons.
 
@@ -302,7 +302,7 @@ Antora:
 
 Based on our research, I even migrated my personal 11ty sites from Markdown to Asciidoc and have been quite happy with it.
 
-3. Another anonymous user wrote:
+## [MilStdJunkie](https://news.ycombinator.com/user?id=MilStdJunkie) wrote:
 
 I tend to agree with the author's sentiment re: Asciidoc, but that is a subjective impression, driven by my industry and the requirements it imposes. (note that the first version of the blog suggested Asciidoc/Antora as the ideal choice).
 
