@@ -207,8 +207,8 @@ Let's look at some documentation sites with great UX:
 
 | Jekyll  | Docusaurus  | Antora  | Sphinx  |
 |---|---|---|---|
-| [Sketch](https://sketch.com/)  | [Algolia](https://docsearch.algolia.com/)  | [Apache Solr](https://solr.apache.org/guide/solr/latest/)  | [ReadTheDocs](https://readthedocs.org/)  |
-| [Spotify](https://developer.spotify.com/)  | [Hasura](https://hasura.io/docs/)  | [Apache Cassandra](https://cassandra.apache.org/_/development/documentation.html)  | [WriteTheDocs](https://github.com/writethedocs/www)  |
+| [Sketch](https://sketch.com/)  | [Algolia](https://docsearch.algolia.com/)  | [Apache Solr](https://solr.apache.org/guide/solr/latest/)  | [Linux Kernel](https://docs.kernel.org/)  |
+| [Spotify](https://developer.spotify.com/)  | [Hasura](https://hasura.io/docs/)  | [Apache Cassandra](https://cassandra.apache.org/_/development/documentation.html)  | [Envoy Proxy](https://www.envoyproxy.io/docs)  |
 | [Twitch](https://dev.twitch.tv/)  | [Supabase](https://www.supabase.io/docs)  | [Cloudbees](https://docs.cloudbees.com/)  | [Aiven](https://docs.aiven.io/)  |
 
 Humble brag that the last one in the list ([Aiven](https://docs.aiven.io/) 🦀) won [2022 DevPortal Awards](https://devportalawards.org/nominees/2022/aiven-developer) in the category **Best DevPortal Beyond REST Platforms**. If I added a list of great docs websites but didn't include the OG, it would be a crime. Check out one of THE BEST documentation out there - [Stripe Docs](https://stripe.com/docs), built using [Markdoc](https://markdoc.dev/). 
@@ -273,6 +273,7 @@ I have started to toy with the idea of a more general purpose CMS built around m
 2. Anonymous user wrote:
 
 I've done a lot of research and testing with Markdown, Asciidoc, and reStructuredText to see which would work best for my company's documentation needs. We ended up going with Asciidoc and Antora for the following reasons.
+
 Asciidoc:
 
 * Almost as simple as Markdown.
