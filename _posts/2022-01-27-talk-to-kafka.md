@@ -3,7 +3,7 @@ title: "Dewan learns Kafka - Let's talk to Kafka"
 date: 2022-01-27T22:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/kafka006.png"
+  teaser: "/assets/images/2022/kafka006.png"
 tags:
   - kafka
 ---
@@ -38,7 +38,7 @@ There are five parts to the actual producer program:
 4. Send data
 5. Close connection
 
-![Talk to Kafka](/assets/images/kafka006.png)
+![Talk to Kafka](/assets/images/2022/kafka006.png)
 
 ### 1. Producer properties
 

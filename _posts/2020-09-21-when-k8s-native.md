@@ -3,7 +3,7 @@ title: "When to go K8s-native - a tale of CI/CD servers"
 last_modified_at: 2020-09-21T0:00:00-05:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/containers.jpg"
+  teaser: "/assets/images/2020/containers.jpg"
 tags:
   - kubernetes
   - devops

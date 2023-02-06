@@ -3,7 +3,7 @@ title: "10 steps to a better Dockerfile"
 date: 2021-11-10T22:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/containers.jpg"
+  teaser: "/assets/images/2021/containers.jpg"
 tags:
   - devops
   - containers
@@ -11,7 +11,7 @@ tags:
 
 The journey to the cloud typically starts with containerizing your apps. One of the first challenges developers face is writing the blueprint for those container images—aka a Dockerfile. This article guides you through ten steps to writing better Dockerfiles. The basis for our example is a  [popular Spring application](https://developers.redhat.com/courses/spring-boot).
 
-![containers](../assets/images/containers.jpg)
+![containers](/assets/images/2021/containers.jpg)
 
 ## Pre-requisites
 

@@ -3,7 +3,7 @@ title: "Why are we paying these folks - a tale of DevRel"
 date: 2022-12-07T00:00:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/why-paying-devrel.jpg"
+  teaser: "/assets/images/2022/why-paying-devrel.jpg"
   alt: "Photo by Sangga Rima Roman Selia on Unsplash"
 tags:
   - devrel
@@ -74,7 +74,7 @@ Your path can be very different. You can be a CS grad or a college dropout, a ph
 Does DevRel look glamorous from the outside? The travel, staying at nice hotels, and "influence" on social media might send all the wrong signals to someone looking to break into tech. Maybe we should talk more about the invisible hard stuff on the job. When I'm in my hotel room, I'm practicing in front of a mirror for my talk the next morning and not sipping on a pina colada by the pool. I've spent countless nights at airports and on economy flights without much sleep. I've had layovers at airports without a proper restaurant and survived on granola bars and Coke Zero. On economy flights, wearing N95 masks can be anything but glamorous.
 
 <p align="center">
-<img src="/assets//images/program-age-vs-employee-experience-devrel.jpeg" alt="Program Age vs. Employee Years of DevRel Experience. Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/)" width="600"/>
+<img src="/assets//images/2022/program-age-vs-employee-experience-devrel.jpeg" alt="Program Age vs. Employee Years of DevRel Experience. Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) and [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/)" width="600"/>
 </p>
 
 Image credit: [Taylor Barnett](https://twitter.com/taylor_atx) edited the above image from [2022 State of Developer Relations report](https://www.stateofdeveloperrelations.com/) and [tweeted]((https://twitter.com/taylor_atx/status/1575218433632804864?s=20&t=WwyR42KTOQPJ4zWn4mqmrw))
@@ -86,7 +86,7 @@ There can be a handful of exceptions, like Twilio back in the day or GitHub in t
 ## Cost of DevRel depends on how you value them 
 
 <p align="center">
-<img src="/assets//images/devrel-layoffs.jpg" alt="DevRel mass layoffs in 2022" width="600"/>
+<img src="/assets//images/2022/devrel-layoffs.jpg" alt="DevRel mass layoffs in 2022" width="600"/>
 </p>
 
 2022 was a troubling year for tech. However, with all the mass layoffs, don't associate the troubling trend of DevRel layoffs only with mass layoffs. DevRel layoffs happened this year, the year before, and the year before. In my observations, there are three main reasons behind DevRel layoffs:

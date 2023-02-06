@@ -3,7 +3,7 @@ title: "Stability comes from making changes - A tale of infrastructure as code"
 last_modified_at: 2020-08-19T0:00:00-05:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/iac-part1.jpg"
+  teaser: "/assets/images/2020/iac-part1.jpg"
 tags:
   - infrastructure-as-code
   - devops

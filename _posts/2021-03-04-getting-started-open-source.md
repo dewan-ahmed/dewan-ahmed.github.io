@@ -3,7 +3,7 @@ title: "How to get involved with Open Source"
 date: 2021-03-04T22:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/open-source.jpg"
+  teaser: "/assets/images/2021/open-source.jpg"
 tags:
   - open-source
   - community
@@ -14,7 +14,7 @@ Recently, a student reached out to me and asked:
 
 I'm a strong believer of reusable contents and that's why I decided to write a blog post on this topic. If you're a student, newgrad or anyone who is looking to start/transition into the software industry; open source contribution will be a strong skillset on your resume. 
 
-![Open Source](/assets/images/open-source.jpeg)
+![Open Source](/assets/images/2021/open-source.jpeg)
 
 ## What is Open Source?
 
