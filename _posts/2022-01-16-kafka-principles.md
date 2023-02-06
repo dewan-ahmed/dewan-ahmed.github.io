@@ -3,7 +3,7 @@ title: "Dewan learns Kafka - architecture principles and recent changes"
 date: 2022-01-16T22:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/kafka005.png"
+  teaser: "/assets/images/2022/kafka005.png"
 tags:
   - kafka
 ---
@@ -30,7 +30,7 @@ The rack awareness feature spreads replicas of the same partition across differe
 The availability of a Kafka cluster at Netflix is defined as the ratio of messages successfully produced to Kafka vs. total attempts. Their engineers understood that Kafka, as a stateful service, must provide fast failover to guarantee a high SLA (99.9999% availability at that time). Let's talk about scalability now. Scaling regular workload and scaling internet-scale workload are not the same. In order to scale, you add brokers and add partitions to those brokers. There's a limit on the number of partitions you can have in a Kafka cluster. It was 100,000 at the time of the talk and 2M+ when I'm writing this blog in 2022 (although it is suggested to keep the number of partitions around 200,000). There's also an issue with partition reassignment because when you add new brokers and you reassign the ownership of the partition, the new broker has to copy the data of that partition from the leader. Not only is this a time-consuming process, but there's also a significant increase in network traffic during that time. 
 
 
-![kafka005.png](/assets/images/kafka005.png)
+![kafka005.png](/assets/images/2022/kafka005.png)
 
 The benefit of cloud and managed services is that you can provision a Kafka cluster with the click of a button or an API call. Imagine you have a single cluster and producer/consumer. If you see a traffic increase, you add a second cluster add create topics in the second cluster. The next step is to have your producer write to both clusters and consumer read from both clusters. This is how you scale up. To scale down, you ask the producer to stop producing to the second cluster while the consumer is still reading from both clusters. Once all the data has been read or the data retention period has passed for the second cluster, you can have the consumer stop reading from the second cluster and safely remove the second cluster. The  [video](https://www.youtube.com/watch?v=ZAmfZcuhJ94)  shows advanced topics like topic failover and failover with traffic migration.  
 

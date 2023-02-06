@@ -3,7 +3,7 @@ title: "Markdown, Asciidoc, or reStructuredText - a tale of docs-as-code"
 date: 2023-01-10T00:00:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/md-adoc-reST.jpg"
+  teaser: "/assets/images/2023/md-adoc-reST.jpg"
   alt: "Photo by Leah Kelley: https://www.pexels.com/photo/close-up-photo-of-gray-typewriter-952594/"
 tags:
   - docs-as-code
@@ -114,7 +114,7 @@ I [asked on Twitter](https://twitter.com/DewanAhmed/status/1583465169006448640?s
 
 ## Scripting language preference
 
-![Why reST](/assets/images/why-reST.png)
+![Why reST](/assets/images/2023/why-reST.png)
 
 The first line says it all! Almost every single question of "Why reST?" is answered with "because we have a bunch of Python devs...". 
 

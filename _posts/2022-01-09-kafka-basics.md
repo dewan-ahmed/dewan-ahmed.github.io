@@ -3,7 +3,7 @@ title: "Dewan learns Kafka - Basics"
 date: 2022-01-09T22:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/kafka003.png"
+  teaser: "/assets/images/2022/kafka003.png"
 tags:
   - kafka
 ---
@@ -19,14 +19,14 @@ Kafka is an open-source software that provides a framework for reading, storing,
 The world produces data - a lot of data. The data goes from some source systems to some target systems. It's easy to deal with a single data source and a single data target. Imagine the following setup with multiple data sources and targets:
 
 
-![kafka002.png](/assets/images/kafka002.png)
+![kafka002.png](/assets/images/2022/kafka002.png)
 
 This means that you have to develop multiple integrations to move data across and each integration can have complexities with respect to the protocol, data format, etc. Additionally, every time you add a target, the source systems will experience an increased load.
 
 Kafka lets you decouple the source and target data systems and provides out-of-the-box connectors for the integrations between Kafka and the source/target(s). You don't need to write code for these integrations. 
 
 
-![kafka003.png](/assets/images/kafka003.png)
+![kafka003.png](/assets/images/2022/kafka003.png)
 
 Kafka is highly resilient, can horizontally scale to 100s to brokers exchanging millions of messages per second in real-time. For these reasons, more than 80% of all Fortune 100 companies use Kafka.
 
@@ -44,7 +44,7 @@ Traditionally, we have imagined data representing things - an employee, a produc
 A partition is similar to a database partition. Each partition is ordered and each message within a partition gets an incremental id, called **offset**. When you create a topic, you have to mention the number of partitions (that can be changed later). 
 
 
-![kafka004.png](/assets/images/kafka004.png)
+![kafka004.png](/assets/images/2022/kafka004.png)
 
 In the above diagram, there are 4 partitions - from *partition 0* to *partition 3* and they do not contain the same number of messages. You can see that the offset numbers go from 0 all the way up to some large index for the first 3 partitions and the offset number stops at 2 for *partition 3* (these are arbitrary numbers). The *offset 0* does not mean anything on its own. You have to mention, for example, **my_awesome_topic --> partition 3 --> offset 1** for it to make sense. Offsets only have a meaning for a specific partition. Order is guaranteed only within a partition and not across partitions. In the above diagram, we can guarantee that offset 2 in partition 3 has been written after offset 1 within the same partition but we cannot guarantee that offset 2 in partition 3 has been written after offset 1 in partition 2. 
 
@@ -55,7 +55,7 @@ Once data is written to a partition, it cannot be changed (immutability feature 
 A **Broker** is a Kafka server that runs in a Kafka Cluster. From an infrastructure point, Kafka is composed of a network of machines called brokers. These machines can either be physical machines or containers running the Kafka broker process. Each broker hosts some set of Kafka partitions and handles read/write requests to those partitions. Brokers also manage replications of the partitions they host. 
 
 
-![kafka001.png](/assets/images/kafka001.png)
+![kafka001.png](/assets/images/2022/kafka001.png)
 
 
 

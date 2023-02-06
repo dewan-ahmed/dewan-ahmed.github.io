@@ -3,7 +3,7 @@ title: "Principles and patterns - A tale of infrastructure as code"
 date: 2022-05-10T06:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/iac-part2.jpg"
+  teaser: "/assets/images/2022/iac-part2.jpg"
 tags:
 - infrastructure-as-code
 - devops

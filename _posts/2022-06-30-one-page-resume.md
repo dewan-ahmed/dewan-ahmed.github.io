@@ -3,7 +3,7 @@ title: "Coach yourself - how long should the resume be?"
 date: 2022-06-30T06:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/stack-of-resumes.jpg"
+  teaser: "/assets/images/2022/stack-of-resumes.jpg"
 tags:
 - career
 - resume
@@ -49,11 +49,11 @@ If the hiring manager had to go through hundreds of online applications, they mi
 
 You'll find countless articles like this one claiming to be "based on research":
 
-![two-page-over-one-page](/assets/images/resume-page-count.png)
+![two-page-over-one-page](/assets/images/2022/resume-page-count.png)
 
 However, a quick search of that company's blog shows the following content:
 
-![exactly-one-page](/assets/images/resume-page-count-contradict.png)
+![exactly-one-page](/assets/images/2022/resume-page-count-contradict.png)
 
 Confused? The internet has made the topic of the length of a resume similar to topics like "Is coffee good for health?" But I won't leave you with "it depends". I have a definitive answer for you in the next-to-next section. 
 

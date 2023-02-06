@@ -3,7 +3,7 @@ title: "How to write an amazing resume summary statement"
 date: 2021-04-08T22:50:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/resume-summary.jpg"
+  teaser: "/assets/images/2021/resume-summary.jpg"
 tags:
   - career
 ---
@@ -12,7 +12,7 @@ tags:
 
 Don't feel bad if your resume summary/objective reads like above. This blog aims to help you improve your resume summary/objective that can take your resume from zero to hero (couldn't resist using this overly used phrase). 
 
-![Photo by Anna Tarazevich from Pexels](/assets/images/resume-summary.jpg)
+![Photo by Anna Tarazevich from Pexels](/assets/images/2021/resume-summary.jpg)
 
 ## Summary vs Objective
 
@@ -40,7 +40,7 @@ Some suggest that if you're just entering the workforace or switching careers an
 You might be right. But imagine this...it's Friday evening and the recruiter has been going through mountains of resumes. By the time they get to yours, they’re just skimming...trying to make it through. They glance at your resume but, in their tired overwhelmed rush to get done, don't find the relevant skills buried deep in your resume. Your resume, and your prospects at the company, are accidentally ignored.
 
 <p align="center">
-<img src="/assets/images/dog-sad.jpg" width="400">
+<img src="/assets/images/2021/dog-sad.jpg" width="400">
 </p>
 
 None of us want that, do we :) ?

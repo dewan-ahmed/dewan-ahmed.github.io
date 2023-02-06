@@ -3,7 +3,7 @@ title: "Dear tech recruiters,"
 date: 2021-10-04T00:00:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/dear-recruiter.jpg"
+  teaser: "/assets/images/2021/dear-recruiter.jpg"
 tags:
   - career
 ---
@@ -17,7 +17,7 @@ The software industry is growing at an exploding rate and it seems that this is 
 
 Are you an expert recruiter who knows this already? That's awesome for you and now you have a handy blog link to share with your colleagues who might need it (you and I both know that a lot of them will need this 😉)
 
-![Dear Recruiter](/assets/images/dear-recruiter.jpg)
+![Dear Recruiter](/assets/images/2021/dear-recruiter.jpg)
 
 ## Why do I care
 
@@ -121,7 +121,7 @@ A UX Researcher’s primary job is to understand the target market so the UX des
 
 If you're hiring for an entry-level person, you're probably looking for a Data Analyst. Common tasks done by data analysts include data cleaning, performing analysis and creating data visualizations. A Data Scientist is a specialist who uses statistics and machine learning to answer key business questions. A Data Engineer builds and optimizes the systems that allow Data Scientists and Data Analysts to perform their work. Unlike the previous two roles, data engineering leans a lot more toward a software development skill set. [This tweet](https://twitter.com/RealSaintSteven/status/1257781619584270337?s=20&t=LEJQUFBgt0JNvNzTfc3xQg) adds a nice visual comparison among these three roles:
 
-![data-roles](../assets/images/data-roles.jpeg)
+![data-roles](../assets/images/2021/data-roles.jpeg)
 
 ---
 Thank you for patiently reading my letter. I am really excited to hear your thoughts and possible improvements on this open letter. I hope you write me back and if you do, please do not lead with a job for a Fullstack Developer 🤪
