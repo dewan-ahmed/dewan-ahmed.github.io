@@ -95,7 +95,7 @@ There can be a handful of exceptions, like Twilio back in the day or GitHub in t
 2. The company never needed DevRel
 3. The leadership didn't understand DevRel
 
-When the company needs to tighten the belt, only the folks directly contributing to the revenue make the cut, and their colleagues find a place on the chopping board. I will be out of my mind to say that a company should let go of a developer or a sales rep over a developer advocate. Mass layoffs are unsightly and brutal, and they frequently result from Silicon Valley's rush to become the next unicorn. But that is sometimes the unfortunate reality and cannot be avoided.
+When the company needs to tighten the belt, only the folks directly contributing to the revenue make the cut, and their colleagues find a place on the chopping board. I will be out of my mind to say that a company should let go of a developer over a developer advocate. Mass layoffs are unsightly and brutal, and they frequently result from Silicon Valley's rush to become the next unicorn. But that is sometimes the unfortunate reality and cannot be avoided.
 
 > DevRel - for every developer, not for every company
 
