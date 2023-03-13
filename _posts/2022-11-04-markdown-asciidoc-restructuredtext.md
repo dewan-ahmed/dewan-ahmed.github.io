@@ -141,7 +141,7 @@ https://www.dewanahmed.com[Dewan's blog]
 Link in Markdown:
 
 ```
-[This is `Dewan's blog](https://www.dewanahmed.com)
+[This is Dewan's blog](https://www.dewanahmed.com)
 ```
 
 Let's take a look at header complexity in reStructuredText: 
