@@ -31,27 +31,23 @@ The “meetup game” comes in two modes - **easy** and **extreme**. The **easy*
 
 There are many ways to find tech meetups in your area. Here are a few tips:
 
-Use Meetup.com: Meetup.com is a popular platform for finding and joining tech meetups in your area. You can search both by technology and location.
+- Use Meetup.com: Meetup.com is a popular platform for finding and joining tech meetups in your area. You can search both by technology and location.
 
-Attend conferences: Tech conferences are a great place to meet other professionals and learn about new technologies. Many conferences also have associated meetups or networking events.
+- Attend conferences: Tech conferences are a great place to meet other professionals and learn about new technologies. Many conferences also have associated meetups or networking events.
 
-Ask around: Ask colleagues or friends in the industry if they know of any local meetups that might be of interest.
+- Ask around: Ask colleagues or friends in the industry if they know of any local meetups that might be of interest.
 
-Use other local resources: If there’s a local slack or discord, ask there. If there’s a local co-working space or tech accelerator, see if they know of any.
+- Use other local resources: If there’s a local slack or discord, ask there. If there’s a local co-working space or tech accelerator, see if they know of any.
 
-Use geographically focused online resources: Ask on HackerNews if anyone knows about local meetups. Search on your city or area’s reddit to see if anyone mentions a meetup.
+- Use geographically focused online resources: Ask on HackerNews if anyone knows about local meetups. Search on your city or area’s reddit to see if anyone mentions a meetup.
 
-Check social media: Many tech meetups use social media platforms like Twitter and LinkedIn to promote their events and share information.
-
-…what if I can’t find a meetup about the technology I’m interested in?
+- Check social media: Many tech meetups use social media platforms like Twitter and LinkedIn to promote their events and share information.
 
 ## But… What about virtual meetups?
 
 The essence of tech meetups is in-person networking. The pandemic prompted a flurry of virtual meetups; just as the rest of life went virtual, so did meetups. However, I’ve attended and hosted many of these virtual meetups and they are a far cry from the interactiveness and engagement of in-person meetups. While they are great for learning from presenters, you won’t interact with the other participants that much.
 
 Connecting with tech professionals is valuable regardless of the geography. However, in my humble opinion, the virtual medium makes networking extremely difficult. It’s hard to have casual conversations, difficult to connect, and tough to move between conversations. 
-
-It’s not impossible to make a great personal connection at an online meetup, merely very difficult.
 
 ## What’s in it for me? 
 
@@ -61,7 +57,7 @@ Meetups work slightly differently than traditional job boards. In a traditional 
 
 Does it mean that only speakers at meetups get to do networking and potentially secure job offers? Absolutely not! Almost every meetup dedicates time for networking. As a participant, you have to identify tech professionals from your target industry or companies. During the networking session, you can introduce yourself, engage in thoughtful technical discussions, and request them to add you to their LinkedIn network. Your goal is to showcase your skill set. It’s a lot easier when you deliver a talk as you have the platform and all eyes are on you. However, you can also do that by effectively connecting during the networking sessions. 
 
-Like any networking effort, meetups don’t usually pay off immediately. You’re extremely unlikely to get a job offer after first attending. But, as you build up connections and more and more people know who you are and what you can offer, you’re increasing the odds of matching an open role at a company where you already have someone who can confirm your skills and fit.
+Like any networking effort, meetups don’t usually pay off immediately. You’re extremely unlikely to get a job offer after the first attendance. But, as you build up connections and more and more people know who you are and what you can offer, you’re increasing the odds of matching an open role at a company where you already have someone who can confirm your skills and fit.
 
 ## Making the most out of a meetup
 
