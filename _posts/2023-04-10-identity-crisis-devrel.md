@@ -11,15 +11,13 @@ tags:
 
 Do you identify yourself as a developer advocate? 
 
-Are you confident that your technical skills are being fully utilized in your current role? 
+Are you confident that your skills are being fully utilized in your current role? 
 
 OR,
 
-Do you ever feel like your work requires more technical skills than you currently possess? 
+Do you ever feel like your work requires more skills than what you currently possess? 
 
-Developer relations, both as a field and for those working within it, is currently facing a significant identity crisis. There is little to no standardization across various aspects of the role, from the type of work being done, to the required competencies, and even to the ideal career ladder. For far too long, we have used the excuse that developer relations is a relatively new field, and that the definition of what we do is still evolving. But the reality is, this could not be further from the truth.
-
-This blog presents a somber view of the identity crisis currently plaguing developer relations. It delves into how our actions may have contributed to irreparable damage to the very essence of our field's identity.
+Developer relations, both as a field and for those working within it, is currently facing a significant identity crisis. There is little to no standardization across various aspects of the role, from the type of work being done, to the required competencies, and even to the ideal career ladder. This blog presents a somber view of the identity crisis currently plaguing developer relations. It delves into how our actions may have contributed to irreparable damage to the very essence of our field's identity.
 
 ## Forming the identity
 
@@ -37,10 +35,11 @@ Neither Jobs nor Dadgar had an evangelist or advocate title. Around 2012-13, com
 
 Fast-forward to 2023 and we're seeing posts like this:
 
-![DevRel League](/assets/images/2023/identity-crisis-1.png)
+![DevRel League](/assets/images/2023/devrel-league.png)
 
-KrunchData has since removed the post due to backlash.
+The company has since apologized and removed the post due to backlash.
 
+But it's an important reminder that how far-fetched the meaning of DevRel can be for some companies or individuals.
 
 ### Have we forgotten how to be engineers?
 
@@ -72,7 +71,7 @@ Here's my response:
 
 ### The real cost of identity crisis
 
-We're seeing a lot of [valid concerns](https://twitter.com/jensneuse_de/status/1644312468166983685) and confusions around DevRel:
+We're seeing a lot of [concerns](https://twitter.com/jensneuse_de/status/1644312468166983685) and confusions around DevRel:
 
 ![Worse than consultants](/assets/images/2023/identity-crisis-2.png)
 
