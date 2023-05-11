@@ -33,7 +33,7 @@ Around 2012-13, companies like EngineYard, Twilio, SendGrid, and New Relic took 
 
 Fast-forward to 2023 and we're seeing posts like this:
 
-<img src="/assets/images/2023/devrel-league.png" alt="DevRel League" width="250" height="250">
+<img src="/assets/images/2023/devrel-league.png" alt="DevRel League" width="400">
 
 The company has since apologized and removed the post due to backlash.
 
