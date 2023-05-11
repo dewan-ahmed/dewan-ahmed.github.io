@@ -17,7 +17,7 @@ OR,
 
 Do you ever feel like your work requires more skills than what you currently possess? 
 
-Developer relations, both as a field and for those working within it, is currently facing a significant identity crisis. There is little to no standardization across various aspects of the role, from the type of work being done, to the required competencies, and even to the ideal career ladder. This blog presents a somber view of the identity crisis currently plaguing developer relations. It delves into how our actions may have contributed to irreparable damage to the very essence of our field's identity.
+Developer relations, both as a field and for those working within it, is currently facing a significant identity crisis. There is little to no standardization across various aspects of the role, from the type of work being done, to the required competencies, and even to the ideal career ladder. This blog presents a somber view of the identity crisis currently plaguing developer relations. I conclude the blog with one action item YOU can take before irreparable damage is done to the very essence of our field's identity.
 
 ## Forming the identity
 
@@ -27,15 +27,13 @@ Douglas Engelbart took to the stage to perform what would become known as the ["
 
 Engelbart's presentation was not just a showcase of his technological innovations, but it was also an invitation for developers to collaborate with him in advancing the field of human-computer interaction. Many credit Engelbart to first plant the seed of developer relations. 
 
-From the storytelling of Steve Jobs at Apple events or Armon Dadgar explaining how Terraform or Vault works on a whiteboard, the art of teaching developers about technology has been best performed by the best engineers of our times. 
-
-Neither Jobs nor Dadgar had an evangelist or advocate title. Around 2012-13, companies like EngineYard, Twilio, SendGrid, and New Relic took DevRel to mainstream by investing heavily in their DevRel programs and reaching their developers from a community-first approach. Rather than traditional marketing materials, these companies had engineers presenting technical talks at meetups and conferences.
+Around 2012-13, companies like EngineYard, Twilio, SendGrid, and New Relic took DevRel to mainstream by investing heavily in their DevRel programs and reaching their developers from a community-first approach. Rather than traditional marketing materials, these companies had engineers presenting technical talks at meetups and conferences.
 
 ### The tragedy...
 
 Fast-forward to 2023 and we're seeing posts like this:
 
-![DevRel League](/assets/images/2023/devrel-league.png)
+<img src="/assets/images/2023/devrel-league.png" alt="DevRel League" width="250" height="250">
 
 The company has since apologized and removed the post due to backlash.
 
