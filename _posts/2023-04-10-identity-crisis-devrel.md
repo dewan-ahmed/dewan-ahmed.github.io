@@ -39,6 +39,24 @@ The company has since apologized and removed the post due to backlash.
 
 But it's an important reminder that how far-fetched the meaning of DevRel can be for some companies or individuals.
 
+So how did we arrive at this point?
+
+Surprisinly enough... it's because DevRel became highly successful!
+
+Seeing the massive success of DevRel programs at companies like Twilio and HashiCorp, other companies wanted to replicate. 
+
+However, simply copying their models does not guarantee success. In fact, many tech companies that attempted to do so ended up failing in their DevRel programs. Without an insider knowledge, here's my calculated guess on the "why":
+
+1. Lack of genuine commitment: DevRel programs require a genuine commitment to developers and their needs. This means investing in resources like documentation, support channels, and events, as well as taking the time to engage with the developer community. Many companies see DevRel as an afterthought or a checkbox item, rather than a core part of their business strategy.
+
+2. Poor understanding of the developer mindset: Developers have a unique mindset and approach to problem-solving. They value tools that are easy to use, well-documented, and flexible. Companies that fail to understand this mindset may develop tools and resources that are too complex or too restrictive, which can turn developers off.
+
+3. Lack of trust: Developers are a discerning audience, and they can quickly sniff out inauthenticity. Companies that lack trust with the developer community, perhaps because of a history of closed-source practices or a lack of transparency, may struggle to build meaningful relationships with developers. If you went above and beyond on a developer event and the CEO comes to you right after the event asking for ROI 
+
+Insufficient resources: Building a strong DevRel program requires a significant investment of time, money, and personnel. Companies that try to cut corners or skimp on resources may find that their DevRel efforts fall short.
+
+Poor execution: Even with the best intentions and resources, DevRel programs can fail if they are poorly executed. This might include a lack of follow-through on promises, inconsistent messaging, or an inability to respond to developer feedback in a timely manner.
+
 ### Have we forgotten how to be engineers?
 
 Let's clarify what I mean by "engineers". I live in Canada so I'm aware that the term "engineer" has a special meaning at some places that is regulated by local engineering associations. However, my use of the term "engineer" refers to anyone who has professionaly built software and hence, (software) engineer. It has nothing to do with your path to becoming a software engineer. Whether you're a ComSci PhD or a bootcamp grad, you possess certain skillset that is common to expect from a majority of other software engineers. 
