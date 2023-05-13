@@ -17,7 +17,7 @@ OR,
 
 Do you ever feel like your work requires more skills than what you currently possess? 
 
-Developer relations, both as a field and for those working within it, is currently facing a significant identity crisis. There is little to no standardization across various aspects of the role, from the type of work being done, to the required competencies, and even to the ideal career ladder. This blog presents a somber view of the identity crisis currently plaguing developer relations. I conclude the blog with one action item YOU can take before irreparable damage is done to the very essence of our field's identity.
+Developer relations (DevRel, in short), both as a field and for those working within it, is currently facing a significant identity crisis. There is little to no standardization across various aspects of the role, from the type of work being done, to the required competencies, and even to the ideal career ladder. This blog presents a somber view of the identity crisis currently plaguing DevRel. I conclude the blog with one action item YOU can take before irreparable damage is done to the very essence of our field's identity.
 
 ## Forming the identity
 
@@ -25,19 +25,32 @@ December 9, 1968.
 
 Douglas Engelbart took to the stage to perform what would become known as the ["Mother of All Demos"](https://www.youtube.com/watch?v=yJDv-zdhzMY). Little did the audience know that they were about to witness a demonstration that would forever change the course of computing history.
 
-Engelbart's presentation was not just a showcase of his technological innovations, but it was also an invitation for developers to collaborate with him in advancing the field of human-computer interaction. Many credit Engelbart to first plant the seed of developer relations. 
+Engelbart's presentation was not just a showcase of his technological innovations, but it was also an invitation for developers to collaborate with him in advancing the field of human-computer interaction. Many credit Engelbart to first plant the seed of technology evangelist. However, [Guy Kawasaki](https://en.wikipedia.org/wiki/Guy_Kawasaki) is more widely known to pioneer the role of technology evangelist as the first successful one, promoting the Apple Macintosh in the 1980s through his passionate speeches, demonstrations, and events.
 
 Around 2012-13, companies like EngineYard, Twilio, SendGrid, and New Relic took DevRel to mainstream by investing heavily in their DevRel programs and reaching their developers from a community-first approach. Rather than traditional marketing materials, these companies had engineers presenting technical talks at meetups and conferences.
 
-### The tragedy...
+### Battling for an identity
 
-Fast-forward to 2023 and we're seeing posts like this:
+When I started my first official DevRel role at IBM, the answer to "what do you do at IBM?" never ended in one line. I was tired to explain my role every time so I [wrote a blog to explain](https://medium.com/@dewanahmed/what-i-do-as-a-developer-advocate-at-ibm-da2252179f6). Long before I had the title, I was delivering talks, hosting meetups, and writing technical blogs on my own time. I was doing this out of joy and could never imagine that I could do this full-time (and get paid to do so). 
 
-<img src="/assets/images/2023/devrel-league.png" alt="DevRel League" width="400">
+As a full-time software engineer doing "DevRel thing" on the side, I didn't have an identity crisis. I was just another software engineer who was active in writing and public speaking. As soon as I started to do DevRel full-time, I started to ask myself "how valuable and visible is my work?". Check out what [Rachel](https://twitter.com/rachelnabors) has to say about the value of tech writing:
 
-The company has since apologized and removed the post due to backlash.
+![value of tech writing](/assets/images/2023/rachel-tweet-1.png)
 
-But it's an important reminder that how far-fetched the meaning of DevRel can be for some companies or individuals.
+This can be very much relatable to the perceived value of DevRel.  
+
+![value of developer advocates](/assets/images/2023/rachel-tweet-2.png)
+
+It's a [golden thread](https://twitter.com/rachelnabors/status/1647771654519676929?s=20) for anyone in DevRel. Please bookmark!
+
+## Engineering? Marketing? Product? Office of CTO? 
+
+> Oh no! Not "where should DevRel sit" question again 🤬
+
+
+
+
+From Rachel's thread, it seems  
 
 So how did we arrive at this point?
 
@@ -49,7 +62,7 @@ However, simply copying their models does not guarantee success. In fact, many t
 
 1. Lack of genuine commitment: DevRel programs require a genuine commitment to developers and their needs. This means investing in resources like documentation, support channels, and events, as well as taking the time to engage with the developer community. Many companies see DevRel as an afterthought or a checkbox item, rather than a core part of their business strategy.
 
-2. Poor understanding of the developer mindset: Developers have a unique mindset and approach to problem-solving. They value tools that are easy to use, well-documented, and flexible. Companies that fail to understand this mindset may develop tools and resources that are too complex or too restrictive, which can turn developers off.
+2. Poor understanding of the developer mindset: Developers have a unique mindset and approach to problem-solving. They value tools that are easy to use, well-documented, and flexible. Companies that fail to understand this mindset may develop tools and resources that are too complex or too restrictive, which can turn developers off. Even the best DevRel team won't be able to shine poor product will
 
 3. Lack of trust: Developers are a discerning audience, and they can quickly sniff out inauthenticity. Companies that lack trust with the developer community, perhaps because of a history of closed-source practices or a lack of transparency, may struggle to build meaningful relationships with developers. If you went above and beyond on a developer event and the CEO comes to you right after the event asking for ROI 
 
@@ -65,7 +78,7 @@ In the last 10 years, the identity of DevRel has become more convoluted. When I 
 
 One of the common complaints DevRel folks have is that we don't get a seat at the table in terms of product development and roadmap. Your peers at product or engineering will likely respect product feedback coming from an engineer than from someone who has very little to do with coding in their day to day job.
 
-While I don't agree 100% with what [Jens](https://twitter.com/jensneuse_de) tweeted above, [being an engineer is a non-negotiable requirement](https://www.dewanahmed.com/why-paying-devrel/#developer-advocates-must-be-technical) to become a good developer advocate. 
+
 
 ### You aren't gatekeeping... are you?
 
@@ -87,9 +100,13 @@ Here's my response:
 
 ### The real cost of identity crisis
 
-We're seeing a lot of [concerns](https://twitter.com/jensneuse_de/status/1644312468166983685) and confusions around DevRel:
+Here's a CEO asking if developer advocacy is a good idea or not.
 
-![Worse than consultants](/assets/images/2023/identity-crisis-2.png)
+![Worse than consultants](/assets/images/2023/is-devrel-bad-idea.png)
+
+Here's a programmer with ~40K Twitter followers who does not trust developer advocates because this person feels that developer advocates are just pitch people for their employers instead of people really helping developers.
+
+![Unfollow developer advocates](/assets/images/2023/unfollow-developer-advocates.png)
 
 At the core of this confusion, there are two questions:
 
