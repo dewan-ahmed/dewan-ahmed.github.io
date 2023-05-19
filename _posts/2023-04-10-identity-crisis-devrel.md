@@ -56,10 +56,14 @@ But where does a developer advocate fit in? They are engineers by trade, work cl
 [Karin](https://twitter.com/karinwolok) recently asked this same question which received [31 responses on Twitter](https://twitter.com/karinwolok/status/1655951362151292931?s=20). In these responses, people had eight different opinions on where DevRel should sit. I don't like "it depends" answer most of the time because even if it depends, we should give more reasoning on "why". Out of all 31 responses, I share the same view as [Jim Bennett](https://twitter.com/jimbobbennett):
 
 > It’s (DevRel is) such a cross functional org that there is no real right answer. Done well it’s such a strong collaboration across all the orgs that it should have access to marketing budget as well as product teams.
-
+>
 > Just not sales - it should never be tied to revenue.
 
+Had I responded to that thread, here would be my corollary to Jim's response: Developer relations (DevRel), when done right, acts as a metaphorical glue among cross-functional teams, similar to the [Japanese art of Kintsugi](https://traditionalkyoto.com/culture/kintsugi/). Like Kintsugi repairs cracks in ceramics adorned with gold, DevRel strengthens relationships between teams by bridging gaps and fostering collaboration. It serves as a unifying force that brings together various departments, such as marketing and product teams.
 
+DevRel, like the gold in Kintsugi, adds value and beauty to the organization. It enhances communication, understanding, and cooperation among teams. By actively engaging with different stakeholders, DevRel creates a shared sense of purpose and celebrates the uniqueness of each team's contributions.
+
+Just as Kintsugi repairs ceramics to create something stronger and more beautiful, DevRel repairs fractured relationships within an organization. It creates an environment where teams can effectively work together, leveraging their diverse expertise and perspectives. In this way, DevRel acts as a vital component that holds the different teams together, promoting collaboration and driving overall success.
 
 
 
