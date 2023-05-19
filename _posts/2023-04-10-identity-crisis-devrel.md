@@ -1,6 +1,6 @@
 ---
 title: "Identity Crisis - A Tale of DevRel"
-date: 2023-05-12T00:00:00
+date: 2023-05-19T00:00:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/2023/identity-crisis-teaser.jpg"
@@ -31,9 +31,9 @@ Around 2012-13, companies like EngineYard, Twilio, SendGrid, and New Relic took 
 
 ### Battling for an identity
 
-When I started my first official DevRel role at IBM, the answer to "what do you do at IBM?" never ended in one line. I was tired to explain my role every time so I [wrote a blog to explain](https://medium.com/@dewanahmed/what-i-do-as-a-developer-advocate-at-ibm-da2252179f6). Long before I had the title, I was delivering talks, hosting meetups, and writing technical blogs on my own time. I was doing this out of joy and could never imagine that I could do this full-time (and get paid to do so). 
+Long before I had the title of developer advocate, I was delivering talks, hosting meetups, and writing technical blogs on my own time. I was doing this out of joy and could never imagine that I could do this full-time (and get paid to do so). 
 
-As a full-time software engineer doing "DevRel thing" on the side, I didn't have an identity crisis. I was just another software engineer who was active in writing and public speaking. As soon as I started to do DevRel full-time, I started to ask myself "how valuable and visible is my work?". Check out what [Rachel](https://twitter.com/rachelnabors) has to say about the value of tech writing:
+As a full-time software engineer doing "DevRel thing" on the side, I didn't have an identity crisis. I was just another software engineer who was active in writing and public speaking. When I started to do DevRel full-time, I asked myself "how valuable and visible is my work?". Check out what [Rachel](https://twitter.com/rachelnabors) has to say about the value of tech writing:
 
 ![value of tech writing](/assets/images/2023/rachel-tweet-1.png)
 
@@ -43,14 +43,25 @@ This can be very much relatable to the perceived value of DevRel.
 
 It's a [golden thread](https://twitter.com/rachelnabors/status/1647771654519676929?s=20) for anyone in DevRel. Please bookmark!
 
+When I started my first official DevRel role at IBM, the answer to "what do you do at IBM?" never ended in one line as developer advocacy was new to most folks. I was tired to explain my role every time so I [wrote a blog to explain](https://medium.com/@dewanahmed/what-i-do-as-a-developer-advocate-at-ibm-da2252179f6). If you think that something clever like "I help developers to succeed" or "I educate developers on $someTechnology" would work, be my guest to try it out on someone who never heard of developer relations and then ask them back if they understood what you do from that clever one-liner.   
+
 ## Engineering? Marketing? Product? Office of CTO? 
 
 > Oh no! Not "where should DevRel sit" question again 🤬
 
+An engineer typically works under the Engineering org, while an SDR works in Sales, and a marketing analyst works in Marketing.
+
+But where does a developer advocate fit in? They are engineers by trade, work closely with the product team, (oftentimes) report to the marketing department, and can be great allies for sales reps without directly selling the product.
+
+[Karin](https://twitter.com/karinwolok) recently asked this same question which received [31 responses on Twitter](https://twitter.com/karinwolok/status/1655951362151292931?s=20). In these responses, people had eight different opinions on where DevRel should sit. I don't like "it depends" answer most of the time because even if it depends, we should give more reasoning on "why". Out of all 31 responses, I share the same view as [Jim Bennett](https://twitter.com/jimbobbennett):
+
+> It’s (DevRel is) such a cross functional org that there is no real right answer. Done well it’s such a strong collaboration across all the orgs that it should have access to marketing budget as well as product teams.
+
+> Just not sales - it should never be tied to revenue.
 
 
 
-From Rachel's thread, it seems  
+
 
 So how did we arrive at this point?
 
@@ -70,15 +81,34 @@ Insufficient resources: Building a strong DevRel program requires a significant 
 
 Poor execution: Even with the best intentions and resources, DevRel programs can fail if they are poorly executed. This might include a lack of follow-through on promises, inconsistent messaging, or an inability to respond to developer feedback in a timely manner.
 
+### The real cost of identity crisis
+
+Here's a CEO asking if developer advocacy is a good idea or not.
+
+![Worse than consultants](/assets/images/2023/is-devrel-bad-idea.png)
+
+Here's a programmer with ~40K Twitter followers who does not trust developer advocates because this person feels that developer advocates are just pitch people for their employers instead of people really helping developers.
+
+![Unfollow developer advocates](/assets/images/2023/unfollow-developer-advocates.png)
+
+Here's a company pitting DevRel teams against each other without even taking their consent. They have since taken down the post due to backlash.
+
+![DevRel league](/assets/images/2023/devrel-league.png)
+
+At the core of this confusion, there are two questions:
+
+1. What is DevRel?
+2. [Why are we paying them?](https://www.dewanahmed.com/why-paying-devrel/)
+
+If we (DevRel community) cannot have a unified answer to the first question, more and more people will question the effectiveness of DevRel. I don't know about you but I've seen more than enough "And the entire DevRel team was let go" posts in the last few months. In weak economy, you need a strong justification to the second question to save your job.
+
 ### Have we forgotten how to be engineers?
 
-Let's clarify what I mean by "engineers". I live in Canada so I'm aware that the term "engineer" has a special meaning at some places that is regulated by local engineering associations. However, my use of the term "engineer" refers to anyone who has professionaly built software and hence, (software) engineer. It has nothing to do with your path to becoming a software engineer. Whether you're a ComSci PhD or a bootcamp grad, you possess certain skillset that is common to expect from a majority of other software engineers. 
+In this section, I'll discuss the challenges of a unified answer to Let's clarify what I mean by "engineers". I live in Canada so I'm aware that the term "engineer" has a special meaning at some places that is regulated by local engineering associations. However, my use of the term "engineer" refers to anyone who has professionaly built software and hence, (software) engineer. It has nothing to do with your path to becoming a software engineer. Whether you're a ComSci PhD or a bootcamp grad, you possess certain skillset that is common to expect from a majority of other software engineers. 
 
 In the last 10 years, the identity of DevRel has become more convoluted. When I started at IBM in 2014, there were very few developer advocates in the industry. A developer advocate would be someone with decades (not years) of engineering experience who chose not to go the management or principal engineer route. They wanted to teach and share their experience.  
 
 One of the common complaints DevRel folks have is that we don't get a seat at the table in terms of product development and roadmap. Your peers at product or engineering will likely respect product feedback coming from an engineer than from someone who has very little to do with coding in their day to day job.
-
-
 
 ### You aren't gatekeeping... are you?
 
@@ -97,23 +127,6 @@ Here's my response:
 3. And you're assuming that the other person competing for the role who is technical doesn't have empathy? 
 
 
-
-### The real cost of identity crisis
-
-Here's a CEO asking if developer advocacy is a good idea or not.
-
-![Worse than consultants](/assets/images/2023/is-devrel-bad-idea.png)
-
-Here's a programmer with ~40K Twitter followers who does not trust developer advocates because this person feels that developer advocates are just pitch people for their employers instead of people really helping developers.
-
-![Unfollow developer advocates](/assets/images/2023/unfollow-developer-advocates.png)
-
-At the core of this confusion, there are two questions:
-
-1. What is DevRel?
-2. [Why are we paying them?](https://www.dewanahmed.com/why-paying-devrel/)
-
-If we cannot have a unified answer to the first question, more and more people will question the effectiveness of DevRel. In weak economy, you need a strong justification to the second question to save your job.
 
 ### But... there is hope
 
