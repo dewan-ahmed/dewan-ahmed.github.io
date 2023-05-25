@@ -43,7 +43,7 @@ This can be very much relatable to the perceived value of DevRel.
 
 It's a [golden thread](https://twitter.com/rachelnabors/status/1647771654519676929?s=20) for anyone in DevRel. Please bookmark!
 
-When I started my first official DevRel role at IBM, the answer to "what do you do at IBM?" never ended in one line as developer advocacy was new to most folks. I was tired to explain my role every time so I [wrote a blog to explain](https://medium.com/@dewanahmed/what-i-do-as-a-developer-advocate-at-ibm-da2252179f6). If you think that something clever like "I help developers to succeed" or "I educate developers on $someTechnology" would work, be my guest to try it out on someone who never heard of developer relations and then ask them back if they understood what you do from that clever one-liner.   
+When I started my first official DevRel role at IBM, the answer to "what do you do at IBM?" never ended in one line as developer advocacy was new to most folks. I was tired to explain my role every time so I [wrote a blog to explain](https://medium.com/@dewanahmed/what-i-do-as-a-developer-advocate-at-ibm-da2252179f6). If you think that something clever like "I help developers to succeed" or "I educate developers on $someTechnology" would work, please try it out on someone who never heard of developer relations and then ask them back if they understood what you do from that clever one-liner.   
 
 ## How did we arrive at this point?
 
@@ -77,9 +77,11 @@ But where does a developer advocate fit in? Many of them are engineers by trade,
 >
 > Just not sales - it should never be tied to revenue.
 
-Had I responded to that thread, here would be my corollary to Jim's response: Developer relations (DevRel), when done right, acts as a metaphorical glue among cross-functional teams, similar to the [Japanese art of Kintsugi](https://traditionalkyoto.com/culture/kintsugi/). Like Kintsugi repairs cracks in ceramics adorned with gold, DevRel strengthens relationships between teams by bridging gaps and fostering collaboration. 
+Had I responded to that thread, here would be my corollary to Jim's response: Developer relations (DevRel), when done right, acts as a metaphorical glue among cross-functional teams, similar to the [Japanese art of Kintsugi](https://traditionalkyoto.com/culture/kintsugi/). DevRel, like the gold in Kintsugi, repairs fractured relationships or creates non-existing relationships between an organization and its target developer audience. It creates an environment based on authenticity and trust, without a direct purpose of "sell no matter what".
 
-DevRel, like the gold in Kintsugi, repairs fractured relationships or creates non-existing relationships between an organization and its target developer audience. It creates an environment based on authenticity and trust, without a direct purpose of "sell no matter what".
+But is DevRel really a golden solution for everyone?
+
+Does every organization have the capacity to use the power of DevRel?
  
 ## The real cost of identity crisis
 
@@ -110,26 +112,33 @@ In the last 10 years, the identity of DevRel has become more convoluted. When I 
 
 One of the common complaints DevRel folks have is that we don't get a seat at the table in terms of product development and roadmap. Your peers at product or engineering will likely respect product feedback coming from an engineer than from someone who has very little to do with coding in their day to day job.
 
-### You aren't gatekeeping... are you?
+Does it mean a developer advocate need to regularly write code that runs in production? No! **Zero coding** and **writing production code daily** are two extremes. At bare minimum, you should be comfortable writing code samples and you should do that regularly as part of your job. "I know how to code but I never have to" is a dangerous mindset for a developer advocate.
+
+## You aren't gatekeeping... are you?
 
 Most developer advocates these days confuse "learning in public" with "teaching in public". Your audience regards you as a subject matter expert because your title still means something. Many developer advocates before you paved the way with their knowledge, experience, and teaching and we're still reaping the benefits. 
 
 When I take a strong position on developer advocates needing to be highly technical, I usually get three types of questions/comments:
 
 1. What about developer advocates who are more community focused?
-My response: Out of the 3Cs (code, content, community), what % of code and technical content are you producing? If the answer is "zero" or "very little", you're confusing developer advocates with community managers. Community management is super important role. But please use the proper title and don't use .
+My response: Out of the 3Cs (code, content, community), what % of code and technical content are you producing? If the answer is "zero" or "very little", you're confusing developer advocates with community managers. Community management is a super important role. At smaller companies, a developer advocate might be doing community management on top of their advocacy work. But **code** and **technical content** come first for a developer advocate. It's great if you can take on **community** work, completing all 3Cs.
 
 2. Are you trying to gatekeep?
-My response: Not really but can you maintain quality of **anything** without gatekeeping? Even a pull request needs gatekeeping so why not DevRel? From a software engineer to a sales rep, there is clear and unified job description and expectations for every single role in tech industry; except DevRel!
+My response: Not really but can you maintain quality of **anything** without setting some level of standards? From a software engineer to a sales rep, there is clear and unified job description and expectations for every single role in tech industry; except DevRel!
 
 3. But.. I have empathy for developers. Isn't that enough?
-My response:
-And you're assuming that the other person competing for the role who is technical doesn't have empathy? 
+My response: Imagine you've applied to an open developer advocate position where ten other developer advocates are competing with you. How would you rate your chance of getting hired when all of them present technical skills AND empathy and all you have to offer is empathy? If you've chosen this field, it's assumed that you have empathy. Empathy alone will not help you become a strong develper advocate. 
 
+## DevRel is NOT influencer marketing
 
+## But... there is hope
 
-### But... there is hope
+If you've managed to read this far, thank you for your patience! There are three key things to focus in order to revive the lost identity of developer relations:
 
-### Wrap up
+- Technical expertise
+- Authenticity
+- Exec buy-in
 
-If you're working in DevRel or leading a team of DevRel professionals, read on to learn about the steps to revive the lost identity of developer relations and create a stronger, more unified community.
+You, as a developer advocate, need to showcase the technical expertise which is the foundation of helping your developers succeed. You have to do that in an authentic way and not treat every community member as a new lead in the marketing funnel. Your exec team must understand the value of developer relations **before** they hire the first developer advocate and they should be transparent in their support for DevRel. If a developer advocate can manage the first two, most exec teams will do their part. If they don't, you would've built a strong enough portfolio anyway to find another company and exec team who values DevRel.
+
+My hope from this blog is to inspire you, the reader, to revive the lost identity of developer relations and help developers succeed. Remember, DevRel is the only team at your company that can speak the engineer’s language, provide regular feedback to the product team, function as a marketing team, and grow the community as the face of your company.  
