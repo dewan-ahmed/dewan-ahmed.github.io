@@ -29,7 +29,7 @@ Engelbart's presentation was not just a showcase of his technological innovation
 
 Around 2012-13, companies like EngineYard, Twilio, SendGrid, and New Relic took DevRel to mainstream by investing heavily in their DevRel programs and reaching their developers from a community-first approach. Rather than traditional marketing materials, these companies had engineers presenting technical talks at meetups and conferences.
 
-### Battling for an identity
+## Battling for an identity
 
 Long before I had the title of developer advocate, I was delivering talks, hosting meetups, and writing technical blogs on my own time. I was doing this out of joy and could never imagine that I could do this full-time (and get paid to do so). 
 
@@ -45,29 +45,7 @@ It's a [golden thread](https://twitter.com/rachelnabors/status/16477716545196769
 
 When I started my first official DevRel role at IBM, the answer to "what do you do at IBM?" never ended in one line as developer advocacy was new to most folks. I was tired to explain my role every time so I [wrote a blog to explain](https://medium.com/@dewanahmed/what-i-do-as-a-developer-advocate-at-ibm-da2252179f6). If you think that something clever like "I help developers to succeed" or "I educate developers on $someTechnology" would work, be my guest to try it out on someone who never heard of developer relations and then ask them back if they understood what you do from that clever one-liner.   
 
-## Engineering? Marketing? Product? Office of CTO? 
-
-> Oh no! Not "where should DevRel sit" question again 🤬
-
-An engineer typically works under the Engineering org, while an SDR works in Sales, and a marketing analyst works in Marketing.
-
-But where does a developer advocate fit in? They are engineers by trade, work closely with the product team, (oftentimes) report to the marketing department, and can be great allies for sales reps without directly selling the product.
-
-[Karin](https://twitter.com/karinwolok) recently asked this same question which received [31 responses on Twitter](https://twitter.com/karinwolok/status/1655951362151292931?s=20). In these responses, people had eight different opinions on where DevRel should sit. I don't like "it depends" answer most of the time because even if it depends, we should give more reasoning on "why". Out of all 31 responses, I share the same view as [Jim Bennett](https://twitter.com/jimbobbennett):
-
-> It’s (DevRel is) such a cross functional org that there is no real right answer. Done well it’s such a strong collaboration across all the orgs that it should have access to marketing budget as well as product teams.
->
-> Just not sales - it should never be tied to revenue.
-
-Had I responded to that thread, here would be my corollary to Jim's response: Developer relations (DevRel), when done right, acts as a metaphorical glue among cross-functional teams, similar to the [Japanese art of Kintsugi](https://traditionalkyoto.com/culture/kintsugi/). Like Kintsugi repairs cracks in ceramics adorned with gold, DevRel strengthens relationships between teams by bridging gaps and fostering collaboration. It serves as a unifying force that brings together various departments, such as marketing and product teams.
-
-DevRel, like the gold in Kintsugi, adds value and beauty to the organization. It enhances communication, understanding, and cooperation among teams. By actively engaging with different stakeholders, DevRel creates a shared sense of purpose and celebrates the uniqueness of each team's contributions.
-
-Just as Kintsugi repairs ceramics to create something stronger and more beautiful, DevRel repairs fractured relationships within an organization. It creates an environment where teams can effectively work together, leveraging their diverse expertise and perspectives. In this way, DevRel acts as a vital component that holds the different teams together, promoting collaboration and driving overall success.
-
-
-
-So how did we arrive at this point?
+## How did we arrive at this point?
 
 Surprisinly enough... it's because DevRel became highly successful!
 
@@ -77,15 +55,33 @@ However, simply copying their models does not guarantee success. In fact, many t
 
 1. Lack of genuine commitment: DevRel programs require a genuine commitment to developers and their needs. This means investing in resources like documentation, support channels, and events, as well as taking the time to engage with the developer community. Many companies see DevRel as an afterthought or a checkbox item, rather than a core part of their business strategy.
 
-2. Poor understanding of the developer mindset: Developers have a unique mindset and approach to problem-solving. They value tools that are easy to use, well-documented, and flexible. Companies that fail to understand this mindset may develop tools and resources that are too complex or too restrictive, which can turn developers off. Even the best DevRel team won't be able to shine poor product will
+2. Poor understanding of the developer mindset: Developers have a unique mindset and approach to problem-solving. They value tools that are easy to use, well-documented, and flexible. Companies that fail to understand this mindset may develop tools and resources that are too complex or too restrictive, which can turn developers off. Even the best DevRel team won't be able to shine a poor product.
 
-3. Lack of trust: Developers are a discerning audience, and they can quickly sniff out inauthenticity. Companies that lack trust with the developer community, perhaps because of a history of closed-source practices or a lack of transparency, may struggle to build meaningful relationships with developers. If you went above and beyond on a developer event and the CEO comes to you right after the event asking for ROI 
+3. Lack of trust: Developers are a discerning audience, and they can quickly sniff out inauthenticity. Companies that lack trust with the developer community, perhaps because of a history of closed-source practices or a lack of transparency, may struggle to build meaningful relationships with developers. Imagine that you (a developer advocate) went above and beyond on a developer event. You delivered a talk, spent hours on booth duties, and talked to a bunch of developers about the **technology** behind your product. You write a 9 page trip report with all the details and the CEO comes to you right after the event asking for an ROI. It's extremely easy to lose the trust of the community as well as the trust of your own DevRel team. 
 
-Insufficient resources: Building a strong DevRel program requires a significant investment of time, money, and personnel. Companies that try to cut corners or skimp on resources may find that their DevRel efforts fall short.
+4. Insufficient resources: Building a strong DevRel program requires a significant investment of time, money, and people. Companies that try to cut corners or skimp on resources may find that their DevRel efforts fall short. Sure, you can hire 3 junior folks to form a DevRel team but without senior people in the team to groom them, they'll burn out fast with trying to do 10 things at a time and battling for an identity.
 
-Poor execution: Even with the best intentions and resources, DevRel programs can fail if they are poorly executed. This might include a lack of follow-through on promises, inconsistent messaging, or an inability to respond to developer feedback in a timely manner.
+5. Poor execution: Even with the best intentions and resources, DevRel programs can fail if they are poorly executed. This might include a lack of follow-through on promises, inconsistent messaging, or an inability to respond to developer feedback in a timely manner.
 
-### The real cost of identity crisis
+## Engineering? Marketing? Product? Office of CTO? 
+
+> Oh no! Not "where should DevRel sit" question again 🤬
+
+An engineer typically works under the Engineering org, while an SDR works in Sales, and a marketing analyst works in Marketing.
+
+But where does a developer advocate fit in? Many of them are engineers by trade, work closely with the product team, (oftentimes) report to the marketing department, and can be great allies for sales reps without directly selling the product.
+
+[Karin](https://twitter.com/karinwolok) recently asked this same question which received [31 responses on Twitter](https://twitter.com/karinwolok/status/1655951362151292931?s=20). In these responses, people had eight different opinions on where DevRel should sit - from some flavors of "it depends" to "DevRel as a separate org" to "sales". Out of all 31 responses, I share the same view as [Jim Bennett](https://twitter.com/jimbobbennett):
+
+> It’s such a cross functional org that there is no real right answer. Done well it’s such a strong collaboration across all the orgs that it should have access to marketing budget as well as product teams.
+>
+> Just not sales - it should never be tied to revenue.
+
+Had I responded to that thread, here would be my corollary to Jim's response: Developer relations (DevRel), when done right, acts as a metaphorical glue among cross-functional teams, similar to the [Japanese art of Kintsugi](https://traditionalkyoto.com/culture/kintsugi/). Like Kintsugi repairs cracks in ceramics adorned with gold, DevRel strengthens relationships between teams by bridging gaps and fostering collaboration. 
+
+DevRel, like the gold in Kintsugi, repairs fractured relationships or creates non-existing relationships between an organization and its target developer audience. It creates an environment based on authenticity and trust, without a direct purpose of "sell no matter what".
+ 
+## The real cost of identity crisis
 
 Here's a CEO asking if developer advocacy is a good idea or not.
 
@@ -106,11 +102,11 @@ At the core of this confusion, there are two questions:
 
 If we (DevRel community) cannot have a unified answer to the first question, more and more people will question the effectiveness of DevRel. I don't know about you but I've seen more than enough "And the entire DevRel team was let go" posts in the last few months. In weak economy, you need a strong justification to the second question to save your job.
 
-### Have we forgotten how to be engineers?
+## Have we forgotten how to be engineers?
 
-In this section, I'll discuss the challenges of a unified answer to Let's clarify what I mean by "engineers". I live in Canada so I'm aware that the term "engineer" has a special meaning at some places that is regulated by local engineering associations. However, my use of the term "engineer" refers to anyone who has professionaly built software and hence, (software) engineer. It has nothing to do with your path to becoming a software engineer. Whether you're a ComSci PhD or a bootcamp grad, you possess certain skillset that is common to expect from a majority of other software engineers. 
+I live in Canada so I'm aware that the term "engineer" has a special meaning at some places that is regulated by local engineering associations. However, my use of the term "engineer" refers to anyone who has professionaly built software and hence, (software) engineer. This includes a wide variety of roles such as developers, SysAdmins, DBAs, Solution Architects, etc. It has nothing to do with your path to becoming a software engineer. Whether you're a ComSci PhD or a bootcamp grad, you possess certain skillset that is common to expect from a majority of other software engineers. You know how to use version control, read a piece of code, write and debug code, and so on. 
 
-In the last 10 years, the identity of DevRel has become more convoluted. When I started at IBM in 2014, there were very few developer advocates in the industry. A developer advocate would be someone with decades (not years) of engineering experience who chose not to go the management or principal engineer route. They wanted to teach and share their experience.  
+In the last 10 years, the identity of DevRel has become more convoluted. When I started at IBM in 2014, there were very few developer advocates in the industry (compared to now). A developer advocate would be someone with decades (not years) of engineering experience who chose not to go the management or principal engineer route. They wanted to teach and share their experience.  
 
 One of the common complaints DevRel folks have is that we don't get a seat at the table in terms of product development and roadmap. Your peers at product or engineering will likely respect product feedback coming from an engineer than from someone who has very little to do with coding in their day to day job.
 
@@ -121,14 +117,14 @@ Most developer advocates these days confuse "learning in public" with "teaching 
 When I take a strong position on developer advocates needing to be highly technical, I usually get three types of questions/comments:
 
 1. What about developer advocates who are more community focused?
+My response: Out of the 3Cs (code, content, community), what % of code and technical content are you producing? If the answer is "zero" or "very little", you're confusing developer advocates with community managers. Community management is super important role. But please use the proper title and don't use .
+
 2. Are you trying to gatekeep?
+My response: Not really but can you maintain quality of **anything** without gatekeeping? Even a pull request needs gatekeeping so why not DevRel? From a software engineer to a sales rep, there is clear and unified job description and expectations for every single role in tech industry; except DevRel!
+
 3. But.. I have empathy for developers. Isn't that enough?
-
-Here's my response:
-
-1. You're confusing developer advocates with community managers. Use the proper title and then you'll have the proper job description.
-2. Not really but can you maintain quality of **anything** without gatekeeping? Even a pull request needs gatekeeping so why not DevRel? From a software engineer to a sales rep, there is clear and unified job description and expectations for every single role in tech industry; except DevRel! 
-3. And you're assuming that the other person competing for the role who is technical doesn't have empathy? 
+My response:
+And you're assuming that the other person competing for the role who is technical doesn't have empathy? 
 
 
 
