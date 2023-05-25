@@ -35,11 +35,11 @@ Long before I had the title of developer advocate, I was delivering talks, hosti
 
 As a full-time software engineer doing "DevRel thing" on the side, I didn't have an identity crisis. I was just another software engineer who was active in writing and public speaking. When I started to do DevRel full-time, I asked myself "how valuable and visible is my work?". Check out what [Rachel](https://twitter.com/rachelnabors) has to say about the value of tech writing:
 
-<p style="text-align:center;"><img src="/assets/images/2023/rachel-tweet-1.png" alt="Value of tech writing" width="500"></p>
+<p style="text-align:center;"><img src="/assets/images/2023/rachel-tweet-1.png" alt="Value of tech writing" width="400"></p>
 
 This can be very much relatable to the perceived value of DevRel.  
 
-![value of developer advocates](/assets/images/2023/rachel-tweet-2.png | width=100px)
+<p style="text-align:center;"><img src="/assets/images/2023/rachel-tweet-2.png" alt="Value of developer advocates" width="400"></p>
 
 It's a [golden thread](https://twitter.com/rachelnabors/status/1647771654519676929?s=20) for anyone in DevRel. Please bookmark!
 
@@ -85,15 +85,15 @@ DevRel, like the gold in Kintsugi, repairs fractured relationships or creates no
 
 Here's a CEO asking if developer advocacy is a good idea or not.
 
-![Worse than consultants](/assets/images/2023/is-devrel-bad-idea.png | width=100px)
+<p style="text-align:center;"><img src="/assets/images/2023/is-devrel-bad-idea.png" alt="Developer advocates worse than consultants" width="400"></p>
 
 Here's a programmer with ~40K Twitter followers who does not trust developer advocates because this person feels that developer advocates are just pitch people for their employers instead of people really helping developers.
 
-![Unfollow developer advocates](/assets/images/2023/unfollow-developer-advocates.png | width=100px)
+<p style="text-align:center;"><img src="/assets/images/2023/unfollow-developer-advocates.png" alt="Unfollow developer advocates" width="400"></p>
 
 Here's a company pitting DevRel teams against each other without even taking their consent. They have since taken down the post due to backlash.
 
-![DevRel league](/assets/images/2023/devrel-league.png | width=100px)
+<p style="text-align:center;"><img src="/assets/images/2023/devrel-league.png" alt="DevRel league" width="400"></p>
 
 At the core of this confusion, there are two questions:
 
