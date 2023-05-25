@@ -35,7 +35,7 @@ Long before I had the title of developer advocate, I was delivering talks, hosti
 
 As a full-time software engineer doing "DevRel thing" on the side, I didn't have an identity crisis. I was just another software engineer who was active in writing and public speaking. When I started to do DevRel full-time, I asked myself "how valuable and visible is my work?". Check out what [Rachel](https://twitter.com/rachelnabors) has to say about the value of tech writing:
 
-![value of tech writing](/assets/images/2023/rachel-tweet-1.png | width=100px)
+<img src="/assets/images/2023/rachel-tweet-1.png" alt="Value of tech writing" class="center" width="300">
 
 This can be very much relatable to the perceived value of DevRel.  
 
