@@ -139,7 +139,9 @@ Tim goes on to explain that developers worldwide, regardless of spoken language,
 Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. I was about to write this section and then heard Tim Berglund craft the same message perfectly. Listen to what Tim has to say about the [influencer path vs. the traditional DevRel path](https://www.youtube.com/clip/UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH).
 
 {% raw %}
+
 {% youtube 9OmURvI9gwo %}
+
 {% endraw %}
 
 
