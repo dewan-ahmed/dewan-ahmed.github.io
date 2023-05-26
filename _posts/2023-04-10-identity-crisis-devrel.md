@@ -138,7 +138,7 @@ Berglund goes on to explain that developers worldwide, regardless of spoken lang
 
 Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. Listen to what Tim has to say about the influencer path vs. the traditional DevRel path ⤵️ 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9OmURvI9gwo?start=1938" title="DevRel is NOT influencer marketing" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9OmURvI9gwo?clip=UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH&amp;clipt=EIDEdxjgmHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## But... there is hope
 
