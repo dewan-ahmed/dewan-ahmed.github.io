@@ -1,6 +1,6 @@
 ---
 title: "Identity Crisis - A Tale of DevRel"
-date: 2023-05-19T00:00:00
+date: 2023-05-26T00:00:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/2023/identity-crisis-teaser.jpg"
@@ -112,7 +112,7 @@ In the last 10 years, the identity of DevRel has become more convoluted. When I 
 
 One of the common complaints DevRel folks have is that we don't get a seat at the table in terms of product development and roadmap. Your peers at product or engineering will likely respect product feedback coming from an engineer than from someone who has very little to do with coding in their day to day job.
 
-Does it mean a developer advocate need to regularly write code that runs in production? No! **Zero coding** and **writing production code daily** are two extremes. At bare minimum, you should be comfortable writing code samples and you should do that regularly as part of your job. "I know how to code but I never have to" is a dangerous mindset for a developer advocate.
+Does it mean a developer advocate need to regularly write code that runs in production? No! **Zero coding** and **writing production code daily** are two extremes. At bare minimum, you should be comfortable writing code samples and you should do that regularly as part of your job. "I know how to code and I'll do it when needed (interpreted as *never*)" is a dangerous mindset for a developer advocate.
 
 ## You aren't gatekeeping... are you?
 
@@ -122,23 +122,38 @@ When I express my view on developer advocates needing to be highly technical, I 
 
 My response: A developer advocate is the default role that comes to mind when people think about DevRel. If you're a series-A startup and can only afford to have one person on your DevRel team, it's likely that you'll hire a developer advocate. This is why DevRel and developer advocate are often used interchangeably, even though one is a subset of the other.
 
-Out of the 3Cs (code, content, community), what % of code and technical content are you producing as a developer advocate? If the answer is "zero" or "very little", you're confusing developer advocates with community managers. Community management is a super important role. At smaller companies, a developer advocate might be doing community management on top of their advocacy work. But **code** and **technical content** come first for a developer advocate, with **community** work as a nice-to-have.
+Out of the 3Cs (code, content, community), what % of code and technical content are you producing as a developer advocate? If the answer is "zero" or "very little", you're confusing developer advocates with community managers. A community manager is a super important role. At smaller companies, a developer advocate might be doing community management on top of their advocacy work. But **code** and **technical content** come first for a developer advocate, with **community** work as a nice-to-have.
 
 2. Are you trying to gatekeep?
 
-My response: Not really; I'm simply sharing my opinions on DevRel (on my personal blog). A question back at you: can you maintain quality of **anything** without setting some level of standards? From a software engineer to a sales rep, there is clear and **unified** job description and expectations for every single role in tech industry; except DevRel! Most of what I'm saying have been said many times in the past by well-respected DevRel leaders. 
+My response: Not really; I'm simply sharing my opinions on DevRel (on my personal blog). A question back at you: can you maintain quality of anything without setting some level of standards? From a software engineer to a sales rep, there is clear and **unified** job description and expectations for every single role in tech industry; except DevRel! Most of what I'm saying have been said many times in the past by well-respected DevRel leaders. 
 
 3. But.. I have empathy for developers. Isn't that enough?
 
-My response: Having empathy is important but empathy *alone* will not help you become a strong develper advocate. How does one cultivate empathy in the first place? Tim Berglund, a respected figure in DevRel, [points out](https://www.youtube.com/watch?v=9OmURvI9gwo&t=1336s) that genuine empathy for developers is challenging to achieve if you have never been a developer yourself. It's almost impossible to truly understand their experiences and struggles without a background in engineering or coding. 
+My response: Having empathy is important but empathy *alone* will not help you become a strong develper advocate. How does one cultivate empathy in the first place? Tim Berglund, a respected figure in DevRel and one of the best developer advocates out there, [points out](https://www.youtube.com/watch?v=9OmURvI9gwo&t=1336s) that genuine empathy for developers is challenging to achieve if you have never been a developer yourself. It's almost impossible to truly understand their experiences and struggles without a background in engineering or coding. 
 
-Berglund goes on to explain that developers worldwide, regardless of spoken language, share a common dialect and inside jokes that only fellow developers can comprehend. This shared language and understanding of the developer's world can only be acquired through years spent behind a keyboard, earning a livelihood by writing code. It is by going through similar challenges and experiences that one can truly develop the empathy necessary to connect with other developers. 
+Tim goes on to explain that developers worldwide, regardless of spoken language, share a common dialect and inside jokes that only fellow developers can comprehend. This shared language and understanding of the developer's world can only be acquired through years spent behind a keyboard, earning a livelihood by writing code. It is by going through similar challenges and experiences that one can truly develop the empathy necessary to connect with other developers. 
 
 ## DevRel is NOT influencer marketing
 
-Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. Listen to what Tim has to say about the influencer path vs. the traditional DevRel path ⤵️ 
+Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. I was about to write this section and then heard Tim Berglund craft the same message perfectly. Listen to what Tim has to say about the [influencer path vs. the traditional DevRel path](https://www.youtube.com/clip/UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9OmURvI9gwo?controls=0&amp;clip=UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH&amp;clipt=EIDEdxjgmHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="1"> </iframe>
+{% raw %}
+{% youtube 9OmURvI9gwo %}
+{% endraw %}
+
+
+## You're a developer advocate... what's next?
+
+Around 2013-14, some of my IBM colleagues retired as a developer advocate. This is after they became a developer advocate after working as a senior engineer for 20+ years. I wrote before that [developer advocay is not an entry-level role](https://www.dewanahmed.com/why-paying-devrel/#developer-advocacy---not-an-entry-level-role). In recent years, some companies are hiring junior folks as a developer advocate (totally not to save on 💰) and then they are not providing them a DevRel career path to grow. 
+
+If you're a solo developer advocate, what does a promotion look like for you? If you're manager of a DevRel team, do you have a defined career ladder at your company? At what point in your DevRel career do you reach a plateau, where staying in a DevRel role no longer offers further growth opportunities?
+
+Scanning the internet, I found [four companies](https://www.devrel-ladders.com/) with publicly posted DevRel career path. Besides these four companies, I know a few more with defined career ladders for ICs but none for DevRel managers. From DevRel-ladders site:
+
+> Often one of the hardest challenges in Developer Relations is **clarity**. Clarity around goals, metrics, place within the organization, but most importantly clarity about your career path.
+
+When your DevRel team doesn't have clarity, they'll face an identity crisis and that's the shortest path to burnout.
 
 ## But... there is hope
 
