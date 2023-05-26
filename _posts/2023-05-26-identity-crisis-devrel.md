@@ -138,20 +138,15 @@ Tim goes on to explain that developers worldwide, regardless of spoken language,
 
 Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. I was about to write this section and then heard Tim Berglund craft the same message perfectly. Listen to what Tim has to say about the [influencer path vs. the traditional DevRel path](https://www.youtube.com/clip/UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH).
 
-{% raw %}
-
-{% youtube 9OmURvI9gwo %}
-
-{% endraw %}
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9OmURvI9gwo?start=1962" frameborder="0" allowfullscreen></iframe>
 
 ## You're a developer advocate... what's next?
 
-Around 2013-14, some of my IBM colleagues retired as a developer advocate. This is after they became a developer advocate after working as a senior engineer for 20+ years. I wrote before that [developer advocay is not an entry-level role](https://www.dewanahmed.com/why-paying-devrel/#developer-advocacy---not-an-entry-level-role). In recent years, some companies are hiring junior folks as a developer advocate (totally not to save on 💰) and then they are not providing them a DevRel career path to grow. 
+Around 2013-14, some of my IBM colleagues retired as a developer advocate. This is after they became a developer advocate after working as a senior engineer for 20+ years. I wrote before that [developer advocay is not an entry-level role](https://www.dewanahmed.com/why-paying-devrel/#developer-advocacy---not-an-entry-level-role). In present days, some companies are hiring junior folks as a developer advocate (totally not to save on 💰) and then they are not providing them a DevRel career path to grow. 
 
 If you're a solo developer advocate, what does a promotion look like for you? If you're manager of a DevRel team, do you have a defined career ladder at your company? At what point in your DevRel career do you reach a plateau, where staying in a DevRel role no longer offers further growth opportunities?
 
-Scanning the internet, I found [four companies](https://www.devrel-ladders.com/) with publicly posted DevRel career path. Besides these four companies, I know a few more with defined career ladders for ICs but none for DevRel managers. From DevRel-ladders site:
+Scanning the internet, I found [four companies](https://www.devrel-ladders.com/) with publicly posted DevRel career path. Besides these four companies, I know a few more with defined career ladders for DevRel individual contributor (IC) but none for DevRel managers. From DevRel-ladders site:
 
 > Often one of the hardest challenges in Developer Relations is **clarity**. Clarity around goals, metrics, place within the organization, but most importantly clarity about your career path.
 
@@ -159,12 +154,22 @@ When your DevRel team doesn't have clarity, they'll face an identity crisis and 
 
 ## But... there is hope
 
-If you've managed to read this far, thank you for your patience! There are three key things to focus in order to revive the lost identity of developer relations:
+If you've managed to read this far, thank you for your patience! There are three key things YOU can focus on in order to revive the lost identity of developer relations.
+
+If you're a DevRel IC, focus on: 
 
 - Technical expertise
 - Authenticity
-- Exec buy-in
+- Optics
 
-You, as a developer advocate, need to showcase the technical expertise which is the foundation of helping your developers succeed. You have to do that in an authentic way and not treat every community member as a new lead in the marketing funnel. Your exec team must understand the value of developer relations **before** they hire the first developer advocate and they should be transparent in their support for DevRel. If a developer advocate can manage the first two, most exec teams will do their part. If they don't, you would've built a strong enough portfolio anyway to find another company and exec team who values DevRel.
+You, as a developer advocate, need to showcase the technical expertise which is the foundation of helping your developers succeed. You have to do that in an authentic way and not treat every community member as a new lead in the marketing funnel. Besides doing the work, you have to be intentional in conveying the value of your work within your company. This is where the optics comes in.
+
+If you manage a DevRel team, focus on:
+
+- Exec buy-in
+- DevRel metrics
+- Avoiding burn-outs
+
+Your exec team must understand the value of developer relations **before** they hire the first developer advocate and they should be transparent in their support for DevRel. If you are in a difficult spot where you have to convince the leadership on DevRel ROI, understand what metrics are important for the exec team and find a direct/semi-direct relation with [DevRel metrics](https://www.swyx.io/measuring-devrel). Most people working in DevRel are eager to help and often find it challenging to say "no". When this eagerness is coupled with a lack of clarity and clear expectations, it becomes the primary cause of DevRel burnout. It is crucial to prioritize the well-being of your team and foster a sense of psychological safety within the organization.
 
 My hope from this blog is to inspire you, the reader, to revive the lost identity of developer relations and help developers succeed. Remember, DevRel is the only team at your company that can speak the engineer’s language, provide regular feedback to the product team, function as a marketing team, and grow the community as the face of your company.  
