@@ -118,17 +118,17 @@ Does it mean a developer advocate need to regularly write code that runs in prod
 
 When I express my view on developer advocates needing to be highly technical, I usually get three types of questions/comments:
 
-1. What about developer advocates who are more community focused?
+- What about developer advocates who are more community focused?
 
 My response: A developer advocate is the default role that comes to mind when people think about DevRel. If you're a series-A startup and can only afford to have one person on your DevRel team, it's likely that you'll hire a developer advocate. This is why DevRel and developer advocate are often used interchangeably, even though one is a subset of the other.
 
 Out of the 3Cs (code, content, community), what % of code and technical content are you producing as a developer advocate? If the answer is "zero" or "very little", you're confusing developer advocates with community managers. A community manager is a super important role. At smaller companies, a developer advocate might be doing community management on top of their advocacy work. But **code** and **technical content** come first for a developer advocate, with **community** work as a nice-to-have.
 
-2. Are you trying to gatekeep?
+- Are you trying to gatekeep?
 
 My response: Not really; I'm simply sharing my opinions on DevRel (on my personal blog). A question back at you: can you maintain quality of anything without setting some level of standards? From a software engineer to a sales rep, there is clear and **unified** job description and expectations for every single role in tech industry; except DevRel! Most of what I'm saying have been said many times in the past by well-respected DevRel leaders. 
 
-3. But.. I have empathy for developers. Isn't that enough?
+- But.. I have empathy for developers. Isn't that enough?
 
 My response: Having empathy is important but empathy *alone* will not help you become a strong develper advocate. How does one cultivate empathy in the first place? Tim Berglund, a respected figure in DevRel and one of the best developer advocates out there, [points out](https://www.youtube.com/watch?v=9OmURvI9gwo&t=1336s) that genuine empathy for developers is challenging to achieve if you have never been a developer yourself. It's almost impossible to truly understand their experiences and struggles without a background in engineering or coding. 
 
@@ -136,9 +136,9 @@ Tim goes on to explain that developers worldwide, regardless of spoken language,
 
 ## DevRel is NOT influencer marketing
 
-Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. I was about to write this section and then heard Tim Berglund craft the same message perfectly. Listen to what Tim has to say about the [influencer path vs. the traditional DevRel path](https://www.youtube.com/clip/UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH).
+Once I had a recruiter reach out who was looking for a DevRel superstar  with a certain Twitter follower count as part of the required skills on the job description. I was about to write this section and then heard Tim Berglund craft the same message perfectly. Listen to what Tim has to say about the influencer path vs. the traditional DevRel path ⤵️
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9OmURvI9gwo?start=1962" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9OmURvI9gwo?clip=UgkxeIU5q7CxOXZtgU2RB2OLG1cPies3YBhH&amp;clipt=EIDEdxjgmHs" frameborder="0" allowfullscreen></iframe>
 
 ## You're a developer advocate... what's next?
 
