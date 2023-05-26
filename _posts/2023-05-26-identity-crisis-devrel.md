@@ -47,7 +47,7 @@ When I started my first official DevRel role at IBM, the answer to "what do you 
 
 ## How did we arrive at this point?
 
-Surprisinly enough... it's because DevRel became highly successful!
+Surprisingly enough... it's because DevRel became highly successful!
 
 Seeing the massive success of DevRel programs at companies like Twilio and HashiCorp, other companies wanted to replicate. 
 
