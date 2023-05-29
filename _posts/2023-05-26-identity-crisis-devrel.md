@@ -142,7 +142,7 @@ Once I had a recruiter reach out who was looking for a DevRel superstar  with a 
 
 ## You're a developer advocate... what's next?
 
-Around 2013-14, some of my IBM colleagues retired as a developer advocate. This is after they became a developer advocate after working as a senior engineer for 20+ years. I wrote before that [developer advocay is not an entry-level role](https://www.dewanahmed.com/why-paying-devrel/#developer-advocacy---not-an-entry-level-role). In present days, some companies are hiring junior folks as a developer advocate (totally not to save on 💰) and then they are not providing them a DevRel career path to grow. 
+Around 2013-14, some of my IBM colleagues retired as a developer advocate. This is after they became a developer advocate after working as a senior engineer for 20+ years. I wrote before that [developer advocacy is not an entry-level role](https://www.dewanahmed.com/why-paying-devrel/#developer-advocacy---not-an-entry-level-role). In present days, some companies are hiring junior folks as a developer advocate (totally not to save on 💰) and then they are not providing them a DevRel career path to grow. 
 
 If you're a solo developer advocate, what does a promotion look like for you? If you're manager of a DevRel team, do you have a defined career ladder at your company? At what point in your DevRel career do you reach a plateau, where staying in a DevRel role no longer offers further growth opportunities?
 
