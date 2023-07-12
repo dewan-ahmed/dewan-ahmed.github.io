@@ -43,15 +43,13 @@ I always encourage seeking help for your career, but if you can handle things on
 - Follow companies of interest: Identify companies you would like to work for and follow them on LinkedIn. This allows you to stay updated on their latest news, job postings, and any potential opportunities that arise. Once you see an open role, check who within your network works at that company and then make specific requests about that role. Here's a template:
 
 ```
-I hope this message finds you well. I have a big favor to ask, and I truly appreciate your time and consideration.
+Hi [Person2],
 
-I recently came across an open role at CompanyX, where I noticed that you're currently working. With my [X years of experience] in [specific field/industry], I believe I would be a strong fit for the position. I have a proven track record in [mention relevant skills/accomplishments].
+This is [Person1], we've spoken a few times on Hacker News and then connected on LinkedIn. I saw that your company has openings for QBasic programmers on the website. Do you know anything about this position? I'm interested in applying and would love a referral or introduction to the hiring manager/team leader if that's possible.
 
-Given your firsthand experience at CompanyX, I wanted to ask if you would be willing to provide a referral for me. Your endorsement would mean a lot, and I'm confident that I could make a valuable contribution to the team.
+Appreciate your time,
 
-I understand the weight and significance of referrals, and I assure you that if given the opportunity, I will give my best to succeed at CompanyX. If there's any additional information or references you need from me, please let me know.
-
-Thank you for considering my request, and I truly appreciate your support.
+[Person1]
 ```
 
 ## Don't take this the wrong way
