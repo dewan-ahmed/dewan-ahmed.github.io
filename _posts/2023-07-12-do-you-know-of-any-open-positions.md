@@ -32,15 +32,15 @@ Instead of making a generic inquiry, job seekers can significantly enhance their
 
 I always encourage seeking help for your career, but if you can handle things on your own, there's no need to burden others with unnecessary requests. For instance, if you send me a resume full of typos, it gives the impression that you didn't even bother to run a quick grammar/spelling check. Similarly, a simple LinkedIn search will show you all the available jobs. So, before reaching out, try taking a proactive approach to your job search. Here are some strategies to consider:
 
-1. Utilize job search tools: Make use of LinkedIn's robust job search features to find relevant positions. Narrow down your search by filtering according to location, industry, experience level, and more. Here are some free tools:
+- Utilize job search tools: Make use of LinkedIn's robust job search features to find relevant positions. Narrow down your search by filtering according to location, industry, experience level, and more. Here are some free tools:
 
   - LinkedIn for job search
   - [NovoResume](https://novoresume.com/) to create awesome resumes for free
   - [ResyMatch](https://cultivatedculture.com/resume-scanner/) to compare keyword strength for specific jobs
 
-2. Network and engage: Actively participate in relevant LinkedIn groups and discussions related to your field of interest. Engage with industry professionals, ask insightful questions, and build meaningful connections. Instead of solely reaching out to connections when job searching, make an effort to engage with them regularly. When you connect with someone, ask them about their work, follow their blogs, and offer your help **before** you ask for help. That person might be running a meetup where you can volunteer or they might be maintaning an open-source project where you can contribute. Even the intent will go a long way. Building rapport ensures that when the time comes to seek help, your requests are more likely to be received positively.
+- Network and engage: Actively participate in relevant LinkedIn groups and discussions related to your field of interest. Engage with industry professionals, ask insightful questions, and build meaningful connections. Instead of solely reaching out to connections when job searching, make an effort to engage with them regularly. When you connect with someone, ask them about their work, follow their blogs, and offer your help **before** you ask for help. That person might be running a meetup where you can volunteer or they might be maintaning an open-source project where you can contribute. Even the intent will go a long way. Building rapport ensures that when the time comes to seek help, your requests are more likely to be received positively.
 
-3. Follow companies of interest: Identify companies you would like to work for and follow them on LinkedIn. This allows you to stay updated on their latest news, job postings, and any potential opportunities that arise. Once you see an open role, check who within your network works at that company and then make specific requests about that role. Here's a template:
+- Follow companies of interest: Identify companies you would like to work for and follow them on LinkedIn. This allows you to stay updated on their latest news, job postings, and any potential opportunities that arise. Once you see an open role, check who within your network works at that company and then make specific requests about that role. Here's a template:
 
 ```
 I hope this message finds you well. I have a big favor to ask, and I truly appreciate your time and consideration.
