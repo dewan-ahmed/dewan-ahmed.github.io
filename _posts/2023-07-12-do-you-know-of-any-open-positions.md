@@ -34,7 +34,7 @@ I always encourage seeking help for your career, but if you can handle things on
 
 - Utilize job search tools: Make use of LinkedIn's robust job search features to find relevant positions. Narrow down your search by filtering according to location, industry, experience level, and more. Here are some free tools:
 
-  - LinkedIn for job search
+  - You can use LinkedIn for job search. For many folks, however, reaching out to contacts directly on LinkedIn works better than simply a LinkedIn Easy-Apply. OTOH, [HN](https://news.ycombinator.com/jobs) and [Wellfound (f.k.a. Angel.co)](https://wellfound.com/jobs) might have better success rate than LinkedIn jobs.
   - Google Drive --> New Google Doc --> From template --> Resume will give you a simple resume template for free
   - [Resume Parser](https://www.open-resume.com/resume-parser) parse information from a resume PDF
 
