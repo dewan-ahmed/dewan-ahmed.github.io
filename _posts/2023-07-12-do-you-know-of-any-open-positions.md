@@ -35,8 +35,8 @@ I always encourage seeking help for your career, but if you can handle things on
 - Utilize job search tools: Make use of LinkedIn's robust job search features to find relevant positions. Narrow down your search by filtering according to location, industry, experience level, and more. Here are some free tools:
 
   - LinkedIn for job search
-  - [NovoResume](https://novoresume.com/) to create awesome resumes for free
-  - [ResyMatch](https://cultivatedculture.com/resume-scanner/) to compare keyword strength for specific jobs
+  - Google Drive --> New Google Doc --> From template --> Resume will give you a simple resume template for free
+  - [Resume Parser](https://www.open-resume.com/resume-parser) parse information from a resume PDF
 
 - Network and engage: Actively participate in relevant LinkedIn groups and discussions related to your field of interest. Engage with industry professionals, ask insightful questions, and build meaningful connections. Instead of solely reaching out to connections when job searching, make an effort to engage with them regularly. When you connect with someone, ask them about their work, follow their blogs, and offer your help **before** you ask for help. That person might be running a meetup where you can volunteer or they might be maintaining an open-source project where you can contribute. Even the intent will go a long way. Building rapport ensures that when the time comes to seek help, your requests are more likely to be received positively.
 
