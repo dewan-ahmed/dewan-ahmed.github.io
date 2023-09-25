@@ -1,6 +1,6 @@
 ---
 title: "Connecting the dots: Let's get ship done!"
-date: 2020-09-25T00:00:00-04:00
+date: 2023-09-25T00:00:00
 author: Dewan Ahmed
 header:
   teaser: "/assets/images/2023/joining-harness.jpg"
