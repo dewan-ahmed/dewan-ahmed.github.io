@@ -33,7 +33,9 @@ It’s easy to become the "go-to person"—the one in every meeting, the voice i
 You’re in a meeting, constantly context-switching, your mind racing to the next three tasks, while also drafting a response to a community Slack thread. Developer Advocates juggle multiple domains—public speaking, content creation, product feedback, and internal alignment—which makes it tempting to be *everywhere at once*. The reality? *Presence matters*.  
 
 ✔ When writing content, resist the urge to multitask. Well-written content scales your knowledge far beyond what any single conversation can.
+
 ✔ When engaging with teams, be fully present. Not every meeting needs you, but when you’re in the right ones, your focus is your biggest asset.
+
 ✔ Protect your deep work time—whether that’s for writing, content creation, or strategic thinking.
 
 ### **The Perfection Trap**  
