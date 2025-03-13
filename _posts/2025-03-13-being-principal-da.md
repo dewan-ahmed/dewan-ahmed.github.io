@@ -3,7 +3,7 @@ title: "The Principal Developer Advocate Paradox: Scaling Impact Without Burnout
 date: 2025-03-13T00:00:00-04:00
 author: Dewan Ahmed
 header:
-  teaser: "/assets/images/2025/multiplier.jpg"
+  teaser: "/assets/images/2025/multiplier.jpeg"
 tags:
   - community
   - devrel
