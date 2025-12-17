@@ -87,7 +87,7 @@ A useful way to reason about local LLM hardware is as a memory hierarchy:
 - **System RAM** → runtime support, offload, conversion
 - **Storage** → model files, checkpoints, swap
 
-When these layers are aligned with your inference goals, hardware choices become much clearer. Instead of chasing vague “requirements,” you can decide whether you’re optimizing for feasibility, performance, context length, or cost.
+When these layers are aligned with your inference goals, hardware choices become much clearer. Instead of chasing vague "requirements", you can decide whether you’re optimizing for feasibility, performance, context length, or cost.
 
 ## One last thing
 
