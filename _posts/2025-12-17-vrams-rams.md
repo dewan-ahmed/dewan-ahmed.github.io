@@ -57,7 +57,7 @@ If a model’s weights and KV cache cannot reside in GPU memory at the same time
 2. Reduce context length (to shrink the KV cache)
 3. Accept CPU offloading and slower inference
 
-For large models—30B parameters and above—this usually means **24GB of VRAM or more** just to get started, and significantly more if you want higher precision or long-context workloads. Context length matters here: KV cache memory grows linearly with the number of tokens, and for long prompts it can rival or exceed the size of the model weights themselves.
+For large models (30B parameters and above), this usually means **24GB of VRAM or more** just to get started, and significantly more if you want higher precision or long-context workloads. Context length matters here: KV cache memory grows linearly with the number of tokens, and for long prompts it can rival or exceed the size of the model weights themselves.
 
 This is why two users running the "same model" can have wildly different experiences depending on context length and precision.
 
