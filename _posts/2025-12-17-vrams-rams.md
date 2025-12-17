@@ -89,8 +89,6 @@ A useful way to reason about local LLM hardware is as a memory hierarchy:
 
 When these layers are aligned with your inference goals, hardware choices become much clearer. Instead of chasing vague “requirements,” you can decide whether you’re optimizing for feasibility, performance, context length, or cost.
 
-If you’re interested, a natural next step is breaking down **how quantization levels and KV cache size translate into concrete VRAM estimates**, which turns this mental model into a practical sizing tool.
-
 ## One last thing
 
 I’m also writing these posts as part of my own transition from DevOps into AI and ML. Earlier in my career, I went through a similar shift when I moved from being a Java developer into DevOps, and writing things down publicly helped me make sense of that transition.
