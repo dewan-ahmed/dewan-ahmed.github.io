@@ -27,7 +27,7 @@ VRAM is the memory physically attached to your GPU. During GPU-based inference, 
 - The KV cache that stores attention state for the active context
 - Temporary buffers used by fused kernels and matrix multiplications
 
-Modern inference runtimes—`vLLM`, `llama.cpp`, TensorRT-LLM, and PyTorch-based stacks—try very hard to keep as much of this as possible in VRAM. The reason is simple: GPU memory offers dramatically higher bandwidth and better effective latency for GPU workloads than system RAM.
+Modern inference runtimes— vLLM, llama.cpp, TensorRT-LLM, and PyTorch-based stacks—try very hard to keep as much of this as possible in VRAM. The reason is simple: GPU memory offers dramatically higher bandwidth and better effective latency for GPU workloads than system RAM.
 
 If the full model (plus its KV cache and runtime buffers) fits in VRAM, you get fast, predictable throughput. If it doesn’t, you’re forced into offloading strategies where parts of the model or attention state live in system RAM. That works, but performance drops sharply as data moves back and forth across the CPU–GPU boundary.
 
