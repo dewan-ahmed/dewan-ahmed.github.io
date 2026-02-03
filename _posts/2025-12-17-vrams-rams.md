@@ -7,7 +7,6 @@ header:
 tags:
   - llm
   - ai
-  - devrel
 ---
 
 If you’ve spent any time experimenting with running large language models locally, you’ve probably seen guidance like _"you need 30GB of RAM"_ to get a model working. That exact phrasing showed up recently on a [Reddit thread](https://www.reddit.com/r/LocalLLM/comments/1p8xlnw/run_qwen3next_locally_guide_30gb_ram/) about running **Qwen3-Next locally**, and it sparked a familiar kind of confusion: _are we talking about GPU memory or system memory?_
