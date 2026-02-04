@@ -8,9 +8,9 @@ tags:
   - ai
 ---
 
-<p style="text-align:center;"><img src="/assets/images/2026/openclaw-vulnerability.png" alt="Hacker News headline about OpenClaw vulnerability" width="400"></p>
-
 This headline should make you uncomfortable if you run [OpenClaw](https://openclaw.ai/) locally.
+
+<p style="text-align:center;"><img src="/assets/images/2026/openclaw-vulnerability.png" alt="Hacker News headline about OpenClaw vulnerability" width="600"></p>
 
 Last month (Jan 2026), [a high-severity vulnerability](https://x.com/0xacb/status/2016913750557651228) in OpenClaw allowed one-click remote code execution via a malicious link. The issue was patched. A [CVE](https://nvd.nist.gov/vuln/detail/CVE-2026-25253) was assigned. The mechanics were [explained](https://depthfirst.com/post/1-click-rce-to-steal-your-moltbot-data-and-keys) clearly.
 
@@ -75,7 +75,7 @@ Good security shouldn’t depend on perfect behavior. It should depend on **rest
 
 ## A real-world parallel: the Moltbook incident
 
-<p style="text-align:center;"><img src="/assets/images/2026/hacking-moltbook-wiz.png" alt="Moltbook API Key Exposure" width="400"></p>
+<p style="text-align:center;"><img src="/assets/images/2026/hacking-moltbook-wiz.png" alt="Moltbook API Key Exposure" width="600"></p>
 
 Interestingly, this pattern shows up outside local agents too.
 
