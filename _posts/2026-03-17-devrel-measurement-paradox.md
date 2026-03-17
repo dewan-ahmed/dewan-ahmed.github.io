@@ -1,5 +1,5 @@
 ---
-title: "DevRel is Not Measured Like Other Roles — And That Needs to Change"
+title: "DevRel Is Not Measured Like Other Roles — And That Needs to Change"
 last_modified_at: 2026-03-17T0:00:00-05:00
 author: Dewan Ahmed
 header:
@@ -8,16 +8,16 @@ tags:
   - devrel
 ---
 
-Over the past year, I’ve had a recurring conversation with developer advocates at different companies, different stages, different products. The details change. The frustration doesn’t. They feel like they’re being evaluated by a rulebook that was written for a different role entirely. I’ve written before about [why DevRel is worth every penny you invest in them](https://www.dewanahmed.com/why-paying-devrel/) and the [identity crisis that plagues the role](https://www.dewanahmed.com/identity-crisis-devrel/). But there’s a more specific problem underneath both of those — one that I haven’t seen addressed directly: the measurement standard applied to developer advocacy is unlike any other role in the company.
+Over the past year, I’ve had a recurring conversations with developer advocates at different companies, different stages, different products. The details change. The frustration doesn’t. They feel like they’re being evaluated by a rulebook that was written for a different role entirely. I’ve written before about [why DevRel is worth every penny you invest in them](https://www.dewanahmed.com/why-paying-devrel/) and the [identity crisis that plagues the role](https://www.dewanahmed.com/identity-crisis-devrel/). But there’s a more specific problem underneath both of those — one that I haven’t seen addressed directly: the measurement standard applied to developer advocacy is unlike any other role in the company.
 
 After sitting with this long enough, I think I understand why. Developer advocacy is the only role in a technology company that gets held accountable for both what it produces and what it causes. At the same time. With no agreed model for connecting the two.
 
 I want to explore four things in this blog:
 
 1. The specific double standard DevRel faces that engineering and sales do not.
-1. Why the "attribution is hard" excuse cuts both ways — and how to actually solve it.
-1. The community bias baked into most DevRel measurement frameworks — and the enterprise dimension that gets ignored entirely.
-1. What a fair measurement framework looks like when it’s aligned to where the business actually is.
+2. Why the "attribution is hard" excuse cuts both ways — and how to actually solve it.
+3. The community bias baked into most DevRel measurement frameworks — and the enterprise dimension that gets ignored entirely.
+4. What a fair measurement framework looks like when it’s aligned to where the business actually is.
 
 ## Output and outcome are not the same thing
 
@@ -27,13 +27,13 @@ When a sales professional misses quota, no one asks them how many prospecting em
 
 Now look at what happens when a developer advocate sits down for a performance review. The manager wants to know how many blogs they published, how many conference talks they gave, how many demos they built. That is the output layer. Then, in the same conversation, the question shifts: what was the business impact? Did developers adopt the product? Can you show community growth? Did your work influence pipeline?
 
-Two layers of accountability. One role. No other function in the company faces this combination, and almost no one talks about it openly.
+Two layers of accountability. One role. Product managers sometimes navigate a similar tension, but they operate with agreed frameworks — roadmaps, OKRs, delivery milestones — that connect their work to outcomes. No other individual contributor role faces this combination without an agreed model for connecting the two, and almost no one talks about it openly.
 
 ## "Attribution is hard for other roles too" — and why that argument misses the point
 
 When developer advocates raise the attribution problem, the pushback is usually some version of: "Marketing has attribution problems. Internal tooling has attribution problems. That doesn’t mean you get a free pass."
 
-That is a fair point. It doesn’t mean DevRel gets a free pass. But it also ignores the real issue.
+It’s worth addressing that directly. That is a fair point. It doesn’t mean DevRel gets a free pass. But it also ignores the real issue.
 
 Marketing has attribution problems — and Marketing has MQL/SQL models, CAC tracking, and campaign attribution tools that the whole organization has agreed to use. The proxies are imperfect. They are accepted. Everyone knows before the quarter starts what counts and how it gets measured.
 
