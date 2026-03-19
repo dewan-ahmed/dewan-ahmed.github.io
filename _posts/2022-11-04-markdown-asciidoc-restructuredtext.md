@@ -43,7 +43,7 @@ In 2014, a group of Markdown fans came together and established [CommonMark](htt
 
 If you're just starting out with Markdown, check out the [syntax](https://www.markdownguide.org/basic-syntax/) and write some hello-world docs [online](https://markdownlivepreview.com/). 
 
-For Markdown, there are [A LOT](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) of flavors. Despite all eleventy-zillion flavors, Markdown is loved for developer documentation due to its simplicity.
+For Markdown, there are [A LOT](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) of flavors. A notable one is [R Markdown](https://rmarkdown.rstudio.com/), which extends Markdown with executable R (and Python) code chunks, making it a powerful choice for data science and academic documentation where reproducible analysis is key. R Markdown documents can be rendered to HTML, PDF, Word, and slides using the [knitr](https://yihui.org/knitr/) engine and Pandoc. Despite all eleventy-zillion flavors, Markdown is loved for developer documentation due to its simplicity.
 
 ## Asciidoc (adoc)
 
