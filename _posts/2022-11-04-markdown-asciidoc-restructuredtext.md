@@ -68,7 +68,7 @@ For a serious documentation project, you're almost certainly using a framework f
 
 ## Markdown frameworks
 
-Considering that the end result of a documentation project is often a static site, the words **static site generator (SSG) tool** and Markdown framework can be used interchangeably. Here are my top five picks:
+Considering that the end result of a documentation project is often a static site, the words **static site generator (SSG) tool** and Markdown framework can be used interchangeably. Here are my top six picks:
 
 1. [Jekyll](https://github.com/jekyll/jekyll), the engine behind GitHub Pages, was the most popular SSG until Hugo came out. Written in Ruby, Jekyll is a great choice for writing blog sites. Jekyll can take your content written in Markdown and Liquid templates and render them to a static website deployed to a server of your choice. The site you're currently on is [built using Jekyll and GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll). 
 
@@ -78,7 +78,7 @@ Considering that the end result of a documentation project is often a static sit
 
 4. Configured with a single YAML file, [MKDocs](https://www.mkdocs.org/) is the fourth Markdown framework on my list, which falls in the category of SSG.  Although there are not as many as in Hugo, MKDocs offers a [few official themes](https://www.mkdocs.org/user-guide/choosing-your-theme/) and a number of [third party themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). As a Python-based framework, you can use `pip` to install [MKDocs plugins](https://www.mkdocs.org/dev-guide/plugins/). You can follow [this getting started guide](https://www.mkdocs.org/getting-started/) for your first MKDocs project.
 
-5. Last, but certainly not least, among my favorite frameworks is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let’s understand what is MDX and how does it vary from MD.
+5. Among my favorite frameworks is the family of frameworks based on [MDX](https://mdxjs.com/). Before that, let’s understand what is MDX and how does it vary from MD.
 
 According to [mdxjs.com](https://mdxjs.com/docs/what-is-mdx/#jsx):
 
@@ -88,7 +88,9 @@ With over 40K GitHub stars, [Docusaurus](https://docusaurus.io/) is undeniably o
 
 From the creators of [NextJS](https://nextjs.org/), the next SSG based on MDX is [Nextra](https://nextra.site/). Nextra offers advanced syntax highlighting, ease of i18n creation, out-of-the-box full text search, and Markdown link and image converted to [Next.js Link](https://nextjs.org/docs/routing/introduction#linking-between-pages) and [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization#local-images). With Nextra, you can write a blog or docs using the themes available. [Here](https://nextra.site/showcase) are the sites that are built using Nextra.
 
-Besides these five frameworks, [Notaku](https://notaku.so/) gets an honorable mention that uses [Notion](https://notaku.so/) as CMS to create documentation site. With SEO and site performance optimization out-of-the-box, Notaku can be a great choice for teams those are already using Notion.
+6. [Astro](https://astro.build/) is a modern web framework that has seen rapid adoption for content-heavy sites like documentation and blogs. Astro supports Markdown and MDX out-of-the-box, with built-in frontmatter validation and TypeScript type-safety. Its Markdown processing is powered by [remark](https://github.com/remarkjs), giving you access to a rich plugin ecosystem. What sets Astro apart is its "islands architecture" - it ships zero JavaScript to the client by default and only hydrates interactive components when needed, resulting in blazing-fast page loads. For documentation specifically, the [Starlight](https://starlight.astro.build/) theme provides a full-featured docs experience with built-in search, i18n, and sidebar navigation. Check out the [Astro showcase](https://astro.build/showcase/) for sites built with Astro.
+
+Besides these six frameworks, [Notaku](https://notaku.so/) gets an honorable mention that uses [Notion](https://notaku.so/) as CMS to create documentation site. With SEO and site performance optimization out-of-the-box, Notaku can be a great choice for teams those are already using Notion.
 
 ## Asciidoc frameworks
 
@@ -98,13 +100,15 @@ Besides these five frameworks, [Notaku](https://notaku.so/) gets an honorable me
 
 3. Unlike docToolchain or Asciidoctor, [Antora](https://antora.org/) is a true framework for Asciidoc that can store, retrieve, and aggregate all Asciidoc content from multiple git repositories. Antora’s page referencing system isn’t coupled to filesystem paths or URLs. You are able to cross reference pages across a local machine, a staging environment, and a production environment. To generate a site with Antora, you need the [Antora CLI](https://www.npmjs.com/package/@antora/cli) and [Antora site generator](https://gitlab.com/antora/antora). 
 
-## reStructuredText Framework
+## reStructuredText Frameworks
 
-If you've noticed the usage of "framework" instead of "frameworks" in the above heading, you can guess that there's only one framework for reStructuredText. [Sphinx](https://www.sphinx-doc.org/en/master/index.html), originally created for Python documentation, takes plain-text files in reStructuredText format and transforms it into HTML, PDF, and any output formats. A few well-known projects that use Sphinx for documentation are [Django](https://docs.djangoproject.com/) and [ReadTheDocs](https://docs.readthedocs.io/en/latest/index.html). 
+1. [Sphinx](https://www.sphinx-doc.org/en/master/index.html), originally created for Python documentation, takes plain-text files in reStructuredText format and transforms it into HTML, PDF, and any output formats. A few well-known projects that use Sphinx for documentation are [Django](https://docs.djangoproject.com/) and [ReadTheDocs](https://docs.readthedocs.io/en/latest/index.html).
 
-[Sphinx](https://www.sphinx-doc.org/en/master/index.html) is incredibly powerful and can offer a table of contents, automatic links for functions, automatic code highlighting using [Pygments](https://pygments.org/), and other capabilities using [built-in](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#builtin-extensions) or [third-party](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#third-party-extensions) extensions. If you'd like to use (a flavor of) Markdown with Sphinx, you can do so using [MyST-parser](https://myst-parser.readthedocs.io/en/latest/) - a Sphinx and Docutils extension to parse [MyST](https://jupyterbook.org/en/stable/reference/cheatsheet.html). 
+   [Sphinx](https://www.sphinx-doc.org/en/master/index.html) is incredibly powerful and can offer a table of contents, automatic links for functions, automatic code highlighting using [Pygments](https://pygments.org/), and other capabilities using [built-in](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#builtin-extensions) or [third-party](https://www.sphinx-doc.org/en/master/usage/extensions/index.html#third-party-extensions) extensions. If you'd like to use (a flavor of) Markdown with Sphinx, you can do so using [MyST-parser](https://myst-parser.readthedocs.io/en/latest/) - a Sphinx and Docutils extension to parse [MyST](https://jupyterbook.org/en/stable/reference/cheatsheet.html).
 
-However, [many folks complained](https://twitter.com/choldgraf/status/1212054861132521472?s=20&t=SiZ3Pr5NnPbID0kNLYcisg) about the difficulty in surfacing and debugging errors that happen in the Sphinx build process. The fact that Sphinx build is significantly slower than other SSG frameworks, the development and writing flow takes a hit in the process.
+   However, [many folks complained](https://twitter.com/choldgraf/status/1212054861132521472?s=20&t=SiZ3Pr5NnPbID0kNLYcisg) about the difficulty in surfacing and debugging errors that happen in the Sphinx build process. The fact that Sphinx build is significantly slower than other SSG frameworks, the development and writing flow takes a hit in the process.
+
+2. [Pelican](https://getpelican.com/) is a Python-based static site generator that supports reStructuredText natively (no extra dependencies needed) and can also handle Markdown and HTML content. While Pelican is more of a general-purpose SSG than a documentation-specific framework, it's a solid choice for teams already in the Python ecosystem who want to mix reStructuredText with other content formats like Markdown or even Jupyter notebooks. Pelican uses Jinja2 templates for theming and has a rich [plugin ecosystem](https://github.com/pelican-plugins). The downside? Build times can be painfully slow for larger sites.
 
 # Choose the right markup and framework
 
