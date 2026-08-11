@@ -179,4 +179,7 @@ So if you're trying to break in this year, pick one thing in the agentic stack a
 
 **Do the work that matters, and ship the proof in the format the market is currently searching for. Skipping either one is how good people end up unemployed for reasons they refuse to name.**
 
-_A note on how this was made: I developed this blog with an AI assistant. The structure, the arguments, the three era framing, and the opinions are mine, pressure-tested and organized through that conversation. It is not an AI-generated post, and I'd rather tell you that directly than have you wonder._
+---
+
+**A note on how this was made:** I developed this blog with an AI assistant. The structure, the arguments, the three era framing, and the opinions are mine, pressure-tested and organized through that conversation. It is not an AI-generated post, and I'd rather tell you that directly than have you wonder.
+{: .disclaimer}
