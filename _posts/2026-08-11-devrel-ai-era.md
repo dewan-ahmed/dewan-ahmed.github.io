@@ -9,13 +9,11 @@ tags:
   - career
 ---
 
-# How to Become a Developer Advocate in the AI Era
+Someone asked me recently what advice I'd give to a person trying to break into DevRel in the AI era. I gave an answer around "something something AI". But then it bothered me -.- so this blog is me answering that question, again.
 
-Someone asked me recently what advice I'd give to a person trying to break into DevRel in the AI era. I gave an answer on the spot, and it bothered me for a week afterward, because it was the wrong shape of answer.
+In reality, the AI era is not a new job. It's the third reset of the same job, and it only looks unprecedented if you weren't paying attention during the first two.
 
-Here's the right one. The AI era is not a new job. It's the third reset of the same job, and it only looks unprecedented if you weren't paying attention during the first two.
-
-Ask five experienced developer advocates what to focus on and you'll get seven different answers, all correct. Learn AI. Learn AI. Learn AI. Learn video. Learn marketing and events, because that's what the postings actually ask for. Learn agentic development. Learn how to size up an organization so you don't become the first DevRel hire at a ten person company that has no idea what it just bought. When five correct answers point in five directions, you don't have advice. You have noise. What's missing is the model that explains why they're all correct at once.
+Ask five experienced developer advocates what to focus on and you'll get seven different answers, all correct. Learn AI. Learn AI. Learn AI. Learn video. Learn marketing and events, because that's what the postings actually ask for. Learn agentic development. Learn how to size up an organization so you don't become the first DevRel hire at a ten person company that has no idea what it just bought. That's seven answers from five people, and three of them are the same answer said louder. Nobody on that list is wrong. Now try building a twelve month plan out of it :)
 
 I started my big tech career at IBM in 2014, spent 2020 to 2022 at Red Hat, and have been at startup unicorns since. I've also been organizing conferences and meetups for the last decade or so, which means twice a year I read a stack of CFP submissions and watch the industry's obsessions turn over in real time, usually about nine months before they show up in job descriptions. From that seat, the pattern is hard to miss.
 
@@ -49,7 +47,7 @@ The technical bar moved sideways, not up. Writing good application code stopped 
 
 Sit with that, because it's the pattern that governs everything else in this post. **The market's demand did not need to be architecturally justified in order to be real.**
 
-My own version of that lesson came at the transition. I came up as a backend Java developer. Around 2016 I had to decide whether the container thing was a serious shift or a fashion, and I chose to treat it as serious mostly because the CFP submissions I was reading as an organizer had gone from ten percent container talks to sixty percent in about two years. That was not a technical judgment. It was a market reading, and it was the more useful of the two.
+My own version of that lesson came at the transition. I came up as a backend Java developer. Around 2016 I had to decide whether the container thing was a serious shift or a fashion, and I chose to treat it as serious mostly because the CFP submissions I was reading as an organizer had gone from ten percent container talks to sixty percent in about two years. I didn't reach that by evaluating the architecture. I reached it by counting talk submissions, which turned out to be the better instrument.
 
 By the time I got to Red Hat in 2020, the reset was complete and the demo had become an environment rather than a snippet. It was also the pandemic, so every event I organized or spoke at moved to a webcam, which stripped out the hallway track and left only the artifact. That accelerated something already underway.
 
@@ -69,9 +67,9 @@ I wrote about [llms.txt](https://www.dewanahmed.com/llms-txt/) a while back and 
 
 There's a second order effect that I think is the real story of this era. **The cost of producing a competent-looking artifact has fallen to nearly zero.** A tutorial, a demo app, a blog post, a sample repo, all of it can be generated in an afternoon by someone who understands none of it.
 
-That breaks the Era 2 economy completely. For fifteen years the artifact was evidence. It was expensive to produce, so producing one proved something about you. It no longer does. Volume stopped signalling effort, and effort stopped signalling competence.
+That breaks the Era 2 economy completely. For fifteen years the artifact was evidence. It was expensive to produce, so producing one proved something about you. Publishing a lot used to mean you had worked hard, and working hard used to mean you knew something. Both of those chains snapped.
 
-When artifacts stop working as evidence, the market re-prices two things: **judgment** and **verifiable outcomes**. Knowing what to build, knowing when the agent is confidently wrong, knowing the exact moment to take manual control back. That's the scarce input now. Not the typing.
+When artifacts stop working as evidence, the market re-prices two things: **judgment** and **verifiable outcomes**. Knowing what to build, knowing when the agent is confidently wrong, knowing the exact moment to take manual control back. Typing was never the hard part of this job. It was just the last reliable proxy we had for someone who could do the rest, and it stopped working.
 
 The unit of work is **the judgment call**.
 
@@ -120,7 +118,7 @@ What replaces them, in my view, are proxies built around machine consumption and
 - **Retrieval coverage.** What fraction of your documented surface is reachable and correct through a machine-readable path.
 - Unchanged from before: **feedback that reached the roadmap**, and **technical blockers removed from real deals**.
 
-I'll be honest about the limits. None of this is standardized, none of it has agreed benchmarks, and you will be inventing the framework at whatever company you join. That has been true in every era, and I've written at length about [why DevRel measurement is broken in a way other roles' measurement is not](https://www.dewanahmed.com/devrel-measurement-paradox/). The difference now is that the old proxies aren't merely imperfect. They point the wrong direction.
+I'll be honest about the limits. None of this is standardized, none of it has agreed benchmarks, and you will be inventing the framework at whatever company you join. That has been true in every era, and I've written at length about [why DevRel measurement is broken in a way other roles' measurement is not](https://www.dewanahmed.com/devrel-measurement-paradox/). What's changed is that the old proxies have gone from imperfect to actively misleading.
 
 ## What changed, what didn't
 
@@ -143,7 +141,7 @@ Here's what has not moved a millimetre in twelve years:
 
 **A great DevRel team still cannot save a bad product.** I wrote that in 2023, it's still true, and it will be true in 2030.
 
-**Trust is still the entire asset.** As more generated content reaches the world, human connection and narrative appreciate rather than depreciate. I'd sharpen that further: the reason live work and video are gaining value is precisely the reason some people are skeptical of them, which is that models don't ingest them well. That isn't a flaw in the strategy. **That's the moat.**
+**Trust is still the entire asset.** As more generated content reaches the world, human connection and narrative appreciate rather than depreciate. I'd sharpen that further: the thing that makes video look like a bad bet in an AI-heavy world is exactly what makes it defensible, which is that models don't ingest it well.
 
 Which gives you a practical framing for content. You're running two funnels now, and they optimize for opposite things. The machine funnel is docs, llms.txt, structured content, MCP servers, SDKs an agent calls correctly on the first attempt, error messages that are parseable. Optimize that for retrievability and correctness. The human funnel is video, live workshops, hallway conversations, opinions, narrative, the trip report nobody asked for. Optimize that for trust. Stop trying to make one piece of content serve both. That's why so much DevRel content right now reads like it was written for nobody in particular. It was.
 
@@ -153,7 +151,7 @@ Now the uncomfortable part, and the actual reason I wrote this.
 
 **You are hired to remove a cost or a risk.**
 
-A job description is not a description of the work. It's a compression artifact of a hiring manager's anxiety, run through a recruiter who has to filter 400 applicants. When it says "experience building agentic workflows," the sentence underneath is closer to: our CEO asked what our AI story is, our docs are being consumed by models and misrepresented, activation is flat, and I need someone who won't take six months to ramp.
+A job description is not a description of the work. It's a hiring manager's anxiety, filtered through a recruiter who has to cut 400 applicants down to 10. When it says "experience building agentic workflows," the sentence underneath is closer to: our CEO asked what our AI story is, our docs are being consumed by models and misrepresented, activation is flat, and I need someone who won't take six months to ramp.
 
 You are allowed to think a requirement is silly. In 2016, "must have production Kubernetes experience" was a questionable ask for a role that mostly involved writing tutorials, and smart people said so out loud. The ask was still real. The people who satisfied it got the roles. The people who wrote thoughtful posts about why the industry was overreacting got to keep writing those posts, from home, for longer than they intended.
 
@@ -161,11 +159,11 @@ I've watched this from both sides. Since 2022 I've been at startup unicorns, whe
 
 So hold two things at once. Know the work, which means understanding the systems for real and never becoming the person who demos something they cannot debug. And signal what is being searched for right now, not what should be searched for.
 
-Most people in DevRel are excellent at the first and treat the second as beneath them. That's a moral position, not a strategy, and the market doesn't grade on moral positions. The people who struggle during a reset are almost never the ones who lacked skill. They're the ones whose skill wasn't legible in the vocabulary the market was currently using.
+Most people in DevRel are excellent at the first and treat the second as beneath them. I understand the instinct. Nobody gets hired for having correct opinions about what the industry should have wanted. The people who struggle during a reset are almost never the ones who lacked skill. They're the ones whose skill wasn't legible in the vocabulary the market was currently using.
 
 ## Then check whether the job is even doable
 
-Getting a job is not the win condition. Getting a job where the work is possible is.
+The offer isn't the finish line. Plenty of people have won the offer and walked into a job where the work was never going to be possible.
 
 Before you accept anything, find out who DevRel reports to and whether that person wanted a DevRel team or inherited one. Find out what stage the business is in and whether the proposed metrics match that stage. If you'd be the first DevRel hire, find out who defined the mandate before the requisition opened, because "we'll figure it out together" means you're being hired to invent your own job and then take the blame when it fails to produce a number nobody defined. Find out whether anyone senior will protect you when the CEO asks for ROI the week after a conference. And find out whether the product is any good, because you cannot advocate your way out of a bad one, and attempting it costs you community trust you spent a decade building.
 
@@ -173,14 +171,12 @@ Before you accept anything, find out who DevRel reports to and whether that pers
 
 ## Time to ship
 
-Three eras. Three product surfaces, three distribution channels, three complete resets of what the market asked for. Underneath all of it, the same job: understand the technology well enough to be trusted, and be useful to developers in whatever medium they actually use.
+Three eras, and at each one the product surface, the distribution channel, and the definition of good work all turned over together. Underneath all of it, the same job: understand the technology well enough to be trusted, and be useful to developers in whatever medium they actually use.
 
 What changes every eight years is the medium and the vocabulary. What never changes is that you have to build in order to stay credible, and you have to be legible in order to get hired.
 
 So if you're trying to break in this year, pick one thing in the agentic stack and go deep enough to have opinions about its failure modes. Publish the failures, not the happy path. Write down how you'd measure your own work in the first ninety days, because almost no candidate does. And make all of it verifiable by a stranger in ninety seconds.
 
 **Do the work that matters, and ship the proof in the format the market is currently searching for. Skipping either one is how good people end up unemployed for reasons they refuse to name.**
-
----
 
 _A note on how this was made: I developed this blog with an AI assistant. The structure, the arguments, the three era framing, and the opinions are mine, pressure-tested and organized through that conversation. It is not an AI-generated post, and I'd rather tell you that directly than have you wonder._
