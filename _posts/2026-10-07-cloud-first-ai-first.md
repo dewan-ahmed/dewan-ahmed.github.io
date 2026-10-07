@@ -10,8 +10,6 @@ tags:
   - software-engineering
 ---
 
-{::options smart_quotes="lsquo,rsquo,quot,quot" /}
-
 Imagine a company in 2016. An engineer is standing in a meeting room, trying to convince the CTO and CIO to move an application to the cloud. The engineer has prepared a demo, a cost estimate, and answers to the questions that came up in the previous meeting. There have been several previous meetings.
 
 The CIO asks where the data will live. The CTO asks how the team will recover from an outage. Finance points out that the servers downstairs are already paid for. The engineer explains that waiting weeks for capacity has a cost too, especially when the team wants to try something small and has to ask for something large.
@@ -56,11 +54,15 @@ First, though, someone needs to explain what the company intends to do with all 
 
 The CTO describes a more ambitious possibility. An agent picks up a task, explores the repository, prepares a change, runs tests, and brings it back for review. Over time, more of that path becomes automated. The team could take on maintenance work that keeps losing out to the next feature request.
 
+Eno Reyes [did an X post](https://x.com/EnoReyes/status/2107858448914518174?s=20) about software improving through user feedback and making an organization's unwritten knowledge part of how its systems work. That gives our engineer something more interesting to consider: what would the team learn from each piece of work, and how would that learning help with the next one?
+
 Our engineer is interested. There is a migration in the backlog nobody wants to do by hand. There are tests the team has been meaning to add. There are old modules that take a new hire far too long to understand. A factory that helps with those things would earn its place quickly.
 
 Then the CTO suggests trying it on a small ticket: add retries to the payment flow. The engineer asks what happens when a payment succeeds but the response gets lost. Would the retry charge the customer again?
 
 Now the room has a concrete problem to discuss. Someone needs to establish how the system recognizes a transaction it has already processed. Someone needs to decide what the customer sees while the result is uncertain. The agent can help find the relevant code and investigate the behavior. The team still needs to agree on the promise it is making.
+
+Our engineer knows why this matters because they've been through a similar incident before. The important detail lives in their memory and a comment buried in an old ticket. Getting it into a regression test would help the next engineer and the next agent. Asking the experienced person to remember to mention it every time is a fairly fragile operating model.
 
 This is a developer objection I take seriously. "It passes the tests" leaves me wanting to know which behavior those tests cover, especially when money is involved. I'd also want to understand how the change fits the application we'll be extending next month.
 
@@ -80,9 +82,13 @@ The engineer suggests starting with that neglected migration, leaving the paymen
 
 Before implementation, they agree on the shape of the change. The agent gets a bounded workspace and the context it needs. The work comes back in pieces small enough to review. The team can ask it to explain an assumption, investigate a failure, or revise an approach before the next piece begins.
 
+They also decide what to keep from the review. A recurring design decision goes into the team's documented conventions. A mistake the checks can catch gets a test or a lint rule. Context that helped the agent belongs somewhere the next run can find it. Each improvement still needs review; nobody is giving the system permission to quietly rewrite its own standards.
+
 I like the possibilities here. A reviewer could open a pull request with the relevant context already assembled. A newer engineer could use the agent to walk through the unfamiliar parts. An experienced engineer could explore an alternative without spending an afternoon preparing scaffolding.
 
 They also agree to follow the work all the way through. Time saved during implementation matters. So do review, rework, release, and the effort of maintaining the result. The token bill belongs in the conversation alongside the human effort.
+
+After release, they follow the migration into actual use. A customer asking for another button may be struggling with a step the team assumed was obvious. The team investigates that problem before accepting the suggested solution, then carries the finding into the next change. I'd want that feedback to travel from observation to a tested release while someone still remembers why it mattered.
 
 If the experiment leaves the team with a quicker release and a change everyone can explain, they have a reason to expand it. If review takes longer or the design becomes harder to follow, they have something specific to improve. An unsuccessful tool can be retired without anyone being accused of failing to believe in AI.
 
@@ -96,10 +102,12 @@ A few weeks later, imagine the team returning to the same room. The slide still 
 
 Our engineer now has something to show. The executives can ask whether the migration was worth the effort and whether another team should try the same approach. The discussion can get specific: a review that took too long, context the agent was missing, a useful chunk of work the team would happily delegate again.
 
+There is something else on the slide: what the team kept. A test for a missed failure case. A clearer convention. A customer observation that changed the next task. Those are things the team can use again, even if the engineer who ran the pilot is on holiday. I'd count that growing capacity among the reasons to fund the next experiment.
+
 In 2016, that engineer had to answer difficult questions before getting permission to use the cloud. In 2026, permission arrived first. The questions about cost, ownership, and what happens when something breaks still need answers. Buying the tools doesn't make that work disappear.
 
 If you're leading this effort, put budget behind a task the team actually needs done. Give the engineers time to learn the tool and a say in how it gets used. Expect them to try it seriously, and expect to hear when it creates more work than it saves.
 
-Then follow the result past the demo. Can the next engineer explain why the change works? Can the person on call recover when it fails? If the token dashboard disappeared tomorrow, could you still show that the customer got a better product or the team got a better working day?
+Then follow the result past the demo. Can the next engineer explain why the change works? Can the person on call recover when it fails? What did the team learn that will make the next change easier? If the token dashboard disappeared tomorrow, could you still show that the customer got a better product or the team got a better working day?
 
 I'd fund a second experiment when the first one gives us useful answers, and expand the workflows the team wants to keep using. If the main thing growing is the invoice, check whether you've budgeted for more review and repair work too. That would be a fairly expensive way to discover you've been token-maxxing.
