@@ -45,6 +45,9 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+analytics:
+  provider: custom
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
