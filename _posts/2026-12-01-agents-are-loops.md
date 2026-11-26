@@ -185,7 +185,7 @@ It's boring, and I want it boring. The same binary works from a terminal, a CI s
 
 Multi-agent architectures look great on a whiteboard. Most of the ones I've seen would have worked better as one agent with better tools.
 
-<!-- TODO(Dewan): A specific multi-agent design you've reviewed or tried (anonymized is fine) and what it looked like collapsed into one agent would make this much more convincing. -->
+Kubernetes upgrade checks are a good example. On a whiteboard, that's four agents: one renders the Helm charts, one looks up which APIs the target release removed, one writes migration notes, and one reviews the result. When I built [k8s-workers](https://github.com/dewan-ahmed/k8s-workers), the lookup became a deterministic catalog behind one API call. It reports every removed or deprecated `apiVersion` in your manifests with its replacement, so a single agent can decide what to change. No model has to remember that `batch/v1beta1` CronJob was removed in 1.25.
 
 There's one reason to split that I fully buy: context isolation. A subagent that reads 200 files to answer "where is retry logic configured?" and comes back with one paragraph keeps those 200 files out of the main agent's context. That's worth a lot. "The planner agent hands off to the coder agent, who hands off to the reviewer agent" usually isn't. You end up with three prompts working on one problem and two handoffs where information can get lost.
 
