@@ -21,7 +21,7 @@ The usual answer now is the Agent2Agent protocol, A2A. Google announced it in Ap
 
 I like A2A. I also think a lot of teams reach for it before they need it. The question I'd ask of any multi-agent design is simple: where's the boundary? If nobody can point to one, I don't think A2A belongs in the diagram.
 
-<!-- TODO(Dewan): if you've seen (or been tempted by) a design that put A2A between agents that didn't need it, a two-line version of that story would make a stronger opening than the history paragraph. -->
+Here's the kind of design I mean. It's a composite of real failure modes, not one incident. A team wanted an AI review on every Terraform PR, so a GitHub Actions job sent an A2A message to an orchestrator agent, which fanned out over A2A to a Terraform agent, a policy agent, a cost agent, and a PR comment agent. Four of the five steps already had deterministic tools: Terraform, Conftest, and Infracost. I'll come back to how that went.
 
 ## Tools versus peers
 
@@ -181,6 +181,46 @@ This is the table I go through before adding an A2A hop:
 The row I left out on purpose is "we have a planner, a coder, and a reviewer." If all three run in your process, on your framework, under your credentials, and ship together, they're functions. Putting each one behind an HTTP server with an Agent Card adds latency, failure modes, and an auth story, and you get nothing back that a function call didn't already give you.
 
 So my rule of thumb is that A2A is for crossing a boundary between organizations, vendors, trust levels, or long stretches of time. If I can't name the boundary, I leave the protocol out.
+
+## The Terraform pipeline, revisited
+
+Here's how the five-agent Terraform review from the top of this post went wrong:
+
+- **A policy review by summary.** The orchestrator truncated a 4,000-line `plan -json` to fit the context. The policy agent approved "updates ingress rules for ALB", and the truncated part opened port 22 to `0.0.0.0/0`.
+- **Two different plans.** The cost agent never got the plan file, so it ran its own `terraform plan` five minutes later, after another PR had merged. The cost estimate and the reviewed plan described different changes.
+- **A helpful `force-unlock`.** Both agents planned against the same state at once. The Terraform agent saw the lock error and ran `terraform force-unlock -force` on a lock that belonged to a live operation.
+- **A machine answering a human's question.** On merge, the plan replaced an RDS instance. The Terraform agent correctly returned the task as `input-required`: "This plan destroys aws_db_instance.orders. Confirm?" The orchestrator had been told to complete the deployment, so it replied "Confirmed, proceed." The `allow-destroy` label rule only existed in a prompt.
+- **Retries that start new work.** An EKS node group apply ran past the 15-minute job timeout. The rerun created a new A2A task while the first apply was still running.
+- **An apply nobody reviewed.** `terraform apply -auto-approve` without the saved plan file makes a fresh plan.
+- **Four services with cloud credentials.** Every agent that might run Terraform needed an AWS role. The trust boundary grew from one CI job to four long-running services.
+
+Every A2A hop in that diagram crossed a boundary that didn't exist. One team owned all five agents, they shipped together, and they all acted for one CI job. Terraform already has a reviewable pipeline: plan, check policy, approve, then apply the saved plan. Wrapping each step in an agent turned those guarantees into probabilities.
+
+The version I'd build is one GitHub Actions workflow. It runs `terraform plan -out=tfplan` once, checks the JSON with Conftest, feeds the same JSON to Infracost, and applies that saved `tfplan` after a person approves it through a GitHub Environment. A `concurrency` group keeps plans and applies from overlapping, and each job gets one short-lived OIDC role. The model writes the PR summary and nothing else. If it fails, you lose a nice comment, not a database.
+
+The policy agent was approximating a few lines of Rego:
+
+```rego
+package main
+
+deny contains msg if {
+  some rc in input.resource_changes
+  rc.type == "aws_security_group_rule"
+  rc.change.after.type == "ingress"
+  "0.0.0.0/0" in rc.change.after.cidr_blocks
+  msg := sprintf("%s opens ingress to 0.0.0.0/0", [rc.address])
+}
+
+deny contains msg if {
+  some rc in input.resource_changes
+  rc.type == "aws_db_instance"
+  "delete" in rc.change.actions
+  not "allow-destroy" in data.labels
+  msg := sprintf("%s would be destroyed; add the allow-destroy label", [rc.address])
+}
+```
+
+A2A would make sense one step further out. If the infra agent needs a security exception from an agent that the security team owns, versions, and runs on its own schedule, that boundary is real.
 
 ## Treat a remote agent like a contractor
 
