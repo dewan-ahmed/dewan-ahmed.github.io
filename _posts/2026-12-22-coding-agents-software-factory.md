@@ -2,6 +2,7 @@
 title: "Coding Agents Are a Software Factory Problem"
 date: 2026-12-22T00:00:00-04:00
 author: Dewan Ahmed
+excerpt: "When a coding agent fails, the model is rarely the first thing to fix. Preflight checks, repo instructions, compact tools, scoped credentials, and budgets matter more."
 series: agent-builder
 series_part: 4
 header:

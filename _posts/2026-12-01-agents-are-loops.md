@@ -2,6 +2,7 @@
 title: "Agents Are Loops: What I Look for in an Agent Framework"
 date: 2026-12-01T00:00:00-04:00
 author: Dewan Ahmed
+excerpt: "Every agent framework is a model in a loop. Here is the loop, how I test it with a fake model, and the five questions I ask before adopting a framework."
 series: agent-builder
 series_part: 1
 header:

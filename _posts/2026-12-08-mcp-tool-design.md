@@ -2,6 +2,7 @@
 title: "MCP Won the Tool Layer. Now Design Your Tools Like an API"
 date: 2026-12-08T00:00:00-04:00
 author: Dewan Ahmed
+excerpt: "MCP is the default way to give agents tools. The hard part now is designing tools that models can use well, and keeping credentials out of their reach."
 series: agent-builder
 series_part: 2
 header:

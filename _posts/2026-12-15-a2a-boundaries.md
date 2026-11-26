@@ -2,6 +2,7 @@
 title: "A2A Is for Crossing Boundaries, Not for Every Subagent"
 date: 2026-12-15T00:00:00-04:00
 author: Dewan Ahmed
+excerpt: "A2A 1.0 is a good protocol for agents that cross organizational, vendor, trust, or time boundaries. Inside one codebase, your subagents are functions."
 series: agent-builder
 series_part: 3
 header:
