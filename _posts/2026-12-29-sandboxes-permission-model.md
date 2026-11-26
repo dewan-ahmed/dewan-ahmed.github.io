@@ -61,8 +61,6 @@ Every agent platform says its environment is sandboxed. Very few give you a way 
 
 So I added a small feature to [factory-doctor](https://github.com/dewan-ahmed/factory-doctor), the preflight tool from part 4: checks that are supposed to **fail** ([PR #7](https://github.com/dewan-ahmed/factory-doctor/pull/7)). Set `"expect": "fail"` and the check passes only when the underlying access is denied:
 
-<!-- TODO(Dewan): PR #7 was still open when this was drafted. Update the wording if it has been merged or released by the time this goes out. -->
-
 ```json
 {
   "version": 1,
