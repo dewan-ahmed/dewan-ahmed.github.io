@@ -71,7 +71,7 @@ So I added a small feature to [factory-doctor](https://github.com/dewan-ahmed/fa
 }
 ```
 
-That's a sandbox contract in eleven lines. The workspace should work. My SSH keys and the open internet should not.
+That's a sandbox contract in seven lines. The workspace should work. My SSH keys and the open internet should not.
 
 On my unsandboxed VM, it fails the way it should:
 
