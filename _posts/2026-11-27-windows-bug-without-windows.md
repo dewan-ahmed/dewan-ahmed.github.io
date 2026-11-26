@@ -12,7 +12,7 @@ tags:
 
 Yesterday an AI code reviewer told me my new feature was broken on Windows. In the same comment it told me it couldn't check.
 
-That's an honest thing for a reviewer to say, and an easy one to ignore. I don't own a Windows machine. My CI only ran on Linux. The comment was marked as a "flag", not a bug. If I'd been in a hurry, I would have dismissed it as speculation and merged.
+That's an honest thing for a reviewer to say, and an easy one to ignore. I don't own a Windows machine. My CI only ran on Linux. The comment was left for me to triage, with no reproduction. If I'd been in a hurry, I would have dismissed it as speculation and merged.
 
 It turned out to be right. Here's how I found out, what the bug was, and why the fix came down to one git flag.
 
@@ -36,7 +36,7 @@ Devin Review left [this comment](https://github.com/dewan-ahmed/factory-doctor/p
 
 > On Windows, `check_diff` can count several short renames as one file. V's stdout reader strips NUL separators from chunks with enough NUL bytes. The file limit can pass despite being exceeded.
 
-It went further than "this might be a problem." It pointed at the function in V's standard library, described the condition (NUL bytes making up at least a quarter of a chunk), and gave a concrete example: rename `go` to `run` and `id` to `ids`, set `max_files: 1`, and the check passes when it should fail.
+It went further than "this might be a problem." It pointed at the captured-output decoder in V's standard library, described the condition (NUL bytes making up at least a quarter of a chunk), and gave a concrete example: rename `go` to `run` and `id` to `ids`, set `max_files: 1`, and the check passes when it should fail.
 
 Then it said it couldn't verify any of this, because it had no Windows machine either.
 
@@ -71,7 +71,7 @@ assert result.code == 'diff_too_large', result.message
 
 On Linux it passed. Two renames, two files, over the limit, check fails. Correct.
 
-Then I added a Windows job to the workflow and pushed. About a minute later:
+Then I added a Windows job to the workflow and pushed. The first run came back with:
 
 ```text
 checks_test.v:262: fn test_diff_check_counts_each_short_rename
@@ -83,7 +83,7 @@ checks_test.v:262: fn test_diff_check_counts_each_short_rename
 
 One file. Exactly what the reviewer predicted.
 
-The same run turned up a second, unrelated failure. One of my older test fixtures ran `git add . && git commit ...` through `os.execute`, and on Windows that returned `-1`. On Linux, `os.execute` goes through a shell that understands `&&`. On Windows it doesn't. My own `AGENTS.md` for this repo says "Run commands with literal arguments. Never invoke a shell." The production code followed that rule. My tests didn't.
+The same run turned up a second, unrelated failure. One of my older test fixtures ran `git add . && git commit ...` through `os.execute`, and on Windows that returned `-1`. On Linux, `os.execute` goes through a shell that runs the chain. On Windows, V checks the command first, refuses `&&` outright, and returns `-1` without running anything. My own `AGENTS.md` for this repo says "Run commands with literal arguments. Never invoke a shell." The production code followed that rule. My tests didn't.
 
 ## Following the bytes
 
@@ -162,7 +162,7 @@ Going from "how do I get a Windows machine?" to a green fix on both platforms to
 
 ## What I'm taking from this
 
-**"I can't verify this" is a finding.** The review comment was a flag, not a bug, and it said plainly that it was unverified. That's the right label. But an unverified finding about a platform you don't test is still a claim about your users. The cheapest response is a test on that platform, not a judgement call.
+**"I can't verify this" is a finding.** The review comment said plainly that it was unverified and left it for me to triage. That's the right label. But an unverified finding about a platform you don't test is still a claim about your users. The cheapest response is a test on that platform, not a judgement call.
 
 **Linux-only CI is an untested claim.** Before yesterday, factory-doctor's CI said "works on Windows" by never asking. The new job costs nothing on a public repo, and it caught two problems on its first run. One of them was in my own tests.
 
