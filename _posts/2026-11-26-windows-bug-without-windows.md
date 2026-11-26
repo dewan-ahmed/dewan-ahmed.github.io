@@ -124,7 +124,7 @@ That's the worst kind of bug for a check whose whole job is to be a reliable gat
 
 I don't think the V heuristic is wrong for what it was built for. Decoding the output of arbitrary Windows tools is messy, and stripping NULs from garbled UTF-16 is a reasonable recovery. The problem is that `-z` output is a binary protocol, and I was reading it through a pipe that assumes text.
 
-<!-- TODO(Dewan): decide whether to open an issue on vlang/v asking for a raw-bytes read on Process, and link it here if you do. -->
+What I'd want from V is a way to opt out. I opened [vlang/v#32963](https://github.com/vlang/v/issues/32963) with a minimal repro and a request for a raw-bytes read on `Process`.
 
 ## The fix: don't use the pipe
 
