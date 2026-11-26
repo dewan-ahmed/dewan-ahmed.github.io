@@ -21,7 +21,7 @@ So when someone asks me which framework to use, I answer with a question: what h
 
 If the answer is "it starts over and we pay for the tokens again", the framework decision is still open. If the answer is "I don't know", we should talk about that first.
 
-<!-- TODO(Dewan): If you have a real run that died partway and had to start over (what was it doing, what did the rerun cost?), two sentences about it here would beat the hypothetical. -->
+I've paid for this one. An agent running a critical developer workflow had already set a Jira field when a Jira artifact download failed and the session died. Other agents in the workflow retried it from the start, so the rerun cost the full $4 to $5. Resuming from the failed step should have cost about $0.80.
 
 This is part 1 of a five-part series. I'm writing it for people who have already wired a model to a tool, watched it do something impressive, then watched it do something baffling five minutes later. I'll go through the agent loop, MCP, A2A, coding agents, and sandboxes, and I'll tell you where I think each one is heading. All four tools are open source, so you can check my work.
 
