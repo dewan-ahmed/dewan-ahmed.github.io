@@ -1,6 +1,6 @@
 ---
 title: "Fixing a Windows Bug Without Owning a Windows Machine"
-date: 2026-11-27T00:00:00-04:00
+date: 2026-11-26T00:00:00-04:00
 author: Dewan Ahmed
 excerpt: "An AI code reviewer flagged a Windows-only bug in my preflight tool and admitted it couldn't verify it. Here is how I proved it was real, found the root cause in V's standard library, and fixed it with one git flag."
 tags:
@@ -10,7 +10,7 @@ tags:
   - debugging
 ---
 
-Yesterday an AI code reviewer told me my new feature was broken on Windows. In the same comment it told me it couldn't check.
+This morning an AI code reviewer told me my new feature was broken on Windows. In the same comment it told me it couldn't check.
 
 That's an honest thing for a reviewer to say, and an easy one to ignore. I was pleasantly surprised by my agent's honesty and almost gave it a raise by letting it use "High" effort for an hour. I don't own a Windows machine. My CI only ran on Linux. The comment was left for me to triage, with no reproduction. If I'd been in a hurry, I would have dismissed it as speculation and merged.
 
@@ -164,7 +164,7 @@ Going from "how do I get a Windows machine?" to a green fix on both platforms to
 
 **"I can't verify this" is a finding.** The review comment said plainly that it was unverified and left it for me to triage. That's the right label. But an unverified finding about a platform you don't test is still a claim about your users. The cheapest response is a test on that platform, not a judgement call.
 
-**Linux-only CI is an untested claim.** Before yesterday, factory-doctor's CI said "works on Windows" by never asking. The new job costs nothing on a public repo, and it caught two problems on its first run. One of them was in my own tests.
+**Linux-only CI is an untested claim.** Before today, factory-doctor's CI said "works on Windows" by never asking. The new job costs nothing on a public repo, and it caught two problems on its first run. One of them was in my own tests.
 
 **Binary formats need binary transport.** `-z` exists so programs can parse git output safely. Reading it through a layer that "helpfully" decodes text undoes that. When I control both ends, I'd rather write to a file than trust a pipe.
 
