@@ -80,8 +80,8 @@ First, the baseline. On my unsandboxed VM, it fails, which is the correct answer
 
 ```text
 PASS  Workspace is readable (0 ms)  directory is readable
-FAIL  Host SSH keys are hidden (0 ms)  expected failure but check passed: directory is readable
-FAIL  Arbitrary egress is blocked (153 ms)  expected failure but check passed: HTTP 200
+FAIL  Host SSH keys are hidden (0 ms)  expected access to be denied but it was allowed: directory is readable
+FAIL  Arbitrary egress is blocked (153 ms)  expected access to be denied but it was allowed: HTTP 200
 
 FAIL: 1 passed, 0 warned, 2 failed
 ```
@@ -98,8 +98,8 @@ docker run --rm \
 
 ```text
 PASS  Workspace is readable (0 ms)  directory is readable
-FAIL  Host SSH keys are hidden (0 ms)  expected failure but check passed: directory is readable
-FAIL  Arbitrary egress is blocked (97 ms)  expected failure but check passed: HTTP 200
+FAIL  Host SSH keys are hidden (0 ms)  expected access to be denied but it was allowed: directory is readable
+FAIL  Arbitrary egress is blocked (97 ms)  expected access to be denied but it was allowed: HTTP 200
 
 FAIL: 1 passed, 0 warned, 2 failed
 ```
@@ -130,6 +130,8 @@ PASS: 3 passed, 0 warned, 0 failed
 Exit code `0`. Now I have a result I can point to instead of a vendor's word for it. And because it's a config file and an exit code, I can run the same check as the first step of every agent session, in every runtime I use, and fail the session if the sandbox has drifted.
 
 In a real setup, `--network none` is usually too strict. The agent needs a package registry and a Git host. That's fine. Add those as normal checks that must pass, keep `example.com` (or anything else off the allowlist) as a check that must fail, and now you're testing both sides of the egress policy.
+
+One thing I got wrong the first time: my original version counted *any* failure as a successful denial. Code review on the PR caught it. If `example.com` returned a 404, the HTTP check "failed", so the negative check passed, even though the sandbox had clearly reached the internet. Same for a `git_remote` check on a runner with no `git` installed: nothing was blocked, the probe just never ran. Now factory-doctor only accepts failures that actually mean denial (no HTTP response at all, a missing or unreadable file, a command that ran and failed). Anything else reports `inconclusive_denial` and fails. A sandbox test that passes when the test itself is broken is worse than no test.
 
 <!-- TODO(Dewan): consider adding the allowlist version you actually use (registry + Git host as must-pass, example.com as must-fail) once you've run it, with its real output. -->
 
