@@ -158,7 +158,7 @@ It also confirmed the non-ASCII names were counted correctly, the `--json` repor
 
 Going from "how do I get a Windows machine?" to a green fix on both platforms took less than fifteen minutes. Most of that was waiting for CI.
 
-<!-- TODO(Dewan): if you have a view on who actually runs factory-doctor on Windows (you, customers, nobody yet), one line here would help readers judge how much this matters. -->
+As far as I know, nobody runs factory-doctor on Windows yet. I tested it there anyway. In my FDE work, a lot of the enterprise customers I worked with ran their builds on Windows, and a preflight gate that quietly passes on part of a customer's build fleet is worse than no gate at all.
 
 ## What I'm taking from this
 
