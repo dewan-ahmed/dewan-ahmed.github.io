@@ -14,7 +14,7 @@ Yesterday an AI code reviewer told me my new feature was broken on Windows. In t
 
 That's an honest thing for a reviewer to say, and an easy one to ignore. I don't own a Windows machine. My CI only ran on Linux. The comment was marked as a "flag", not a bug. If I'd been in a hurry, I would have dismissed it as speculation and merged.
 
-It turned out to be right. This post is how I found that out, what the bug actually was, and why the fix ended up being one git flag.
+It turned out to be right. Here's how I found out, what the bug was, and why the fix came down to one git flag.
 
 ## The feature
 
@@ -28,7 +28,7 @@ One complaint I keep hearing about coding agents is that their pull requests are
 
 Under the hood it runs `git diff --numstat -z --merge-base <target>`, parses the output, and fails if the change touches too many files or lines.
 
-The `-z` matters. Without it, git quotes unusual file names and prints renames as `old => new`, which is annoying to parse correctly. With it, every record and every path is separated by a NUL byte (`\0`), and a rename becomes three tokens: the counts, the old path, and the new path. It's the format you're supposed to use when a program, not a person, reads the output.
+The `-z` matters. Without it, git quotes unusual file names and prints renames as `old => new`, which is annoying to parse correctly. With it, every record and every path is separated by a NUL byte (`\0`), and a rename becomes three tokens: the counts, the old path, and the new path. It's the format git gives you for when a program reads the output instead of a person.
 
 ## The review comment
 
@@ -40,11 +40,11 @@ It went further than "this might be a problem." It pointed at the function in V'
 
 Then it said it couldn't verify any of this, because it had no Windows machine either.
 
-I liked that. A reviewer that marks the line between what it read in the source and what it actually ran is more useful to me than one that sounds confident about everything. It also left me with a decision: is this real or not?
+I liked that. A reviewer that marks the line between what it read in the source and what it actually ran is more useful to me than one that sounds confident about everything. It also left me with a decision to make: is this real or not?
 
 ## Getting a Windows machine
 
-My first question was the obvious one: how do I get a Windows machine to test this on?
+My first question was the obvious one: where do I get a Windows machine to test this on?
 
 There were two answers, and they do different jobs:
 
@@ -118,7 +118,9 @@ If the output is valid UTF-8 and at least a quarter of its bytes are NUL, V assu
 
 Six NULs in 24 bytes is exactly a quarter. My output sat right on the boundary.
 
-That also explains why the bug is so easy to miss. The Windows session tried renames with longer, messier names (`my file.txt`, `café` to `naïve résumé`, `x` to `ü y`). That output was 70 bytes with nine NULs, well under a quarter, and it came through intact. Only short names trigger it, and only when NULs make up a large share of the output. Most real diffs would never hit it, which is the worst kind of bug to have in a check whose whole job is to be a reliable gate.
+That also explains why the bug is so easy to miss. The Windows session tried renames with longer, messier names (`my file.txt`, `café` to `naïve résumé`, `x` to `ü y`). That output was 70 bytes with nine NULs, well under a quarter, and it came through intact. Only short names trigger it, and only when NULs make up a large share of the output. Most real diffs would never hit it.
+
+That's the worst kind of bug for a check whose whole job is to be a reliable gate. A gate that works most of the time earns your trust right up until it lets something through.
 
 I don't think the V heuristic is wrong for what it was built for. Decoding the output of arbitrary Windows tools is messy, and stripping NULs from garbled UTF-16 is a reasonable recovery. The problem is that `-z` output is a binary protocol, and I was reading it through a pipe that assumes text.
 
@@ -126,7 +128,7 @@ I don't think the V heuristic is wrong for what it was built for. Decoding the o
 
 ## The fix: don't use the pipe
 
-The reviewer suggested reading stdout as raw bytes, bypassing the decoder. That would have meant writing my own Windows pipe reader, with its own timeout and process-group handling, in a few hundred lines of tool that I'd like to keep small.
+The reviewer suggested reading stdout as raw bytes, bypassing the decoder. That would have meant writing my own Windows pipe reader, with its own timeout and process-group handling. This is a tool I'd like to keep to a few hundred lines, so I wasn't keen.
 
 Git already has a better option. `git diff` accepts `--output=<file>`, which writes the diff to a file instead of stdout. Files don't go through V's pipe decoder, so the NULs survive. The [fix](https://github.com/dewan-ahmed/factory-doctor/pull/13/commits/28f05d1235c3155e67ae91c73fba599e0712a927) is small:
 
@@ -154,7 +156,7 @@ Both CI jobs went green. The Windows session then checked the fix from the outsi
 
 It also confirmed the non-ASCII names were counted correctly, the `--json` report escaped them properly, and no temp files were left behind. I [replied on the review thread](https://github.com/dewan-ahmed/factory-doctor/pull/13#discussion_r4706950611) with the result.
 
-From asking how to get a Windows machine to a green fix on both platforms took less than fifteen minutes. Most of that was waiting for CI.
+Going from "how do I get a Windows machine?" to a green fix on both platforms took less than fifteen minutes. Most of that was waiting for CI.
 
 <!-- TODO(Dewan): if you have a view on who actually runs factory-doctor on Windows (you, customers, nobody yet), one line here would help readers judge how much this matters. -->
 
@@ -162,11 +164,11 @@ From asking how to get a Windows machine to a green fix on both platforms took l
 
 **"I can't verify this" is a finding.** The review comment was a flag, not a bug, and it said plainly that it was unverified. That's the right label. But an unverified finding about a platform you don't test is still a claim about your users. The cheapest response is a test on that platform, not a judgement call.
 
-**Linux-only CI makes a claim you haven't tested.** Before yesterday, factory-doctor's CI said "works on Windows" by never asking. The new job costs nothing on a public repo and it already caught two problems, one of which was in my own tests.
+**Linux-only CI is an untested claim.** Before yesterday, factory-doctor's CI said "works on Windows" by never asking. The new job costs nothing on a public repo, and it caught two problems on its first run. One of them was in my own tests.
 
 **Binary formats need binary transport.** `-z` exists so programs can parse git output safely. Reading it through a layer that "helpfully" decodes text undoes that. When I control both ends, I'd rather write to a file than trust a pipe.
 
-**Agents are good at the tedious half of debugging.** The interesting part here was a judgement call: is this real, and is it worth a CI job? The tedious part was standing up a Windows VM, installing a pinned V release, building old and new commits, and dumping bytes. I made the call and agents did the setup. That split worked well for me, and it's how I'd want to handle the next platform bug I can't reproduce.
+**Agents are good at the tedious half of debugging.** The interesting part here was a judgement call: is this real, and is it worth a CI job? The tedious part was standing up a Windows VM, installing a pinned V release, building old and new commits, and dumping bytes. I made the call and agents did the setup. That split worked well for me. It's how I'd want to handle the next platform bug I can't reproduce.
 
 ---
 
