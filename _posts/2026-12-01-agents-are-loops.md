@@ -14,19 +14,21 @@ tags:
 
 {% include agent-builder-series.html %}
 
-Every few weeks someone asks me which agent framework they should use. I usually answer with a question: what happens when your agent crashes halfway through a task?
+In November I wrote four small command-line tools for agents to call: [factory-doctor](https://github.com/dewan-ahmed/factory-doctor), [artifact-bridge](https://github.com/dewan-ahmed/artifact-bridge), [flowfacts](https://github.com/dewan-ahmed/flowfacts), and [runway](https://github.com/dewan-ahmed/runway). None of them is an agent. They're the boring pieces an agent leans on. Is this machine ready? Can I fetch this file without leaking a token? What's actually in this pipeline? Are we about to blow the budget? Building them meant a lot of time watching agents use them, and that changed how I think about agent frameworks.
 
-If the answer is "it starts over and we pay for the tokens again", the framework decision is still open. If the answer is "I don't know", we should probably talk about that before we talk about frameworks.
+So when someone asks me which framework to use, I answer with a question: what happens when your agent crashes halfway through a task?
 
-This is the first post in a five-part series about building with agents. It's written for people who have already wired a model to a tool, watched it do something impressive, then watched it do something baffling five minutes later. Over the series I'll cover the agent loop, MCP, A2A, coding agents, and sandboxes, and I'll say where I think each one is heading.
+If the answer is "it starts over and we pay for the tokens again", the framework decision is still open. If the answer is "I don't know", we should talk about that first.
 
-Most of what follows comes from building small tools that agents call: [factory-doctor](https://github.com/dewan-ahmed/factory-doctor), [artifact-bridge](https://github.com/dewan-ahmed/artifact-bridge), [flowfacts](https://github.com/dewan-ahmed/flowfacts), and [runway](https://github.com/dewan-ahmed/runway), plus a lot of time watching agents use them. They're open source, so you can check my work.
+<!-- TODO(Dewan): If you have a real run that died partway and had to start over (what was it doing, what did the rerun cost?), two sentences about it here would beat the hypothetical. -->
+
+This is part 1 of a five-part series. I'm writing it for people who have already wired a model to a tool, watched it do something impressive, then watched it do something baffling five minutes later. I'll go through the agent loop, MCP, A2A, coding agents, and sandboxes, and I'll tell you where I think each one is heading. All four tools are open source, so you can check my work.
 
 ## Strip the branding and every agent is the same loop
 
-An agent is a model in a loop with tools. The model reads the conversation so far, either answers or asks for a tool call, your code runs the tool, appends the result, and the loop goes around again. That's it. Everything else is a feature built on top of that loop.
+An agent is a model in a loop with tools. The model reads the conversation so far and either answers or asks for a tool call. Your code runs the tool, appends the result, and goes around again. Everything a framework adds sits on top of that.
 
-Here's a complete agent in about 50 lines of Python. It has one tool that runs factory-doctor's preflight checks and reports back.
+Here's a complete agent in about 50 lines of Python. It has one tool, and that tool runs factory-doctor's preflight checks.
 
 ```python
 import os
@@ -93,17 +95,19 @@ def run_agent(task: str, max_turns: int = 10) -> str:
 
 I used the Anthropic SDK because it's what I had open. The OpenAI, Gemini, and open-weight equivalents look almost identical: a list of tool schemas, a response that says "call this tool with these arguments", and a message type for sending results back.
 
-Three details in that loop matter more than they look:
+A few lines in there do more work than they look like they do.
 
-- **`max_turns`.** An agent without a turn limit is a credit card without a limit. You will eventually find out what it costs.
-- **Errors become tool results.** When a tool fails, the model gets the error as content and can try something else. If you raise instead, a typo in a file path ends the whole run.
-- **The tool returns facts, not prose.** factory-doctor emits stable JSON and stable exit codes. The model doesn't have to guess whether "mostly fine" means pass or fail.
+`max_turns` is the one I'd never ship without. A loop with no limit keeps calling the model for as long as the model keeps asking for tools, and you find out what that costs from the invoice. A turn limit stops one runaway run. It doesn't help when every run looks fine and the month doesn't, which is the problem I wrote runway for. It forecasts spend to the end of a budget period and exits non-zero when the forecast crosses your warning or stop threshold.
 
-If you have never written this loop by hand, do it once. Everything a framework sells you is easier to evaluate once you know which parts of it you could write in an afternoon.
+The `except` block sends errors back to the model as a tool result instead of raising them. If factory-doctor isn't on the PATH or the check times out, the model reads the error and can decide what to do next. If you raise, one bad path ends the whole run.
+
+And the tool returns facts, not prose. factory-doctor prints a JSON report and exits `0` when every critical check passed or `1` when one didn't. A check marked `"critical": false` shows up as a warning without failing the run. The model never has to work out whether "mostly fine" means go.
+
+If you've never written this loop by hand, do it once. It's much easier to judge what a framework is selling when you know which parts you could have written yourself in an afternoon.
 
 ## What the loop doesn't give you
 
-The 50-line version works on your laptop. It stops working the moment a task takes longer than one sitting, involves a person, or costs real money. This is where frameworks earn their keep, and it's where I'd focus your evaluation:
+The 50-line version is fine on a laptop. It falls apart once a task outlasts one sitting, needs a person to sign off, or spends real money. That's where frameworks earn their keep, and it's where I'd spend my evaluation time:
 
 | Problem | What you need | Where you'll find it |
 | --- | --- | --- |
@@ -114,19 +118,19 @@ The 50-line version works on your laptop. It stops working the moment a task tak
 | One agent's context is full of the wrong things | Subagents with isolated context | Handoffs (OpenAI Agents SDK), subagents, graph nodes |
 | The bill surprised you | Turn, token, and spend budgets | Usually your own code |
 
-Notice that none of those rows are "a nicer way to define a tool". Every framework already has that. The differences that matter show up in the runtime: state, interruption, context, observability, and cost.
+None of those rows is about a nicer way to define a tool. Every framework already handles that well enough. The differences I care about are in the runtime: state, interruption, context, observability, and cost. Look at how many of those rows end in "your own code". That's the part a framework demo tends to skip.
 
-## My framework checklist
+## The five questions I ask a framework
 
-When I evaluate a framework now, I ask five questions before I look at a single tool decorator.
+Before I look at a single tool decorator, I want answers to these:
 
-1. **Can I resume after a crash without repeating side effects?** If a tool already opened a pull request, the resumed run shouldn't open a second one.
-2. **Can I pause for a human and resume tomorrow?** Real workflows wait on people. "Keep the Python process alive" is not a strategy.
-3. **Can I see every model call and tool call, with token counts?** If I can't trace it, I can't debug it, and I definitely can't explain the invoice.
-4. **Can I swap the model provider without rewriting the agent?** Models leapfrog each other every few months. Your tool layer shouldn't care.
-5. **Can I unit-test the loop with a fake model?** If the only way to test the agent is to call a real model, your test suite becomes an eval suite with a monthly bill.
+1. Can I resume after a crash without repeating side effects? If a tool already opened a pull request, the resumed run shouldn't open a second one.
+2. Can I pause for a human and pick it back up tomorrow? Real workflows wait on people, and keeping a Python process alive overnight isn't a plan.
+3. Can I see every model call and tool call, with token counts? If I can't trace it, I can't debug it, and I definitely can't explain the invoice.
+4. Can I swap the model provider without rewriting the agent? Models leapfrog each other every few months. My tool layer shouldn't have to care.
+5. Can I unit-test the loop with a fake model? If the only way to test the agent is to call a real model, the test suite turns into an eval suite with a monthly bill.
 
-That last one is cheap to do yourself. Here's the loop above, tested with a scripted fake client:
+You can check the last one yourself in a few minutes. Here's the loop from above, tested with a scripted fake client:
 
 ```python
 import os
@@ -148,44 +152,49 @@ agent.HANDLERS["run_preflight"] = lambda config: '{"passed": 4, "failed": 0}'
 assert agent.run_agent("Is this machine ready?") == "All critical checks passed."
 ```
 
-Test the loop and the tools deterministically. Save model calls for evals that measure behaviour, and run those on purpose, not on every commit.
+No real API key and no network calls. The fake client returns a tool call, then a final answer, and the assertion checks that the loop handled both. I test the loop and the tools this way and save real model calls for evals that measure behaviour. Those I run on purpose, not on every commit.
 
-## Four opinions I hold more strongly every month
+## Where I've landed, for now
+
+These are opinions. They've gotten stronger the more time I've spent building tools for agents, but I expect at least one of them to age badly.
 
 ### 1. Put deterministic work in tools, not prompts
 
-The most reliable way I know to improve an agent isn't a better model or a longer prompt. It's moving work out of the model.
+The cheapest reliability win I know of is taking work away from the model.
 
-flowfacts is the clearest example. Ask a migration agent to read a long Jenkinsfile and reason about it, and you're spending context on boilerplate and inviting the model to confidently "remember" stages that aren't there. So the agent calls flowfacts instead. It parses the pipeline and returns compact JSON: stages, dependencies, credential IDs (never values), artifacts, and an explicit list of `unresolved` items like dynamic Groovy.
+flowfacts is my clearest example. Hand a migration agent a long Jenkinsfile and ask it to reason about it, and you've spent a chunk of context on boilerplate and given the model room to confidently "remember" a stage that isn't there. With flowfacts, the agent runs one command and gets compact JSON back: stages, dependencies, credential IDs (never the values), artifacts, and an explicit `unresolved` list for things like dynamic Groovy.
 
-That `unresolved` list is my favourite part. It tells the agent exactly where deterministic extraction stops and judgment has to start. The model spends its attention on the hard ten percent instead of re-deriving the easy ninety.
+That `unresolved` list is my favourite part of the project. It marks where deterministic extraction stops and judgment has to start, so the model spends its attention on the parts that need it instead of re-deriving what a parser already knows. When I added a Harness provider, I kept the same idea: templates, runtime inputs, expressions, looping strategies, and conditions go into `unresolved` rather than getting a guess.
 
-If a task has a correct answer a program can compute, a program should compute it.
+<!-- TODO(Dewan): If you watched an agent misread a real Jenkinsfile or Harness pipeline before flowfacts existed, that's the story for this spot. -->
+
+My rule of thumb now: if a program can compute the answer, don't ask the model for it.
 
 ### 2. Exit codes and JSON are agent UX
 
-We spent decades making CLIs pleasant for humans: colours, spinners, friendly messages. Agents want the opposite. They want stable JSON on stdout, diagnostics on stderr, and exit codes that mean one thing.
+We spent decades making CLIs nice for humans, with colours, spinners, and friendly messages. Agents want close to the opposite: stable JSON on stdout, diagnostics on stderr, and exit codes that each mean one thing.
 
-All four of my tools follow the same contract: `0` means proceed, a small set of non-zero codes mean specific failures, and `2` or `3` means you called me wrong. That's boring on purpose. The same binary works from a terminal, a CI step, an agent hook, or an MCP server, which brings us to the next post.
+All four of my tools follow the same contract. `0` means go ahead. A small set of non-zero codes mean specific failures, like runway's `1` for "the forecast hit the warning threshold" and `2` for "the forecast hit the stop threshold". And one code means you called me wrong: `2` for factory-doctor, artifact-bridge, and flowfacts, and `3` for runway, since its `2` was already taken.
+
+artifact-bridge has the small example I like best. A login page can come back with a 200, and if all you check is the status code, the agent thinks it has your build. So artifact-bridge rejects HTML login and error pages by default and exits `1`, and the agent gets a clear failure instead of a `build.zip` full of HTML.
+
+It's boring, and I want it boring. The same binary works from a terminal, a CI step, an agent hook, or an MCP server, which is where part 2 picks up.
 
 ### 3. Start with one agent and good tools
 
-Multi-agent architectures look great on a whiteboard. In practice, most of the ones I've seen would have worked better as one agent with better tools.
+Multi-agent architectures look great on a whiteboard. Most of the ones I've seen would have worked better as one agent with better tools.
 
-There's one excellent reason to split: **context isolation**. A subagent that reads 200 files to answer "where is retry logic configured?" and returns one paragraph keeps those 200 files out of the main agent's context. That's a real win. "The planner agent talks to the coder agent who talks to the reviewer agent" is usually not. It's three prompts sharing one problem and tripling the ways to lose information between them.
+<!-- TODO(Dewan): A specific multi-agent design you've reviewed or tried (anonymized is fine) and what it looked like collapsed into one agent would make this much more convincing. -->
 
-Split when the context or the trust boundary demands it. Part 3 is about the second case.
+There's one reason to split that I fully buy: context isolation. A subagent that reads 200 files to answer "where is retry logic configured?" and comes back with one paragraph keeps those 200 files out of the main agent's context. That's worth a lot. "The planner agent hands off to the coder agent, who hands off to the reviewer agent" usually isn't. You end up with three prompts working on one problem and two handoffs where information can get lost.
+
+I split when the context or the trust boundary forces it. Trust boundaries get their own post in part 3.
 
 ### 4. Frameworks are thinning, and that's good
 
-Looking across the major options today (LangGraph, the OpenAI Agents SDK, the Claude Agent SDK, Google's ADK, Microsoft Agent Framework, Pydantic AI, Mastra), they're converging on the same core: a loop, typed tools, state, tracing, and some form of handoff. The clever abstractions from 2023 have mostly been sanded away.
+Look across the major options today (LangGraph, the OpenAI Agents SDK, the Claude Agent SDK, Google's ADK, Microsoft Agent Framework, Pydantic AI, Mastra) and they've converged on the same core: a loop, typed tools, state, tracing, and some form of handoff. Most of the clever abstractions from 2023 have been sanded off.
 
-I think that trend continues. The loop becomes a commodity, and the differentiation moves to two places:
-
-- **The tool layer**, which is increasingly MCP.
-- **The environment** the agent runs in, which is increasingly a sandbox.
-
-That's the shape of this series. If you get the tools and the environment right, the framework choice becomes much less dramatic. If you get them wrong, no framework will save you.
+I expect that to continue. The loop becomes a commodity, and the decisions that matter move to the tool layer, which is increasingly MCP, and to the environment the agent runs in, which is increasingly a sandbox. That's why the rest of this series spends its time there. My bet is that once you get the tools and the environment right, picking a framework stops feeling like a big decision.
 
 ## Talks worth your time
 
@@ -198,7 +207,7 @@ If you want to go deeper on the ideas in this post, these are the talks I point 
 
 ## Next up
 
-In part 2, I'll take the tool from this post and expose it over MCP, then talk about what I've learned designing tools for models: fewer of them, shaped like tasks, with errors the model can act on. MCP also changed a lot in 2026, and some of those changes are worth understanding even if you never write a server.
+In part 2, I take flowfacts and expose it over MCP, then share what I've learned about designing tools for models: fewer of them, shaped like tasks, with errors the model can act on. MCP also changed a lot in 2026, and some of those changes are worth understanding even if you never write a server.
 
 ---
 
