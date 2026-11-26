@@ -59,7 +59,7 @@ A one-off repro tells you whether the bug exists today. A CI job tells you the n
 
 First I wrote the test the reviewer described. It builds a temporary git repo, commits two files with two-letter names, renames them on a branch, and runs the check with a limit of one file:
 
-```v
+```text
 for command in ['git init -q -b main ${os.quoted_path(root)}', '${git} add .',
 	'${git} commit -q -m base', '${git} checkout -q -b feature', '${git} mv go run',
 	'${git} mv id ids', '${git} commit -q -m rename'] {
@@ -106,7 +106,7 @@ Without the separators, my parser saw one record with some extra tabs in the pat
 
 The cause is in `decode_windows_captured_output` in V's [`os_windows.c.v`](https://github.com/vlang/v/blob/0.5.2/vlib/os/os_windows.c.v). Both `Process.stdout_read` and `Process.stdout_slurp` pass Windows output through it. Many Windows programs write UTF-16, and text-mode pipes can mangle it, so V tries to recover. One of its rules is roughly this:
 
-```v
+```text
 if nulls * 4 < raw.len {
 	return raw
 }
@@ -132,7 +132,7 @@ The reviewer suggested reading stdout as raw bytes, bypassing the decoder. That 
 
 Git already has a better option. `git diff` accepts `--output=<file>`, which writes the diff to a file instead of stdout. Files don't go through V's pipe decoder, so the NULs survive. The [fix](https://github.com/dewan-ahmed/factory-doctor/pull/13/commits/28f05d1235c3155e67ae91c73fba599e0712a927) is small:
 
-```v
+```text
 // Git writes to a file because V's Windows pipe reader can strip the NUL
 // separators that -z output depends on.
 report := os.join_path(os.temp_dir(),
@@ -145,7 +145,7 @@ capture_command(check, 'git', ['diff', '--numstat', '-z', '--no-relative', '--ou
 output := os.read_file(report) or { ... }
 ```
 
-No platform branch, no custom reader. The arguments are still literal, the timeout still applies, and the parser didn't change.
+The same code runs on every platform, and I didn't have to write my own pipe reader. The arguments are still literal, the timeout still applies, and the parser didn't change.
 
 Both CI jobs went green. The Windows session then checked the fix from the outside, using the built CLI rather than the unit tests:
 
@@ -162,7 +162,7 @@ As far as I know, nobody runs factory-doctor on Windows yet. I tested it there a
 
 ## What I'm taking from this
 
-**"I can't verify this" is a finding.** The review comment said plainly that it was unverified and left it for me to triage. That's the right label. But an unverified finding about a platform you don't test is still a claim about your users. The cheapest response is a test on that platform, not a judgement call.
+**"I can't verify this" is a finding.** The review comment said plainly that it was unverified and left it for me to triage. That's the right label. But an unverified finding about a platform you don't test is still a claim about your users. The cheapest response is to run a test on that platform before deciding anything.
 
 **Linux-only CI is an untested claim.** Before today, factory-doctor's CI said "works on Windows" by never asking. The new job costs nothing on a public repo, and it caught two problems on its first run. One of them was in my own tests.
 
