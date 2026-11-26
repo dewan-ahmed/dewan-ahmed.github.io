@@ -14,11 +14,13 @@ tags:
 
 {% include agent-builder-series.html %}
 
-Most of my agent time this year went into coding agents. Not building them, using them: handing off tasks, reviewing pull requests, and figuring out why a session that should have taken twenty minutes took two hours.
+Most of my agent time this year went into coding agents. Not building them, using them: handing off tasks, reviewing their pull requests, and working out why a session that should have taken twenty minutes took two hours.
 
-Here's what I keep relearning. When a coding agent fails, the model is rarely the first thing I'd fix. The session started on a machine without the test runner. It couldn't reach the internal package registry. It spent forty turns exploring a repo with no instructions. It fetched an artifact that turned out to be a login page. Nobody told it when to stop spending.
+When I go back through the slow ones, the model is rarely the thing I'd fix first. The session started on a machine without the test runner. It couldn't reach the internal package registry. It spent forty turns exploring a repo with no instructions. It fetched an artifact that turned out to be a login page. Nobody told it when to stop spending.
 
-That's not a model problem. It's a factory problem. In [part 1]({% post_url 2026-12-01-agents-are-loops %}) I said deterministic work belongs in tools. This post is what that looks like when the agent writes code for a living.
+A smarter model wouldn't have rescued any of those sessions. Every one of them was a problem with the environment the agent got dropped into, and I've started calling that environment the factory. In [part 1]({% post_url 2026-12-01-agents-are-loops %}) I said deterministic work belongs in tools. This post is what that looks like when the agent writes code for a living.
+
+<!-- TODO(Dewan): one real session that went sideways for one of the reasons above (what the task was, what it hit, how long it ran) would make a better opening than the list. -->
 
 ## The factory around the agent
 
@@ -33,13 +35,13 @@ When I say "software factory," I mean everything around a coding agent session:
 | Cost | Sessions run long and nobody notices until the invoice | A budget forecast that can stop work |
 | Review | Plausible-looking PRs that nobody can verify | CI, tests, and a reviewer who reads the diff |
 
-None of this is new. It's the same discipline we've always applied to CI runners and build farms. The difference is that a coding agent will happily try to work around a broken environment for an hour instead of failing fast like a build would. So the factory has to do the failing for it.
+None of this is new. We've been doing the same work for CI runners and build farms for years. What's different is how a coding agent reacts to a broken environment. A build fails and stops. An agent will happily spend an hour working around the missing tool. So the factory has to do the failing for it.
 
-I built a few small, vendor-neutral CLIs while learning this. They're early, but each one came from a specific failure I kept seeing.
+In November I wrote four small, vendor-neutral CLIs in V while working through this. They're early, and each one exists because I kept hitting the same failure.
 
 ## Fail before the expensive part
 
-The cheapest agent session is the one you don't start on a broken machine. That's why I wrote [factory-doctor](https://github.com/dewan-ahmed/factory-doctor): a config of checks that runs in milliseconds and returns stable JSON and exit codes.
+The failure I hate most is the one that shows up forty minutes into a session, when the agent finally tries to run the tests. [factory-doctor](https://github.com/dewan-ahmed/factory-doctor) is my answer to that. You give it a config of checks, it runs them in milliseconds, and it returns stable JSON and exit codes.
 
 ```json
 {
@@ -53,35 +55,41 @@ The cheapest agent session is the one you don't start on a broken machine. That'
 }
 ```
 
-I ran that on a fresh VM while writing this post, and it caught exactly the kind of thing I'd otherwise find out about forty minutes into a session:
+I ran that on a fresh VM while writing this post, and it caught exactly the kind of thing I'd otherwise find out about the slow way:
 
 ```json
 {"version":1,"status":"fail","checks":[{"name":"Source repository","kind":"git_remote","target":"https://github.com/dewan-ahmed/flowfacts","status":"pass","code":"ok","message":"exit code 0","duration_ms":537},{"name":"Git executable","kind":"command","target":"git","status":"pass","code":"ok","message":"exit code 0","duration_ms":10},{"name":"Test runner","kind":"command","target":"pytest","status":"fail","code":"executable_not_found","message":"executable \"pytest\" was not found","duration_ms":0},{"name":"Optional local cache","kind":"file","target":"./cache","status":"warn","code":"file_not_found","message":"path does not exist","duration_ms":0}],"summary":{"total":4,"passed":2,"warned":1,"failed":1}}
 ```
 
-Exit code `1`. The test runner is missing, so the session shouldn't start. The cache is a warning because I marked it non-critical. Under a second of wall time, and no tokens spent.
+Exit code `1`. The test runner is missing, so the session shouldn't start. The cache is only a warning because I marked it non-critical. The checks took about half a second in total, and no tokens were spent.
 
-The design choices matter more than the code. Exit codes are stable (`0` pass, `1` critical failure, `2` bad config), so a CI step, a session hook, or an agent can all branch on them. Targets are scrubbed of credentials and query strings before they're printed. And the `code` field is machine-readable, so an agent that does see the report can tell `executable_not_found` from `unexpected_http_status` without parsing prose.
+The code is a few hundred lines of V. What I actually care about is the contract around it. The exit codes are stable (`0` pass, `1` critical failure, `2` bad config), so a CI step, a session hook, or an agent can all branch on them. Targets are scrubbed of credentials and query strings before they're printed. And the `code` field is meant for machines, so an agent reading the report can tell `executable_not_found` from `unexpected_http_status` without parsing my prose.
 
 ## Give the agent the repo's rules
 
-The single cheapest improvement I've made to coding agent sessions is a good [`AGENTS.md`](https://agents.md/) at the repo root. It's just Markdown: how to set up the environment, the exact commands for build, lint, and test, the conventions that aren't obvious from the code, and the things you never want the agent to do.
+The cheapest improvement I've made to my coding agent sessions is a good [`AGENTS.md`](https://agents.md/) at the repo root. It's plain Markdown: how to set up the environment, the exact commands for build, lint, and test, the conventions you can't see from the code, and the things you never want the agent to do.
 
-What I've learned writing them:
+A few things I've learned writing them.
 
-- **Commands beat descriptions.** "Run `v -silent test .`" is better than "we use V's test framework."
-- **The test command has to be fast and honest.** If the suite takes 20 minutes or fails on main, the agent will either skip it or learn to ignore failures. Both are bad.
-- **Write down the traps.** Every repo has one: the generated file you shouldn't edit, the integration test that needs a VPN. The agent can't know.
+Give it commands, not descriptions. "Run `v -silent test .`" does more for an agent than "we use V's test framework."
 
-Eno Reyes from Factory gave a good talk on this, [Making Codebases Agent Ready](https://www.youtube.com/watch?v=ShuJ_CN6zr4). His framing stuck with me: the things that make a codebase easy for an agent are mostly the things that make it easy for a new hire.
+The test command has to be fast and honest. If the suite takes 20 minutes or is already failing on main, the agent will either skip it or learn to ignore failures, and I don't want either habit.
+
+Write down the traps. Every repo has one, like the generated file you shouldn't edit or the integration test that needs a VPN. The agent has no way of knowing.
+
+I'll admit my own four repos don't have an `AGENTS.md` yet. The test and build commands live in each README and in my environment setup, which works, but it's not the advice I'm giving here.
+
+<!-- TODO(Dewan): either add an AGENTS.md to factory-doctor before this goes live and show a short excerpt here, or keep the admission above. -->
+
+Eno Reyes from Factory gave a good talk on this, [Making Codebases Agent Ready](https://www.youtube.com/watch?v=ShuJ_CN6zr4). The idea I took away from it: the things that make a codebase easy for an agent are mostly the things that make it easy for a new hire.
 
 ## Return facts, not files
 
-Coding agents burn context fast. A 900-line Jenkinsfile, a full build log, a 50 MB artifact: every one of these competes with the code the agent is actually supposed to change.
+Coding agents burn context fast. A 900-line Jenkinsfile, a full build log, a 50 MB artifact: each of these competes with the code the agent is actually supposed to change.
 
-[flowfacts](https://github.com/dewan-ahmed/flowfacts) is my answer for CI/CD pipelines. Instead of reading the file, the agent asks for facts: stages, dependencies, runners, credential IDs (never values), artifacts, and a list of **unresolved** items where the pipeline does something dynamic that a deterministic parser can't follow. That unresolved list is the part I'm proudest of. It tells the agent exactly where its judgment is needed and where it isn't.
+[flowfacts](https://github.com/dewan-ahmed/flowfacts) is how I handle CI/CD pipelines. Instead of reading the whole file, the agent asks for facts: stages, dependencies, runners, credential IDs (never values), artifacts, and a list of `unresolved` items where the pipeline does something dynamic that a deterministic parser can't follow. That unresolved list is my favourite part. It tells the agent exactly where its judgment is needed, and just as usefully, where it isn't.
 
-For artifacts, [artifact-bridge](https://github.com/dewan-ahmed/artifact-bridge) does the boring parts nobody wants the model improvising with `curl`:
+Artifacts were the other recurring mess. I didn't want the model improvising with `curl` and a token pasted into the command, so I wrote [artifact-bridge](https://github.com/dewan-ahmed/artifact-bridge) to do the boring parts:
 
 ```sh
 export ARTIFACT_TOKEN="Bearer ..."
@@ -91,11 +99,11 @@ artifact-bridge fetch "https://factory.example.com/build.zip" \
   --header-env "Authorization=ARTIFACT_TOKEN"
 ```
 
-The token comes from the environment and is never printed. It rejects non-2xx responses and HTML login pages, enforces a size limit, can verify a SHA-256, and writes atomically. The login-page check is there because an expired session often returns a 200 with an HTML sign-in page, and an agent will happily save that as `build.zip` and then spend turns trying to unzip it.
+The token comes from the environment and is never printed. It rejects non-2xx responses and HTML login pages, enforces a size limit, can verify a SHA-256, and writes atomically. The login-page check is there because an expired session can come back as a 200 with an HTML sign-in page, and an agent will happily save that as `build.zip` and then spend turns trying to unzip it.
 
 ## Put a budget on the loop
 
-Coding agents are the first software I've used where a bug can cost money by the minute. I don't want to find out at the end of the month, so I wrote [runway](https://github.com/dewan-ahmed/runway). It reads the usage data a platform officially exposes and forecasts the rest of the billing period:
+Coding agents are the first software I've used where a bug can cost money by the minute. I didn't want to find out at the end of the month, so I wrote [runway](https://github.com/dewan-ahmed/runway). It reads the usage data a platform officially exposes, saved to a file, and forecasts the rest of the billing period:
 
 ```sh
 runway check \
@@ -114,25 +122,30 @@ On a sample export with usage ramping through the month, it returned:
 {"version":1,"source":"devin","unit":"ACU","period_start":"2026-11-01","period_end":"2026-11-30","as_of":"2026-11-20","elapsed_days":20,"period_days":30,"used":925,"budget":1500,"used_percent":61.67,"daily_rate":46.25,"forecast":1387.5,"forecast_percent":92.5,"remaining":575,"runway_days":12.43,"exhaustion_date":"","status":"warning"}
 ```
 
-Only 62% used, but the forecast is 92.5%, so the status is `warning` and the exit code is `1`. At `stop` it exits `2`. Thresholds apply to the forecast, not the balance, which is the whole point: I want to slow down while there's still budget left. It also reads Factory analytics and OpenTelemetry trace exports, because the budget problem isn't specific to one vendor.
+Only 62% is used, but the forecast is 92.5%, so the status is `warning` and the exit code is `1`. At `stop` it exits `2`. The thresholds apply to the forecast, not the balance, on purpose. I want to slow down while there's still budget left, not when it's gone. Besides Devin's consumption data, it reads Factory Analytics `/tokens` responses and Cosmos OpenTelemetry trace exports, because I don't think this problem belongs to any one vendor.
+
+<!-- TODO(Dewan): runway exits 3 on invalid input while the other three tools use 2. Worth a one-line note on why, or align them before readers compare. -->
 
 ## Review is still the bottleneck
 
-All of this gets the agent to a pull request faster and more reliably. It doesn't make the pull request correct. The constraint in my workflow has moved from writing code to reviewing it, and I don't think a better model fixes that by itself.
+Everything above gets the agent to a pull request faster and more reliably. None of it makes the pull request correct. In my own workflow the slow part has moved from writing code to reviewing it, and I don't expect a better model to fix that on its own.
 
-What helps:
+What has helped me:
 
-- **Smaller tasks.** A PR I can review in ten minutes beats a PR that "does everything" and sits for a week.
-- **Plans before code.** For anything non-trivial, I ask for a short plan first. It's much cheaper to correct a plan than a diff. Dex Horthy's [No Vibes Allowed](https://www.youtube.com/watch?v=rmvDxxNubIg) talk makes this case with real numbers from a large codebase.
-- **CI that the agent has to pass.** Formatting, lint, tests, and the build. If the agent can run the same checks locally, it fixes most failures before I see them.
-- **A second reviewer, human or agent.** I've been using a separate agent to review my own drafts, including this series. It catches different things than I do.
+- Smaller tasks. A PR I can review in ten minutes beats one that "does everything" and sits for a week.
+- A plan before code. For anything non-trivial I ask for a short plan first, because correcting a plan is much cheaper than correcting a diff. Dex Horthy makes this case well in [No Vibes Allowed](https://www.youtube.com/watch?v=rmvDxxNubIg), using a large codebase as the example.
+- CI the agent has to pass: formatting, lint, tests, and the build. If it can run the same checks locally, it fixes most failures before I ever see them.
+- A second reviewer, human or agent. I've been having a separate agent review my own drafts, including this series, and it catches different things than I do.
 
 ## Where I think coding agents are heading
 
-- **Background agents become the default.** The IDE copilot isn't going away, but more work moves to agents that run in a sandbox, open a PR, and wait for review. That makes the factory, not the editor, the product surface.
-- **Repos get optimized for agents.** `AGENTS.md`, fast tests, deterministic tooling, and clean CI become table stakes, the same way READMEs and CI did. Teams that do this will get much more out of the same models.
-- **Small deterministic tools win.** A 400-line CLI with stable JSON and exit codes is more useful to a coding agent than another feature in the agent itself. I expect a lot more of these, and most of them should be vendor-neutral.
-- **Cost controls move into the loop.** Today budgets are a dashboard. They'll become a check the agent runs before it starts and between steps, like a test.
+I think background agents become the default. The IDE copilot isn't going away, but more of the work moves to agents that run in a sandbox, open a PR, and wait for review. Once that happens, the factory matters more than the editor.
+
+I think repos get set up for agents the way they got set up for CI. `AGENTS.md`, fast tests, deterministic tooling, and clean CI will be expected, the way a README is. Teams that do this early will get a lot more out of the same models.
+
+I'd bet on small deterministic tools. A CLI of a few hundred lines with stable JSON and exit codes is more useful to a coding agent than another feature inside the agent. I expect to see a lot more of them, and I'd like most of them to be vendor-neutral.
+
+And I think cost controls move into the loop. Today a budget is a dashboard someone checks. I expect it to become a check the agent runs before it starts and between steps, the same way it runs tests.
 
 ## Talks worth your time
 
