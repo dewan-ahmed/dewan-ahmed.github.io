@@ -167,7 +167,7 @@ flowfacts is my clearest example. Hand a migration agent a long Jenkinsfile and 
 
 That `unresolved` list is my favourite part of the project. It marks where deterministic extraction stops and judgment has to start, so the model spends its attention on the parts that need it instead of re-deriving what a parser already knows. When I added a Harness provider, I kept the same idea: templates, runtime inputs, expressions, looping strategies, and conditions go into `unresolved` rather than getting a guess.
 
-<!-- TODO(Dewan): If you watched an agent misread a real Jenkinsfile or Harness pipeline before flowfacts existed, that's the story for this spot. -->
+I've watched an agent write a Harness pipeline where every step was a bash script, even though Harness had native steps for most of that work. The model went with what it knew best, and nothing in its context told it what the platform already provided.
 
 My rule of thumb now: if a program can compute the answer, don't ask the model for it.
 
