@@ -12,7 +12,7 @@ tags:
 
 Yesterday an AI code reviewer told me my new feature was broken on Windows. In the same comment it told me it couldn't check.
 
-That's an honest thing for a reviewer to say, and an easy one to ignore. I don't own a Windows machine. My CI only ran on Linux. The comment was left for me to triage, with no reproduction. If I'd been in a hurry, I would have dismissed it as speculation and merged.
+That's an honest thing for a reviewer to say, and an easy one to ignore. I was pleasantly surprised by my agent's honesty and almost gave it a raise by letting it use "High" effort for an hour. I don't own a Windows machine. My CI only ran on Linux. The comment was left for me to triage, with no reproduction. If I'd been in a hurry, I would have dismissed it as speculation and merged.
 
 It turned out to be right. Here's how I found out, what the bug was, and why the fix came down to one git flag.
 
