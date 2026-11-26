@@ -1,0 +1,17 @@
+{% assign series = site.data.agent_builder_series %}
+{% assign series_posts = site.posts | where: "series", "agent-builder" %}
+<div class="notice--info">
+  <p><strong>{{ series.title }}</strong> &middot; Part {{ page.series_part }} of {{ series.parts | size }}</p>
+  <ol>
+  {% for item in series.parts %}
+    {% assign post = series_posts | where: "series_part", item.part | first %}
+    {% if item.part == page.series_part %}
+    <li><strong>{{ item.title }}</strong> (you are here)</li>
+    {% elsif post %}
+    <li><a href="{{ post.url | relative_url }}">{{ item.title }}</a></li>
+    {% else %}
+    <li>{{ item.title }} (coming soon)</li>
+    {% endif %}
+  {% endfor %}
+  </ol>
+</div>
