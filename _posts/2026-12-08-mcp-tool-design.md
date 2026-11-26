@@ -96,7 +96,7 @@ It's a small server, but three lines in it are there on purpose, and they're the
 
 The most common MCP mistake I see is one REST taught all of us: wrap every endpoint as a tool. Your issue tracker has 60 API operations, so your MCP server has 60 tools.
 
-<!-- TODO(Dewan): if you've installed or reviewed an MCP server that mirrored a whole API, a sentence on what the agent did with it (picked the wrong tool, burned context) would land better than the hypothetical issue tracker. -->
+I hit this in the early days of MCP. The server for a long-established developer tool exposed its entire API as tools. Every one of those definitions went into the agent's context on every turn, before it had done any work. Each request cost more than it needed to, and the agent took noticeably longer to respond.
 
 Every tool's name, description, and schema go into the model's context so it can decide what to call. Sixty tools is a lot of tokens spent before the model has done anything, and sixty chances to pick the wrong one. Some hosts now load tool definitions on demand, which helps with the token cost. It doesn't help the model choose between `get_issue`, `get_issue_details`, and `fetch_issue_by_key`.
 
