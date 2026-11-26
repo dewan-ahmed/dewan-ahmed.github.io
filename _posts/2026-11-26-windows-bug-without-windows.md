@@ -2,6 +2,8 @@
 title: "Fixing a Windows Bug Without Owning a Windows Machine"
 date: 2026-11-26T00:00:00-04:00
 author: Dewan Ahmed
+header:
+  teaser: "/assets/images/2026/windows-bug-without-windows.png"
 excerpt: "An AI code reviewer flagged a Windows-only bug in my preflight tool and admitted it couldn't verify it. Here is how I proved it was real, found the root cause in V's standard library, and fixed it with one git flag."
 tags:
   - ai
