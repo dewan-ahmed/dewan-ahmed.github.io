@@ -1,0 +1,10 @@
+{%- assign slugs = include.slugs | split: "," -%}
+{%- assign links = "" -%}
+{%- for slug in slugs -%}
+  {%- assign post = site.posts | where: "slug", slug | first -%}
+  {%- if post -%}
+    {%- capture link -%}[{{ post.title }}]({{ post.url | relative_url }}){%- endcapture -%}
+    {%- if links == "" -%}{%- assign links = link -%}{%- else -%}{%- assign links = links | append: ", " | append: link -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if links != "" %} · Used in {{ links }}{% endif -%}
