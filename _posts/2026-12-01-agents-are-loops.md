@@ -94,11 +94,11 @@ def run_agent(task: str, max_turns: int = 10) -> str:
     raise RuntimeError(f"agent did not finish within {max_turns} turns")
 ```
 
-I used the Anthropic SDK because it's what I had open. The OpenAI, Gemini, and open-weight equivalents look almost identical: a list of tool schemas, a response that says "call this tool with these arguments", and a message type for sending results back.
+I used the Anthropic SDK for this example. The OpenAI, Gemini, and open-weight equivalents look almost identical: a list of tool schemas, a response that says "call this tool with these arguments", and a message type for sending results back.
 
 A few lines in there do more work than they look like they do.
 
-`max_turns` is the one I'd never ship without. A loop with no limit keeps calling the model for as long as the model keeps asking for tools, and you find out what that costs from the invoice. A turn limit stops one runaway run. It doesn't help when every run looks fine and the month doesn't, which is the problem I wrote runway for. It forecasts spend to the end of a budget period and exits non-zero when the forecast crosses your warning or stop threshold.
+`max_turns` is the one I'd never ship without. A loop with no limit keeps calling the model for as long as the model keeps asking for tools, and you find out what that costs from the invoice. A turn limit stops one runaway run. It doesn't help when every run looks fine and the month doesn't, which is the problem I wrote runway for. It forecasts spend to the end of a budget period and exits non-zero when the forecast crosses your warning or stop threshold. `runway anomalies` also flags a day that spends far more than the same kind of day (weekday or weekend) usually does, with a reason code that says why.
 
 The `except` block sends errors back to the model as a tool result instead of raising them. If factory-doctor isn't on the PATH or the check times out, the model reads the error and can decide what to do next. If you raise, one bad path ends the whole run.
 
@@ -165,9 +165,7 @@ The cheapest reliability win I know of is taking work away from the model.
 
 flowfacts is my clearest example. Hand a migration agent a long Jenkinsfile and ask it to reason about it, and you've spent a chunk of context on boilerplate and given the model room to confidently "remember" a stage that isn't there. With flowfacts, the agent runs one command and gets compact JSON back: stages, dependencies, credential IDs (never the values), artifacts, and an explicit `unresolved` list for things like dynamic Groovy.
 
-That `unresolved` list is my favourite part of the project. It marks where deterministic extraction stops and judgment has to start, so the model spends its attention on the parts that need it instead of re-deriving what a parser already knows. When I added a Harness provider, I kept the same idea: templates, runtime inputs, expressions, looping strategies, and conditions go into `unresolved` rather than getting a guess.
-
-I've watched an agent write a Harness pipeline where every step was a bash script, even though Harness had native steps for most of that work. The model went with what it knew best, and nothing in its context told it what the platform already provided.
+That `unresolved` list is my favourite part of the project. It marks where deterministic extraction stops and judgment has to start, so the model spends its attention on the parts that need it instead of re-deriving what a parser already knows.
 
 My rule of thumb now: if a program can compute the answer, don't ask the model for it.
 
