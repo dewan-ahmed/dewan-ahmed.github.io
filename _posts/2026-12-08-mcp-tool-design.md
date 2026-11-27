@@ -49,7 +49,7 @@ mcp = MCPServer("pipeline-facts")
 
 
 @mcp.tool(structured_output=True)
-def pipeline_facts(provider: Literal["jenkins", "harness"], file: str) -> dict[str, Any]:
+def pipeline_facts(provider: Literal["jenkins"], file: str) -> dict[str, Any]:
     """Extract compact facts from a CI/CD pipeline file: stages, dependencies,
     runners, credential IDs, artifacts, and dynamic code that needs review.
 
@@ -86,7 +86,7 @@ Or, in Claude Code, `claude mcp add pipeline-facts -- python server.py`.
 
 It's a small server, but three lines in it are there on purpose, and they're the ones I see people skip.
 
-**The `Literal` type becomes an enum in the schema.** The model sees `"enum": ["jenkins", "harness"]` instead of a free-form string. If it sends `"gitlab"` anyway, validation rejects the call and the model gets an error listing the allowed values, so a typo turns into a correction and the agent tries again. I did the same thing in factory-doctor's config parser for humans: an unknown check kind fails with a message that names the check and the bad kind, instead of failing somewhere later.
+**The `Literal` type becomes an enum in the schema.** The model sees `"enum": ["jenkins"]` instead of a free-form string. If it sends `"gitlab"` anyway, validation rejects the call and the model gets an error listing the allowed values, so a typo turns into a correction and the agent tries again. I did the same thing in factory-doctor's config parser for humans: an unknown check kind fails with a message that names the check and the bad kind, instead of failing somewhere later.
 
 **`ToolError` decides whether the model sees your error message at all.** In SDK v2, an exception you anticipated (`ToolError`) goes back to the model with your message. Any other exception is treated as a crash, and the model sees only `Error executing tool pipeline_facts`. I understand the default, since nobody wants stack traces leaking into context. But it means a lazy `raise ValueError(...)` throws away exactly the message the model needed. I found this out while testing this server, staring at that one-line error and wondering where my message went.
 

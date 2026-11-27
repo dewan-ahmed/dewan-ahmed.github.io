@@ -34,7 +34,7 @@ The second description is where A2A gets interesting, and it's also where it get
 
 ## The protocol in one walkthrough
 
-I'll use an example close to my own tools. Parts 1 and 2 leaned on [flowfacts](https://github.com/dewan-ahmed/flowfacts), the CLI that pulls facts out of a Jenkinsfile or Harness pipeline YAML. flowfacts is deliberately not an agent. It extracts facts and stops, and anything it can't resolve deterministically comes back marked as `unresolved`.
+I'll use an example close to my own tools. Parts 1 and 2 leaned on [flowfacts](https://github.com/dewan-ahmed/flowfacts), the CLI that pulls facts out of a Jenkinsfile. flowfacts is deliberately not an agent. It extracts facts and stops, and anything it can't resolve deterministically comes back marked as `unresolved`.
 
 Now imagine the layer above it. A platform team runs an agent that assesses CI/CD pipelines for migration, and my agent, in a different team, wants to use it. That's a real boundary: a different owner, a different release schedule, and probably different credentials.
 
